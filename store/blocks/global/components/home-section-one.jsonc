@@ -1,0 +1,73 @@
+{
+
+
+    "flex-layout.row#section__one-homeUp": {
+        "children": [
+            "slider-layout#section__one-slider",
+            "image#section__one-principal"
+        ]
+    },
+
+    /* principal children*/
+
+    "slider-layout#section__one-slider": {
+        "children": [
+            "image#initial__img1",
+            "image#initial__img2",
+            "image#initial__img3",
+            "image#initial__img4",
+            "image#initial__img5"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "centerMode": "center",
+            "marginBottom": 10,
+            "maxWidth": "50%"
+        }
+    },
+
+    "image#section__one-principal": {
+        "props": {
+            "src": "assets/img/static__img1.jpg"
+        }
+    },
+
+    /* Secondary children*/
+    "image#initial__img1": {
+        "props": {
+            "src": "assets/img/slider__img1.jpg",
+            "maxWidth": "100%",
+            "maxHeight": "100%"
+        }
+    },
+    "image#initial__img2": {
+        "props": {
+            "src": "assets/img/slider__img2.jpg"
+        }
+    },
+    "image#initial__img3": {
+        "props": {
+            "src": "assets/img/slider__img3.jpg"
+        }
+    },
+    "image#initial__img4": {
+        "props": {
+            "src": "assets/img/slider__img4.jpg"
+        }
+    },
+    "image#initial__img5": {
+        "props": {
+            "src": "assets/img/slider__img5.jpg"
+        }
+    }
+}

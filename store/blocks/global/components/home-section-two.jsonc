@@ -1,0 +1,287 @@
+{
+    "flex-layout.row#section__two-categories": {
+        "children": [
+            "flex-layout.col#categories__group-one",
+            "flex-layout.col#categories__group-two",
+            "flex-layout.col#categories__group-three",
+            "flex-layout.col#categories__group-four",
+            "flex-layout.col#categories__group-five",
+            "flex-layout.col#categories__group-six",
+            "flex-layout.col#categories__group-seven",
+            "flex-layout.col#categories__group-eigth",
+            "flex-layout.col#categories__group-nine",
+            "flex-layout.col#categories__group-ten",
+            "flex-layout.col#categories__group-eleven",
+            "flex-layout.col#categories__group-twelve"
+        ],
+        "props": { 
+            "rowGap":4
+        }
+    },
+
+    /*Principal Children*/
+
+    "flex-layout.col#categories__group-one": {
+        "children": [
+            "image#group__one-vinos",
+            "rich-text#group__one-vinos"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-two": {
+        "children": [
+            "image#group__two-puntos",
+            "rich-text#group__two-puntos"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-three": {
+        "children": [
+            "image#group__three-precio",
+            "rich-text#group__three-precio"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-four": {
+        "children": [
+            "image#group__four-frutas",
+            "rich-text#group__four-frutas"
+        ]
+
+    },
+    "flex-layout.col#categories__group-five": {
+        "children": [
+            "image#group__five-carnes",
+            "rich-text#group__five-carnes"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-six": {
+        "children": [
+            "image#group__six-salud",
+            "rich-text#group__six-salud"
+        ]
+
+    },
+    "flex-layout.col#categories__group-seven": {
+        "children": [
+            "image#group__seven-delicatessen",
+            "rich-text#group__seven-delicatessen"
+        ]
+
+    },
+    "flex-layout.col#categories__group-eigth": {
+        "children": [
+            "image#group__eigth-lacteos",
+            "rich-text#group__eigth-lacteos"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-nine": {
+        "children": [
+            "image#group__nine-huevos",
+            "rich-text#group__nine-huevos"
+        ]
+
+    },
+    "flex-layout.col#categories__group-ten": {
+        "children": [
+            "image#group__ten-bebidas",
+            "rich-text#group__ten-bebidas"
+        ]
+
+    },
+    "flex-layout.col#categories__group-eleven": {
+        "children": [
+            "image#group__eleven-limpieza",
+            "rich-text#group__eleven-limpieza"
+        ]
+
+    },
+
+    "flex-layout.col#categories__group-twelve": {
+        "children": [
+            "image#group__twelve-colchones",
+            "rich-text#group__twelve-colchones"
+        ]
+
+    },
+
+    /*Secondary Children*/
+
+    "image#group__one-vinos": {
+        "props": {
+            "src": "assets/img/lomejorparati__img1.jpg"
+        }
+    },
+    "rich-text#group__one-vinos": {
+        "props": {
+            "text": "Vinos y licores",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+
+    "image#group__two-puntos": {
+        "props": {
+            "src": "assets/img/lomejorparati__img2.jpg"
+        }
+    },
+    "rich-text#group__two-puntos": {
+        "props": {
+            "text": "PuntoManía",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__three-precio": {
+        "props": {
+            "src": "assets/img/lomejorparati__img3.jpg"
+        }
+    },
+    "rich-text#group__three-precio": {
+        "props": {
+            "text": "Mejor Precio",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__four-frutas": {
+        "props": {
+            "src": "assets/img/lomejorparati__img4.jpg"
+        }
+    },
+    "rich-text#group__four-frutas": {
+        "props": {
+            "text": "Frutas y verduras",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__five-carnes": {
+        "props": {
+            "src": "assets/img/lomejorparati__img5.jpg"
+        }
+    },
+    "rich-text#group__five-carnes": {
+        "props": {
+            "text": "Carnes, pescados y pollos",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__six-salud": {
+        "props": {
+            "src": "assets/img/lomejorparati__img6.jpg"
+        }
+    },
+    "rich-text#group__six-salud": {
+        "props": {
+            "text": "Salud  y Belleza",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__seven-delicatessen": {
+        "props": {
+            "src": "assets/img/lomejorparati__img7.jpg"
+        }
+    },
+    "rich-text#group__seven-delicatessen": {
+        "props": {
+            "text": "Delicatessen",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__eigth-lacteos": {
+        "props": {
+            "src": "assets/img/lomejorparati__img8.jpg"
+        }
+    },
+    "rich-text#group__eigth-lacteos": {
+        "props": {
+            "text": "Lácteos y refrigerados",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__nine-huevos": {
+        "props": {
+            "src": "assets/img/lomejorparati__img9.jpg"
+        }
+    },
+    "rich-text#group__nine-huevos": {
+        "props": {
+            "text": "Huevos",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__ten-bebidas": {
+        "props": {
+            "src": "assets/img/lomejorparati__img10.jpg"
+        }
+    },
+    "rich-text#group__ten-bebidas": {
+        "props": {
+            "text": "bebidas, pasabocas y dulces",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__eleven-limpieza": {
+        "props": {
+            "src": "assets/img/lomejorparati__img11.jpg"
+        }
+    },
+    "rich-text#group__eleven-limpieza": {
+        "props": {
+            "text": "Limpieza del hogar",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    },
+    "image#group__twelve-colchones": {
+        "props": {
+            "src": "assets/img/lomejorparati__img12.jpg"
+        }
+    },
+    "rich-text#group__twelve-colchones": {
+        "props": {
+            "text": "colchones",
+            "textAlignment": "CENTER",
+            "textPosition": "center",
+            "font": "t-heading-5",
+            "textColor": "c-on-base"
+        }
+    }
+
+}
