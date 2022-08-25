@@ -3,9 +3,10 @@
 
     "flex-layout.row#section__one-homeUp": {
         "children": [
-            "slider-layout#section__one-slider",
-            "image#section__one-principal"
+            "slider-layout#section__one-slider"
+            //"image#section__one-principal"
         ]
+        
     },
 
     /* principal children*/
@@ -31,10 +32,15 @@
             "infinite": true,
             "showNavigationArrows": "always",
             "centerMode": "center",
-            "marginBottom": 10,
-            "maxWidth": "50%"
+            "fullWidth": false
+
+           
         }
     },
+    "flex-layout.col#section__one-home":{
+        "children": ["image#section__one-principal"]
+    },
+    
 
     "image#section__one-principal": {
         "props": {

@@ -1,0 +1,49 @@
+{
+    "slider-layout#section__five-wines": {
+        "children": [
+            "flex-layout.row#section__five-wines"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "centerMode": "disabled",
+            //"navigationStep": "page",
+            //"fullWidth":false,
+            "showNavigationArrows":"desktopOnly"
+        }
+    },
+
+    "flex-layout.row#section__five-wines": {
+        "children": [
+            "info-card#wine",
+            "info-card#wine",
+            "info-card#wine"
+
+        ],
+        "props": {
+
+        }
+    }
+
+    
+    ,
+    "info-card#wine": {
+        "props": {
+            "id": "info-card-img2",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/img/vino__img1.jpg",
+            "subhead": "Santa Julia marca exclusiva <br> V.TTO reserva Malbec  Santa <br> Julia Marca exclusiva <br>$55.900<br>$27.950",
+            "callToActionText": "Agregar",
+            "textAlignment": "left"
+        }
+    }
+}

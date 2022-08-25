@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#section__eigth-prefooter": {
+        "children": [
+            "rich-text#prefooter-one",
+            "rich-text#prefooter-two",
+            "rich-text#prefooter-three",
+            "rich-text#prefooter-four"
+        ]
+    },
+    "rich-text#prefooter-one": {
+        "props": {
+            "text": "Más de 100 mil productos",
+            "textAlignment": "RIGTH",
+            "font": "t-heading-5"
+        }
+
+    },
+    "rich-text#prefooter-two": {
+        "props": {
+            "text": "Compras seguras",
+            "textAlignment": "RIGTH",
+            "font": "t-heading-5"
+        }
+    },
+    "rich-text#prefooter-three": {
+        "props": {
+            "text": "Acumulas Puntos",
+            "textAlignment": "RIGTH",
+            "font": "t-heading-5"
+        }
+    },
+    "rich-text#prefooter-four": {
+        "props": {
+            "text": "Paga en línea o en efectivo",
+            "textAlignment": "RIGTH",
+            "font": "t-heading-5"
+        }
+
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "slider-layout#section__four-bestsellers": {
+        "children": [
+            "flex-layout.row#section__four-bestsellers"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "centerMode": "disabled",
+            //"navigationStep": "page",
+            //"fullWidth":false,
+            "showNavigationArrows":"desktopOnly"
+        }
+    },
+
+    "flex-layout.row#section__four-bestsellers": {
+        "children": [
+            "info-card#bestsellers",
+            "info-card#bestsellers",
+            "info-card#bestsellers"
+
+        ],
+        "props": {
+
+        }
+    },
+
+    "info-card#bestsellers": {
+        "props": {
+            "id": "info-card-img1",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/img/corona__img1.jpg",
+            "subhead": "CORONA SIX PACK <br> Coronita 1260 ml <br> <br>$17.100<br>$27.950",
+            "callToActionText": "Agregar",
+            "textAlignment": "left"
+        }
+    
+    }
+}

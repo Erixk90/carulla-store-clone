@@ -1,0 +1,64 @@
+{ 
+    "flex-layout.row#section__seven-monthsproducts":{
+    "children":[
+        "flex-layout.col#seven-monthsproducts-one",
+        "flex-layout.col#seven-monthsproducts-two",
+        "flex-layout.col#seven-monthsproducts-three",
+        "flex-layout.col#seven-monthsproducts-four"
+    ],
+    "props":{}
+},
+
+"flex-layout.col#seven-monthsproducts-one":{
+    "children":[
+        "image#monthsproducts_one"
+    ]
+},
+
+"image#monthsproducts_one":{
+    "props": {
+        "src": "assets/img/productosmes__img1.jpg",
+        "maxHeight": 240
+    }
+},
+
+"flex-layout.col#seven-monthsproducts-two":{
+    "children":[
+        "image#monthsproducts_two"
+    ]
+},
+
+"image#monthsproducts_two":{
+    "props": {
+        "src": "assets/img/productosmes__img2.jpg",
+        "maxHeight": 240
+    }
+},
+"flex-layout.col#seven-monthsproducts-three":{
+    "children":[
+        "image#monthsproducts_three"
+    ]
+},
+
+"image#monthsproducts_three":{
+    "props": {
+        "src": "assets/img/productosmes__img3.jpg",
+        "maxHeight": 240
+    }
+},
+
+"flex-layout.col#seven-monthsproducts-four":{
+    "children":[
+        "image#monthsproducts_four"
+    ]
+},
+
+"image#monthsproducts_four":{
+    "props": {
+        "src": "assets/img/productosmes__img4.jpg",
+        "maxHeight": 240
+    }
+}
+
+
+}

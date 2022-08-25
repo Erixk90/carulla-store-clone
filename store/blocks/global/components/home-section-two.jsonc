@@ -6,7 +6,16 @@
             "flex-layout.col#categories__group-three",
             "flex-layout.col#categories__group-four",
             "flex-layout.col#categories__group-five",
-            "flex-layout.col#categories__group-six",
+            "flex-layout.col#categories__group-six"
+            
+        ],
+        "props": { 
+            "rowGap":4
+        }
+    },
+
+    "flex-layout.row#section__two-categories2": {
+        "children": [
             "flex-layout.col#categories__group-seven",
             "flex-layout.col#categories__group-eigth",
             "flex-layout.col#categories__group-nine",

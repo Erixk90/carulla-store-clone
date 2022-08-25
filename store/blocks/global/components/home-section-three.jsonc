@@ -1,0 +1,58 @@
+{
+
+    /*Declare the principal row */
+    "flex-layout.row#section__three-yourmarket": {
+        "children": [
+            "flex-layout.row#market__group-one",
+            "flex-layout.row#market__group-two"
+        ]
+    },
+
+    /*Declare first one group*/
+
+    "flex-layout.row#market__group-one": {
+        "children": [
+            "image#market__image-one"
+        ]
+    },
+
+    "image#market__image-one": {
+        "props": {
+            "src": "assets/img/todomercado__img1.jpg",
+            "maxWidth": "100%"
+        }
+    },
+    /*Declare next group */
+    "flex-layout.row#market__group-two": {
+        "children": [
+            "flex-layout.col#market__image-one",
+            "flex-layout.col#market__image-two"
+        ]
+    },
+
+    /*First sub-group */
+    "flex-layout.col#market__image-one": {
+        "children": [
+            "image#market__image-two"
+        ]
+    },
+    "flex-layout.col#market__image-two": {
+        "children": [
+            "image#market__image-three"
+        ]
+    },
+    "image#market__image-two": {
+        "props": {
+            "src": "assets/img/todomercado__img2.jpg",
+            "maxWidth": "100%"
+        }
+    },
+
+    "image#market__image-three": {
+        "props": {
+            "src": "assets/img/todomercado__img3.jpg",
+            "maxWidth": "100%"
+        }
+    }
+
+}
