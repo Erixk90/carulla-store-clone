@@ -1,106 +1,179 @@
 {
 
   "header": {
+    "title": "Header",
+    "blocks": ["header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "title": "Header",
     "blocks": ["header-layout.desktop",
       "header-layout.mobile"
     ]
   },
 
   "header-layout.desktop": {
+    "title": "Header Desktop",
     "children": [
-      "header-row#1-desktop"
-      /*,
-           "header-row#2-desktop",
-           "header-row#3-desktop",
-           "header-row#4-desktop"*/
+      "header-row#header-top"
     ]
   },
-
-  "header-row#1-desktop": {
-    "children": [
-      "image#header__top-logo"
-    ]
+  "header-layout.mobile": {
+    "title": "Header mobile",
+    "children": ["header-row#header-top"]
   },
 
-  "image#header__top-logo": {
-    "title": "sucio",
+
+  "header-row#header-top": {
+    "title": "Header  top",
+    "children": [
+      "drawer",
+      "logo#header__top-logo",
+      "rich-text#header-top",
+      "login",
+      "minicart.v2"
+
+    ],
     "props": {
-      "src": "assets/img/logo.png",
-      "width": 150
+      "blockClass": "header__top"
+    }
+  },
+
+  "rich-text#header-top": {
+    "props": {
+      "text": "Esto es una parte del header"
+    }
+  },
+  "logo#header__top-logo": {
+    "title": "logo",
+    "props": {
+      "url": "assets/img/logo.png",
+      "width": 26,
+      "heigth": 26,
+      "href": "/"
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-delicatessen",
+      "menu-item#category-bebidas",
+      "menu-item#custom-vinos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#category-delicatessen": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Delicatessen",
+        "text": "Delicatessen"
+      }
+    }
+  },
+
+  "menu-item#category-bebidas": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Bebidas",
+        "text": "Bebidas"
+      }
+    }
+  },
+
+  /*Ejemplo de submenu  */
+
+  "menu-item#custom-vinos": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Vainos",
+        "text": "Vinos"
+      }
+    },
+    "blocks": ["submenu.accordion#departments"]
+  },
+
+  "submenu.accordion#departments": {
+    "children": [
+      "menu#department__one"
+    ]
+  },
+  "menu#department__one": {
+    "children": [
+      "menu-item#category__one",
+      "menu-item#category__two"
+    ], 
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  
+
+  "menu-item#category__one": {
+    "props": {
+      "id": "category__one",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "notFollow": true,
+        "tagTitle": "Sin Alcohol",
+        "text": "Sin Alcohol"
+      }
+    }
+  },
+
+  "menu-item#category__two": {
+    "props": {
+      "id": "category__one",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "notFollow": true,
+        "tagTitle": "con Alcohol",
+        "text": "con Alcohol"
+      }
+    }
+  },
+
+
+
+  "login": {
+    "props": {
+      "optionsTitle": "Cuenta",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showIconProfile": true,
+      "hasGoogleOneTap": true,
+      "identifierPlaceholder": "holaaaaa",
+      "hideIconLabel": true
+
     }
   }
-
-  /* "header.full": {
-     "blocks": ["header-layout.desktop", "header-layout.mobile"]
-   },
-   "header-layout.desktop": {
-     "children": [
-       "sticky-layout#desktop"
-     ]
-   },
-   "sticky-layout#desktop": {
-     "props": {
-       "blockClass": "sticky-header"
-     },
-     "children": ["flex-layout.row#desktop"]
-   },
-   "flex-layout.row#desktop": {
-     "props": {
-       "horizontalAlign": "center",
-       "verticalAlign": "center",
-       "preventHorizontalStretch": true,
-       "preventVerticalStretch": true,
-       "fullWidth": true
-     },
-     "children": [
-       "flex-layout.col#logo-desktop",
-       "flex-layout.col#spacer",
-       "search-bar",
-       "locale-switcher",
-       "login",
-       "minicart.v2"
-     ]
-   },
-   "flex-layout.col#spacer": {
-     "props": {
-       "width": "grow"
-     }
-   },
-   "flex-layout.col#logo-desktop": {
-     "props": {
-       "verticalAlign": "middle"
-     },
-     "children": ["logo"]
-   },
-   "logo": {
-     "props": {
-       "title": "Logo",
-       "src": "assets/img/logo.jpg",
-       "width": "80"
-     }
-   },
-   "header-layout.mobile": {
-     "children": ["sticky-layout#mobile"]
-   },
-   "sticky-layout#mobile": {
-     "children": ["flex-layout.row#mobile"]
-   },
-   "flex-layout.row#mobile": {
-     "children": [
-       "drawer",
-       "logo",
-       "flex-layout.col#spacer",
-       "login",
-       "minicart.v2"
-     ],
-     "props": {
-       "blockClass": "main-header-mobile",
-       "preventHorizontalStretch": true,
-       "preserveLayoutOnMobile": true,
-       "fullWidth": true
-     }
-   },
-   "drawer": {
-     "children": []
-   } */
 }
