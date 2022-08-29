@@ -32,7 +32,7 @@
             "infinite": true,
             "showNavigationArrows": "always",
             "centerMode": "center",
-            "fullWidth": false
+            "fullWidth": true
 
            
         }
@@ -51,9 +51,8 @@
     /* Secondary children*/
     "image#initial__img1": {
         "props": {
-            "src": "assets/img/slider__img1.jpg",
-            "maxWidth": "100%",
-            "maxHeight": "100%"
+            "src": "assets/img/slider__img1.jpg"
+            
         }
     },
     "image#initial__img2": {

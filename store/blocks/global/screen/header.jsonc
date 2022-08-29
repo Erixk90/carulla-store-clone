@@ -8,7 +8,8 @@
   },
   "header.full": {
     "title": "Header",
-    "blocks": ["header-layout.desktop",
+    "blocks": [
+      "header-layout.desktop",
       "header-layout.mobile"
     ]
   },
@@ -16,6 +17,7 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
+      "notification.bar",
       "header-row#header-top"
     ]
   },
@@ -28,11 +30,16 @@
   "header-row#header-top": {
     "title": "Header  top",
     "children": [
+
       "drawer",
       "logo#header__top-logo",
+      "icon#header__top-bell",
       "rich-text#header-top",
+      "search-bar#header__search",
       "login",
       "minicart.v2"
+
+
 
     ],
     "props": {
@@ -40,9 +47,43 @@
     }
   },
 
+  "notification.bar": {
+    /* "children":[
+       "rich-text#notification__bar-text",
+       "rich-text#notification__bar-link"
+     ],*/
+    "props": {
+      "content": "Envío gratis en tus compras de mercado superiores a $80.000 con tarjetas Carulla"
+
+    }
+  },
+
+  "search-bar#header__search": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
+  },
+
+  "icon#header__top-bell": {
+    "props": {
+      "id": "mpa-location-input",
+      "size": 20
+
+    }
+  },
+
   "rich-text#header-top": {
     "props": {
-      "text": "Esto es una parte del header"
+      "text": " ¿Como quieres recibir tu pedido?",
+      "color": "c-on-emphasys"
     }
   },
   "logo#header__top-logo": {
@@ -127,12 +168,12 @@
     "children": [
       "menu-item#category__one",
       "menu-item#category__two"
-    ], 
+    ],
     "props": {
       "orientation": "vertical"
     }
   },
-  
+
 
   "menu-item#category__one": {
     "props": {
@@ -175,5 +216,64 @@
       "hideIconLabel": true
 
     }
+  },
+
+  "icon#header__top-minicart": {
+    "props": {
+      "id": "erick-cart",
+      "size": 20
+    }
+  },
+
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon#header__top-minicart",
+      "itemCountMode": "total"
+    },
+    "children": [
+      "minicart-base-content"
+    ]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": [
+      "minicart-product-list",
+      "flex-layout.row#minicart__footer"
+    ]
+  },
+
+  "minicart-empty-state":{
+    "children": [
+      "flex-layout.row#minicart__empty"
+    ]
+  },
+  "flex-layout.row#minicart__empty":{
+    "children": [
+      "flex-layout.col#minicart__empty"
+    ]
+  },
+
+  "flex-layout.col#minicart__empty":{
+    "children": [
+      "icon-cart#minicart__empty-icon"
+    ]
+  },
+
+  "icon-cart#minicart__empty-icon":{
+    "props": {
+      "size":60
+    }
+  },
+
+  "flex-layout.row#minicart__footer": {
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
+  },
+
+  "minicart-product-list": {
+
   }
+
 }

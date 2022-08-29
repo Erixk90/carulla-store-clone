@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+
       "image#section__one-welcome",
       "flex-layout.row#section__one-homeUp",
       "rich-text#title__section-two",
@@ -16,13 +17,14 @@
       "flex-layout.row#section__six-yourhome",
       "rich-text#title__section-seven",
       "flex-layout.row#section__seven-monthsproducts",
-      "flex-layout.row#section__eigth-prefooter"
+      "flex-layout.row#section__eigth-prefooter",
+      "search-result-layout.customQuery#home-search"
       //"flex-layout.row#section__nine-footer"
     ]
   },
   "image#section__one-welcome": {
     "props": {
-      "src": "assets/img/header.jpg",
+      "src": "assets/img/header1.jpg",
       "max-width": 600,
       "title": "Banner principal"
     }
@@ -58,7 +60,7 @@
     }
 
   },
-  
+
 
   "rich-text#title__section-five": {
     "props": {
@@ -69,8 +71,7 @@
 
     }
 
-  }
-  ,
+  },
 
   "rich-text#title__section-six": {
     "props": {
@@ -92,5 +93,69 @@
 
     }
 
+    /*Search Results
+    traemos contexto para poder agregar a una pagina que no lo tiene como es el home*/ 
+
+  },
+  "search-result-layout.customQuery#home-search": {
+    "blocks": [
+      "search-result-layout.desktop#home__search-desktop",
+      "search-result-layout.mobile#home__search-mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "search-result-layout.desktop#home__search-desktop": {
+    "children": [
+      
+      
+      "flex-layout.row#home__results"/*,
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    */
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+  "flex-layout.row#home__results":{
+    "children": [
+      "flex-layout.col#home__results-search"
+    
+    ]
+  },
+  "flex-layout.col#home__results-filter":{
+    "props":{
+      "width": "100%"
+    }},
+
+    "flex-layout.col#home__results-search":{
+      "props":{
+        "width": "70%"
+    },
+    "children": [
+      "search-content#home__results-search"
+    ]},
+
+    "search-content#home__results-search":{
+      "blocks":[
+        "gallery", "not-found"]
+      },
+
+      "gallery":{
+        "blocks":[
+          "product-summary.shelf"
+        ]
+      },
+
+  "search-result-layout.mobile#home__search-mobile":{
+     
   }
 }

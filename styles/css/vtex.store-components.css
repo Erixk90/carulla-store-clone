@@ -1,0 +1,18 @@
+.imageElement{
+    align-self: center;
+}
+
+.notificationBarInner{
+    height:  10px;
+    color: #fff;
+    
+}
+
+.notificationcontent{
+    height: 10px;
+} 
+
+.image.element{
+    height: 100% ;
+    width: 100%
+}
