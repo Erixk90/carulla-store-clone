@@ -83,7 +83,8 @@
   "rich-text#header-top": {
     "props": {
       "text": " ¿Como quieres recibir tu pedido?",
-      "color": "c-on-emphasys"
+      "color": "c-on-emphasys",
+      "blockClass": "header__top-paragraph"
     }
   },
   "logo#header__top-logo": {
@@ -95,40 +96,131 @@
       "href": "/"
     }
   },
+
   "drawer": {
     "children": [
-      "menu#drawer"
+      "vtex.menu@2.x:menu#drawer"
     ]
   },
-  "menu#drawer": {
+  "vtex.menu@2.x:menu#drawer": {
     "children": [
-      "menu-item#category-delicatessen",
+      "rich-text#head-menu",
+      "menu-item#category-eventos",
+      "menu-item#category-lanzamientos" ,
+      "rich-text#body-menu",
+      "menu-item#category-vinos",
       "menu-item#category-bebidas",
-      "menu-item#custom-vinos"
+      "menu-item#category-delicatessen" ,
+      "menu-item#category-panaderia",
+      "menu-item#category-pollo",
+      "menu-item#category-frutas",
+      "menu-item#category-despensa",
+      "menu-item#category-lacteos",
+      "menu-item#category-preparados",
+      "menu-item#category-congelados",
+      "menu-item#category-limpieza",
+      "menu-item#category-salud",
+      "menu-item#category-electrodomesticos",
+      "menu-item#category-tecnologia",
+      "menu-item#category-moda",
+      "menu-item#category-hogar",
+      "menu-item#category-deporte",
+      "menu-item#category-otros",
+      "menu-item#category-cocina" /*,
+     "rich-text#footer-menu",
+      "rich-text#footer-menu",
+      "rich-text#footer-menu"*/
     ],
     "props": {
       "orientation": "vertical"
     }
   },
 
-  "menu-item#category-delicatessen": {
+  "rich-text#head-menu": {
     "props": {
-      "id": "menu-item-shop",
+      "text": "Lo Ultimo"
+    }
+  },
+
+  "menu-item#category-eventos": {
+    "props": {
+      "id": "menu-item-eventos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "/",
         "noFollow": false,
-        "tagTitle": "Delicatessen",
-        "text": "Delicatessen"
-      }
+        "tagTitle": "Eventos del mes",
+        "text": "Eventos del mes"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
     }
   },
 
+  "menu-item#category-lanzamientos": {
+    "props": {
+      "id": "menu-item-lanzamientos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Nuevos Lanzamientos",
+        "text": "Nuevos Lanzamientos"
+      },
+      "iconProps": {
+        "id": "mpa-globe",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
+    }
+  },
+
+  "rich-text#body-menu":{
+    "props": {
+      "text": "Categorías"
+    }
+  },
+
+  "menu-item#category-delicatessen": {
+    "props": {
+      "id": "menu-item-delicatessen",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "delicatessen",
+        "text": "delicatessen"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
+    }
+  },
+
+
   "menu-item#category-bebidas": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-bebidas",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -136,16 +228,22 @@
         "href": "/",
         "noFollow": false,
         "tagTitle": "Bebidas",
-        "text": "Bebidas"
-      }
+        "text": "Bebidas, pasabocas y dulces"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
     }
   },
 
-  /*Ejemplo de submenu  */
-
-  "menu-item#custom-vinos": {
+  "menu-item#category-vinos": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-vinos",
       "type": "custom",
       "highlight": false,
       "itemProps": {
@@ -153,9 +251,374 @@
         "href": "/",
         "noFollow": false,
         "tagTitle": "Vainos",
-        "text": "Vinos"
-      }
-    },
+        "text": "Vinos y licores"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
+    }
+  },
+  "menu-item#category-panaderia": {
+    "props": {
+      "id": "menu-item-panaderia",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "panaderia",
+        "text": "panaderia"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+
+  "menu-item#category-pollo": {
+    "props": {
+      "id": "menu-item-pollo",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Pollo, carnes y  pescado",
+        "text": "Pollo, carnes y  pescado"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": false
+    }
+  },
+  "menu-item#category-frutas": {
+    "props": {
+      "id": "menu-item-frutas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Frutas y Verduras",
+        "text": "Frutas y Verduras"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-despensa": {
+    "props": {
+      "id": "menu-item-despensa",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Despensa",
+        "text": "Despensa"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-lacteos": {
+    "props": {
+      "id": "menu-item-lacteos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Lácteos, huevos y refrigerados",
+        "text": "Lácteos, huevos y refrigerados"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-preparados": {
+    "props": {
+      "id": "menu-item-preparados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Comidas Preparadas",
+        "text": "Comidas Preparadas"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-congelados": {
+    "props": {
+      "id": "menu-item-congelados",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Congelados",
+        "text": "Congelados"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-limpieza": {
+    "props": {
+      "id": "menu-item-limpieza",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Limpieza del hogar",
+        "text": "Limpieza del hogar"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-salud": {
+    "props": {
+      "id": "menu-item-salud",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Salud y belleza",
+        "text": "Salud y belleza"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },"menu-item#category-electrodomesticos": {
+    "props": {
+      "id": "menu-item-electrodomesticos",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Electrodomesticos",
+        "text": "Electrodomesticos"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-tecnologia": {
+    "props": {
+      "id": "menu-item-tecnologia",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Tecnologia",
+        "text": "Tecnologia"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-moda": {
+    "props": {
+      "id": "menu-item-moda",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Moda y Accesorios",
+        "text": "Moda y Accesorios"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-hogar": {
+    "props": {
+      "id": "menu-item-hogar",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Hogar y Decoración",
+        "text": "Hogar y Decoración"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-deporte": {
+    "props": {
+      "id": "menu-item-deporte",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Deporte y tiempo libre",
+        "text": "Deporte y tiempo libre"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-otros": {
+    "props": {
+      "id": "menu-item-otros",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Otras Categorías",
+        "text": "Otras Categorías"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+    }
+  },
+  "menu-item#category-cocina": {
+    "props": {
+      "id": "menu-item-cocina",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Escuela de Cocina",
+        "text": "Escuela de Cocina"
+      },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight":true
+      
+    }
+  },
+
+  /*Ejemplo de submenu  */
+  /*
     "blocks": ["submenu.accordion#departments"]
   },
 
@@ -202,7 +665,7 @@
       }
     }
   },
-
+*/
 
 
   "login": {
@@ -225,9 +688,12 @@
     }
   },
 
+  /*Minicart */
+
   "minicart.v2": {
     "props": {
       "MinicartIcon": "icon#header__top-minicart",
+      "variation":"popup",
       "itemCountMode": "total"
     },
     "children": [
@@ -242,26 +708,27 @@
     ]
   },
 
-  "minicart-empty-state":{
-    "children": [
+  "minicart-empty-state": {
+    "children": [ 
       "flex-layout.row#minicart__empty"
     ]
   },
-  "flex-layout.row#minicart__empty":{
+  "flex-layout.row#minicart__empty": {
     "children": [
       "flex-layout.col#minicart__empty"
     ]
   },
 
-  "flex-layout.col#minicart__empty":{
+  "flex-layout.col#minicart__empty": {
     "children": [
-      "icon-cart#minicart__empty-icon"
+      "icon-cart#minicart__empty-icon",
+      "rich-text#minicart__empty-rich-text"
     ]
   },
 
-  "icon-cart#minicart__empty-icon":{
+  "icon-cart#minicart__empty-icon": {
     "props": {
-      "size":60
+      "size": 30
     }
   },
 
@@ -271,9 +738,50 @@
       "minicart-checkout-button"
     ]
   },
+  "minicart-product-list":{
+    "blocks": [
+      "product-list#minicart"
+    ]
 
-  "minicart-product-list": {
+  },
 
+  "product-list#minicart":{
+"blocks":[
+  "product-list-content-desktop"
+]
+  },
+
+  "product-list-content-desktop":{
+    "children": [
+      "flex-layout.row#minicart__row-desktop"
+    ]
+  },
+
+  "flex-layout.row#minicart__row-desktop":{
+    "children": [
+      "flex-layout.col#minicart__col-image",
+      "flex-layout.col#minicart__col-info"
+    ]
+  },
+
+  "flex-layout.col#minicart__col-image":{
+    "children": [
+      "product-list-image"
+    ]
+  },
+
+  "flex-layout.col#minicart__col-info":{
+"children": [
+      "product-name"
+    ]
+  },
+
+
+  
+  "rich-text#minicart__empty-rich-text":{
+    "props":{
+      "text": "Hola, Agrega los mejores productos a tu cesta"
+    }
   }
 
 }
