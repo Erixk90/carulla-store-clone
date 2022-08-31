@@ -2,11 +2,69 @@
   "store.search": {
     "blocks": ["search-result-layout"]
   },
+    "store.search#department":{
+      "blocks": ["search-result-layout"]
+    },
+
+    
+    "store.search#category":{
+      "blocks": ["search-result-layout"]
+    },
+    
+    "store.search#subcategory":{
+      "blocks": ["search-result-layout"]
+    },
+    
+    "store.search#brand":{
+      "blocks": ["search-result-layout"]
+    },
+
+
   "search-result-layout": {
     "blocks": [
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
+  },
+ 
+
+  /*BreadCrumb: sirve como navegador auxiliar en busqueda, es un tipo de icono que va arriba de la busqueda*/
+
+   
+  "search-result-layout.desktop#department":{
+    "children": [
+      "flex-layout.row#department__breadcrumb"
+    ]
+  },
+
+  "flex-layout.row#department__breadcrumb":{
+    "children": [
+      "flex-layout.col#department__breadcrumb"
+    ]
+  },
+
+  "flex-layout.col#department__breadcrumb":{
+    "children": [
+      "breadcrumb.search"
+    ]
+  },
+
+  "rich-text#desktop-result":{
+    "props":{
+      "text": "Desktop result"
+    }
+  },
+
+  "search-result-layout.mobile":{
+    "children": [
+      "rich-text#mobile-result"
+    ]
+  },
+
+  "rich-text#mobile-result":{
+    "props":{
+      "text": "mobile result"
+    }
   }
 }

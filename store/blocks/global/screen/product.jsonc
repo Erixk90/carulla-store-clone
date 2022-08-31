@@ -19,7 +19,7 @@
     },
     "flex-layout.col#right": {
       "children": [
-        "product-name",
+        "vtex.product-list:product-name",
         "product-price",
         "buy-button"
       ]},

@@ -1,0 +1,33 @@
+{
+    "data": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "Categoria",
+                "href": "/category",
+                "children": [
+                    {
+                        "id": 2,
+                        "name": "Delicatessen",
+                        "href": "/category/delicatessen"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Vinos",
+                        "href": "/category/vinos"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Panadería",
+                        "href": "/category/panaderia"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Pollos",
+                        "href": "/category/pollos"
+                    }
+                ]
+            }
+        ]
+    }
+}
