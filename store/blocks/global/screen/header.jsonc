@@ -48,10 +48,11 @@
   },
 
   "notification.bar": {
-    "children":[
+    /*"children":[
        "rich-text#notification__bar-text",
        "rich-text#notification__bar-link"
-     ],
+     ]*/
+     //8
     "props": {
       "content": "Envío gratis en tus compras de mercado superiores a $80.000 con tarjetas Carulla"
     }
@@ -165,6 +166,14 @@
         "tagTitle": "Eventos del mes",
         "text": "Eventos del mes"
       },
+      "iconProps": {
+        "id": "mpa-play",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "",
+        "mutedClassName": "c-action-primary"
+      },
+      
       "iconProps": {
         "id": "mpa-play",
         "size": 16,
