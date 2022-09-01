@@ -1,0 +1,113 @@
+{
+    "icon#header__top-minicart": {
+    "props": {
+        "id": "erick-cart",
+        "size": 20
+    }
+},
+/*Minicart */
+"minicart.v2": {
+    "props": {
+        "MinicartIcon": "icon#header__top-minicart",
+        "variation": "popup",
+        "itemCountMode": "total"
+    },
+    "children": [
+        "minicart-base-content"
+    ]
+},
+"minicart-base-content": {
+    "blocks": [
+        "minicart-empty-state"
+    ],
+    "children": [
+        "minicart-product-list",
+        "flex-layout.row#minicart__footer"
+    ]
+},
+"minicart-empty-state": {
+    "children": [
+        "flex-layout.row#minicart__empty"
+    ]
+},
+"flex-layout.row#minicart__empty": {
+    "children": [
+        "flex-layout.col#minicart__empty"
+    ]
+},
+"flex-layout.col#minicart__empty": {
+    "children": [
+        "icon-cart#minicart__empty-icon",
+        "rich-text#minicart__empty-rich-text"
+    ]
+},
+"icon-cart#minicart__empty-icon": {
+    "props": {
+        "size": 30
+    }
+},
+"minicart-product-list": {
+    "blocks": [
+        "product-list#minicart"
+    ]
+},
+"product-list#minicart": {
+    "blocks": [
+        "product-list-content-desktop"
+    ]
+},
+"product-list-content-desktop": {
+    "children": [
+        "flex-layout.row#minicart__row-desktop"
+    ]
+},
+"flex-layout.row#minicart__row-desktop": {
+    "children": [
+        "flex-layout.col#minicart__col-image",
+        "flex-layout.col#minicart__col-info",
+        "flex-layout.col#minicart__col-remove"
+    ]
+},
+"flex-layout.col#minicart__col-image": {
+    "children": [
+        "product-list-image"
+    ]
+},
+"flex-layout.col#minicart__col-info": {
+    "children": [
+        "vtex.product-list@0.x:product-name",
+        "quantity-selector#minicart",
+        "price"
+    ]
+},
+"quantity-selector#minicart": {
+    "props": {
+        "mode": "stepper"
+    }
+},
+"flex-layout.col#minicart__col-remove": {
+    "children": [
+        "remove-button"
+    ],
+    "props": {
+        "marginLeft": "6",
+        "verticalAlign": "middle"
+    }
+},
+"flex-layout.row#minicart__footer": {
+    "children": [
+        "flex-layout.col#minicart__footer"
+    ]
+},
+"flex-layout.col#minicart__footer": {
+    "children": [
+        "minicart-summary",
+        "minicart-checkout-button"
+    ]
+},
+"rich-text#minicart__empty-rich-text": {
+    "props": {
+        "text": "Hola, Agrega los mejores productos a tu cesta"
+    }
+}
+}

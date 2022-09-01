@@ -1,0 +1,13 @@
+{
+    "login": {
+        "props": {
+            "optionsTitle": "Cuenta",
+            "emailPlaceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showIconProfile": true,
+            "hasGoogleOneTap": true,
+            "identifierPlaceholder": "holaaaaa",
+            "hideIconLabel": true
+        }
+    }
+}

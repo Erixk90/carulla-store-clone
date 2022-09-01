@@ -27,6 +27,7 @@
       "src": "assets/img/header1.jpg",
       "max-width": 600,
       "title": "Banner principal"
+      ,"blockClass":"image__welcome"
     }
   },
   "rich-text#title__section-two": {

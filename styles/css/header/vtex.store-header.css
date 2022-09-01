@@ -1,7 +1,14 @@
 .headerRowContainer{
-    background-color: var(--green-offers);
+    
+    width: 100%
 }
 
 .headerRowContainer--header__top{
     color:#fff
+}
+
+
+
+.headerRowContentContainer--header__top{
+    background-color: var(--green-offers);
 }

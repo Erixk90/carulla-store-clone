@@ -1,0 +1,23 @@
+{
+    "notification.bar": {
+        /*"children":[
+        "rich-text#notification__bar-text",
+        "rich-text#notification__bar-link"
+        ]*/
+        //8
+        "props": {
+            "content": "Envío gratis en tus compras de mercado superiores a $80.000 con tarjetas Carulla",
+            "blockClass": "notification__bar-content"
+        }
+    },
+    "rich-text#notification__bar-text": {
+        "props": {
+            "text": "Envío gratis en tus compras de mercado superiores a $80.000 con tarjetas Carulla"
+        }
+    },
+    "rich-text#notification__bar-link": {
+        "props": {
+            "text": "Envío gratis en tus compras de mercado superiores a $80.000 con tarjetas Carulla"
+        }
+    }
+}

@@ -16,3 +16,13 @@
     height: 100% ;
     width: 100%
 }
+
+.notificationBarInner--notification__bar-content{
+background-color: #c9afd2;
+height: 20;
+}
+
+.min-h-large {
+    min-height: 2rem;
+}
+
