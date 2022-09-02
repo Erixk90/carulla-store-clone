@@ -9,7 +9,8 @@
             "flex-layout.col#categories__group-six"
         ],
         "props": {
-            "rowGap": 4
+            "rowGap": 4,
+            "blockClass":"section__two-categories-container"
         }
     },
     "flex-layout.row#section__two-categories2": {
@@ -22,7 +23,8 @@
             "flex-layout.col#categories__group-twelve"
         ],
         "props": {
-            "rowGap": 4
+            "rowGap": 4,
+            "blockClass":"section__two-categories-c"
         }
     },
     /*Principal Children*/

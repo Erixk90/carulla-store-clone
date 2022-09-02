@@ -9,7 +9,8 @@
             "rich-text#head-menu",
             "menu-item#category-eventos",
             "menu-item#category-lanzamientos",
-            "rich-text#body-menu",
+            "rich-text#body-menu-text",
+            "rich-text#body-menu-line",
             "menu-item#category-vinos",
             "menu-item#category-bebidas",
             "menu-item#category-delicatessen",
@@ -42,7 +43,7 @@
             "text": "Lo Ultimo"
         }
     },
-    /*Ejemplo de Menú mega con icono*/
+    /*firts category example  with mega menu  and icons*/
     "menu-item#category-eventos": {
         "props": {
             "id": "menu-item-eventos",
@@ -61,12 +62,14 @@
                 "viewBox": "0 0 16 16",
                 "activeClassName": "",
                 "mutedClassName": "c-action-primary"
-            }
+            },
+            "onMountBehavior":"open"
         },
         "blocks": [
             "submenu.accordion#departments-eventos"
         ]
     },
+    /* first category submenu */
     "submenu.accordion#departments-eventos": {
         "children": [
             "menu#department__one-eventos"
@@ -81,6 +84,7 @@
             "orientation": "vertical"
         }
     },
+    /* first category with submenu */
     "menu-item#category__one-eventos": {
         "props": {
             "id": "category__one-eventos",
@@ -91,13 +95,30 @@
                 "notFollow": true,
                 "tagTitle": "Nuestros Eventos",
                 "text": "Nuestros Eventos"
-            }
-        }
+            },
+            "onMountBehavior":"open"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#subcategory__one-eventos"
+        ]
     },
-    "menu-item#category__two-eventos": {
+
+
+    "vtex.menu@2.x:submenu#subcategory__one-eventos": {
+        "children": [
+            "vtex.menu@2.x:menu#subcategory__one-eventos"
+        ]
+    },
+    "vtex.menu@2.x:menu#subcategory__one-eventos": {
+        "children": [
+            "menu-item#subcategory__one-eventos",
+            "menu-item#subcategory__two-eventos"
+        ]
+    },
+    "menu-item#subcategory__one-eventos": {
         "props": {
-            "id": "category__two-eventos",
-            "type": "custom",
+            "id": "subcategory__one-eventos",
+            "type": "category",
             "itemProps": {
                 "type": "internal",
                 "href": "/",
@@ -107,6 +128,34 @@
             }
         }
     },
+    "menu-item#subcategory__two-eventos": {
+        "props": {
+            "id": "subcategory__two-eventos",
+            "type": "category",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Cumpleaños septiembre",
+                "text": "Cumpleaños septiembre"
+            }
+        }
+    },
+    /* firts category second item*/
+    "menu-item#category__two-eventos": {
+        "props": {
+            "id": "category__two-eventos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Promociones",
+                "text": "Promociones"
+            }
+        }
+    },
+    /*second category*/
     "menu-item#category-lanzamientos": {
         "props": {
             "id": "menu-item-lanzamientos",
@@ -158,11 +207,19 @@
             }
         }
     },
-    "rich-text#body-menu": {
+    /*title of categories*/
+    "rich-text#body-menu-text": {
         "props": {
-            "text": "Categorías"
+            "text": "**Categoría** "
         }
     },
+    "rich-text#body-menu-line": {
+        "props": {
+            "text": "_______________  "
+        }
+    },
+
+    /* category*/
     "menu-item#category-delicatessen": {
         "props": {
             "id": "menu-item-delicatessen",
@@ -183,8 +240,69 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": false
+        },
+        "blocks": [
+            "submenu.accordion#departments-delicatessen"
+        ]
+    },
+    "submenu.accordion#departments-delicatessen": {
+        "children": [
+            "menu#department__one-delicatessen"
+        ]
+    },
+    "menu#department__one-delicatessen": {
+        "children": [
+            "menu-item#category__one-delicatessen",
+            "menu-item#category__two-delicatessen",
+            "menu-item#category__three-delicatessen"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-delicatessen": {
+        "props": {
+            "id": "category__one-delicatessen",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Quesos ",
+                "text": "Quesos"
+            }
+        }
+    },
+
+    "menu-item#category__two-delicatessen": {
+        "props": {
+            "id": "category__two-delicatessen",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Carnes Maduradas",
+                "text": "Carnes Maduradas"
+            }
+        }
+    },
+    "menu-item#category__three-delicatessen": {
+        "props": {
+            "id": "category__three-delicatessen",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Encurtidos, patés y dulces",
+                "text": "Encurtidos, patés y dulces"
+            }
+        }
+    },
+
+    /* Category*/
+
     "menu-item#category-bebidas": {
         "props": {
             "id": "menu-item-bebidas",
@@ -205,8 +323,113 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": false
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+    "menu-item#category__six-bebidas": {
+        "props": {
+            "id": "category__six-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Dulces Tipicos",
+                "text": "Dulces Típicos"
+            }
+        }
+    },
+
+
+    /*Category*/
+
     "menu-item#category-vinos": {
         "props": {
             "id": "menu-item-vinos",
@@ -227,8 +450,154 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": false
+        }, "blocks": [
+            "submenu.accordion#departments-vinos"
+        ]
+    },
+    "submenu.accordion#departments-vinos": {
+        "children": [
+            "menu#department__one-vinos"
+        ]
+    },
+    "menu#department__one-vinos": {
+        "children": [
+            "menu-item#category__one-vinos",
+            "menu-item#category__two-vinos",
+            "menu-item#category__three-vinos",
+            "menu-item#category__four-vinos",
+            "menu-item#category__five-vinos",
+            "menu-item#category__six-vinos",
+            "menu-item#category__seven-vinos",
+            "menu-item#category__eigth-vinos",
+            "menu-item#category__nine-vinos"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-vinos": {
+        "props": {
+            "id": "category__one-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Vinos",
+                "text": "Vinos"
+            }
+        }
+    },
+
+    "menu-item#category__two-vinos": {
+        "props": {
+            "id": "category__two-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Whisky",
+                "text": "Whisky"
+            }
+        }
+    },
+    "menu-item#category__three-vinos": {
+        "props": {
+            "id": "category__three-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Vodkas",
+                "text": "Vodkas"
+            }
+        }
+    },
+
+    "menu-item#category__four-vinos": {
+        "props": {
+            "id": "category__four-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Cervezas",
+                "text": "Cervezas"
+            }
+        }
+    },
+    "menu-item#category__five-vinos": {
+        "props": {
+            "id": "category__five-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Tequilas",
+                "text": "Tequilas"
+            }
+        }
+    },
+    "menu-item#category__six-vinos": {
+        "props": {
+            "id": "category__six-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Ron",
+                "text": "Ron"
+            }
+        }
+    },
+    "menu-item#category__seven-vinos": {
+        "props": {
+            "id": "category__seven-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Aguardiente",
+                "text": "Aguardiente"
+            }
+        }
+    },
+    "menu-item#category__eigth-vinos": {
+        "props": {
+            "id": "category__eigth-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Ginebras",
+                "text": "Ginebras"
+            }
+        }
+    },
+
+    "menu-item#category__nine-vinos": {
+        "props": {
+            "id": "category__nine-vinos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Cocteles y bases",
+                "text": "Cocteles y bases"
+            }
+        }
+    },
+
+    /*Category*/
+
     "menu-item#category-panaderia": {
         "props": {
             "id": "menu-item-panaderia",
@@ -249,8 +618,97 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        }, "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-panaderia": {
+        "children": [
+            "menu#department__one-panaderia"
+        ]
+    },
+    "menu#department__one-panaderia": {
+        "children": [
+            "menu-item#category__one-panaderia",
+            "menu-item#category__two-panaderia",
+            "menu-item#category__three-panaderia",
+            "menu-item#category__four-panaderia",
+            "menu-item#category__five-panaderia"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-panaderia": {
+        "props": {
+            "id": "category__one-panaderia",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Panadería Fresca",
+                "text": "Panadería Fresca"
+            }
+        }
+    },
+
+    "menu-item#category__two-panaderia": {
+        "props": {
+            "id": "category__two-panaderia",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Panadería Saludable",
+                "text": "Panadería Saludable"
+            }
+        }
+    },
+    "menu-item#category__three-panaderia": {
+        "props": {
+            "id": "category__three-panaderia",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Panadería Empacada",
+                "text": "Panadería Empacada"
+            }
+        }
+    },
+
+    "menu-item#category__four-panaderia": {
+        "props": {
+            "id": "category__four-panaderia",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Postres y tortas",
+                "text": "Postres y tortas"
+            }
+        }
+    },
+    "menu-item#category__five-panaderia": {
+        "props": {
+            "id": "category__five-panaderia",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Panaderia Dulce",
+                "text": "Panaderia Dulce"
+            }
+        }
+    },
+
+    /*Category*/
+
     "menu-item#category-pollo": {
         "props": {
             "id": "menu-item-pollo",
@@ -271,8 +729,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": false
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-frutas": {
         "props": {
             "id": "menu-item-frutas",
@@ -293,8 +841,99 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+
+    /*Category*/
     "menu-item#category-despensa": {
         "props": {
             "id": "menu-item-despensa",
@@ -315,8 +954,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-lacteos": {
         "props": {
             "id": "menu-item-lacteos",
@@ -337,8 +1066,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-preparados": {
         "props": {
             "id": "menu-item-preparados",
@@ -359,8 +1178,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-congelados": {
         "props": {
             "id": "menu-item-congelados",
@@ -381,8 +1290,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-limpieza": {
         "props": {
             "id": "menu-item-limpieza",
@@ -403,8 +1402,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-salud": {
         "props": {
             "id": "menu-item-salud",
@@ -425,8 +1514,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-electrodomesticos": {
         "props": {
             "id": "menu-item-electrodomesticos",
@@ -447,8 +1626,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-tecnologia": {
         "props": {
             "id": "menu-item-tecnologia",
@@ -469,8 +1738,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-moda": {
         "props": {
             "id": "menu-item-moda",
@@ -491,8 +1850,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-hogar": {
         "props": {
             "id": "menu-item-hogar",
@@ -513,8 +1962,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-deporte": {
         "props": {
             "id": "menu-item-deporte",
@@ -535,8 +2074,98 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+    /*Category*/
     "menu-item#category-otros": {
         "props": {
             "id": "menu-item-otros",
@@ -557,8 +2186,99 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
         }
     },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
+        }
+    },
+
+
+    /*Category*/
     "menu-item#category-cocina": {
         "blocks": [
             "submenu.accordion#departments"
@@ -582,6 +2302,94 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": true
+        },
+        "blocks": [
+            "submenu.accordion#departments-bebidas"
+        ]
+    },
+    "submenu.accordion#departments-bebidas": {
+        "children": [
+            "menu#department__one-bebidas"
+        ]
+    },
+    "menu#department__one-bebidas": {
+        "children": [
+            "menu-item#category__one-bebidas",
+            "menu-item#category__two-bebidas",
+            "menu-item#category__three-bebidas",
+            "menu-item#category__four-bebidas",
+            "menu-item#category__five-bebidas",
+            "menu-item#category__six-bebidas"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#category__one-bebidas": {
+        "props": {
+            "id": "category__one-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Bebidas ",
+                "text": "Bebidas"
+            }
+        }
+    },
+
+    "menu-item#category__two-bebidas": {
+        "props": {
+            "id": "category__two-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Chocolate",
+                "text": "Chocolate"
+            }
+        }
+    },
+    "menu-item#category__three-bebidas": {
+        "props": {
+            "id": "category__three-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Frutos secos",
+                "text": "Frutos secos"
+            }
+        }
+    },
+
+    "menu-item#category__four-bebidas": {
+        "props": {
+            "id": "category__four-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Confiteria y dulces",
+                "text": "Confiteria y dulces"
+            }
+        }
+    },
+    "menu-item#category__five-bebidas": {
+        "props": {
+            "id": "category__five-bebidas",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Pasabocas",
+                "text": "Pasabocas"
+            }
         }
     },
     /*Ejemplo de submenu  */
