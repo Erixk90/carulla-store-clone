@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
 
-      "image#section__one-welcome",
+      "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
       "rich-text#title__section-two",
       "flex-layout.row#section__two-categories",
@@ -22,12 +22,23 @@
       //"flex-layout.row#section__nine-footer"
     ]
   },
+
+  "flex-layout.row#welcome__section":{
+    "children":[
+      "image#section__one-welcome"
+    ],
+    "props":{
+    "fullWidth":"true",
+    "marginBottom": 5,
+    "marginTop":5,
+    "blockClass":"image__welcome-content"
+  }
+  },
   "image#section__one-welcome": {
     "props": {
       "src": "assets/img/header1.jpg",
-      "max-width": 600,
-      "title": "Banner principal"
-      ,"blockClass":"image__welcome"
+      "title": "Banner principal",
+      "blockClass":"image__welcome"
     }
   },
   "rich-text#title__section-two": {

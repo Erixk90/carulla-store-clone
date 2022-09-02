@@ -7,13 +7,11 @@
             "flex-layout.col#categories__group-four",
             "flex-layout.col#categories__group-five",
             "flex-layout.col#categories__group-six"
-            
         ],
-        "props": { 
-            "rowGap":4
+        "props": {
+            "rowGap": 4
         }
     },
-
     "flex-layout.row#section__two-categories2": {
         "children": [
             "flex-layout.col#categories__group-seven",
@@ -23,106 +21,84 @@
             "flex-layout.col#categories__group-eleven",
             "flex-layout.col#categories__group-twelve"
         ],
-        "props": { 
-            "rowGap":4
+        "props": {
+            "rowGap": 4
         }
     },
-
     /*Principal Children*/
-
     "flex-layout.col#categories__group-one": {
         "children": [
             "image#group__one-vinos",
             "rich-text#group__one-vinos"
         ]
-
     },
-
     "flex-layout.col#categories__group-two": {
         "children": [
             "image#group__two-puntos",
             "rich-text#group__two-puntos"
         ]
-
     },
-
     "flex-layout.col#categories__group-three": {
         "children": [
             "image#group__three-precio",
             "rich-text#group__three-precio"
         ]
-
     },
-
     "flex-layout.col#categories__group-four": {
         "children": [
             "image#group__four-frutas",
             "rich-text#group__four-frutas"
         ]
-
     },
     "flex-layout.col#categories__group-five": {
         "children": [
             "image#group__five-carnes",
             "rich-text#group__five-carnes"
         ]
-
     },
-
     "flex-layout.col#categories__group-six": {
         "children": [
             "image#group__six-salud",
             "rich-text#group__six-salud"
         ]
-
     },
     "flex-layout.col#categories__group-seven": {
         "children": [
             "image#group__seven-delicatessen",
             "rich-text#group__seven-delicatessen"
         ]
-
     },
     "flex-layout.col#categories__group-eigth": {
         "children": [
             "image#group__eigth-lacteos",
             "rich-text#group__eigth-lacteos"
         ]
-
     },
-
     "flex-layout.col#categories__group-nine": {
         "children": [
             "image#group__nine-huevos",
             "rich-text#group__nine-huevos"
         ]
-
     },
     "flex-layout.col#categories__group-ten": {
         "children": [
             "image#group__ten-bebidas",
             "rich-text#group__ten-bebidas"
         ]
-
     },
     "flex-layout.col#categories__group-eleven": {
         "children": [
             "image#group__eleven-limpieza",
             "rich-text#group__eleven-limpieza"
         ]
-
     },
-
     "flex-layout.col#categories__group-twelve": {
         "children": [
             "image#group__twelve-colchones",
             "rich-text#group__twelve-colchones"
         ]
-
     },
-
     /*Secondary Children*/
-
     "image#group__one-vinos": {
         "props": {
             "src": "assets/img/lomejorparati__img1.jpg"
@@ -137,7 +113,6 @@
             "textColor": "c-on-base"
         }
     },
-
     "image#group__two-puntos": {
         "props": {
             "src": "assets/img/lomejorparati__img2.jpg"
@@ -292,5 +267,4 @@
             "textColor": "c-on-base"
         }
     }
-
 }

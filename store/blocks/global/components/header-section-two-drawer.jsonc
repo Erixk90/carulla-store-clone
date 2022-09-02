@@ -62,6 +62,49 @@
                 "activeClassName": "",
                 "mutedClassName": "c-action-primary"
             }
+        },
+        "blocks": [
+            "submenu.accordion#departments-eventos"
+        ]
+    },
+    "submenu.accordion#departments-eventos": {
+        "children": [
+            "menu#department__one-eventos"
+        ]
+    },
+    "menu#department__one-eventos": {
+        "children": [
+            "menu-item#category__one-eventos",
+            "menu-item#category__two-eventos"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#category__one-eventos": {
+        "props": {
+            "id": "category__one-eventos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Nuestros Eventos",
+                "text": "Nuestros Eventos"
+            }
+        }
+    },
+    "menu-item#category__two-eventos": {
+        "props": {
+            "id": "category__two-eventos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Cumpleaños Carulla",
+                "text": "Cumpleaños Carulla"
+            }
         }
     },
     "menu-item#category-lanzamientos": {
@@ -84,6 +127,35 @@
                 "mutedClassName": "c-action-primary"
             },
             "iconToTheRight": false
+        },
+        "blocks": [
+            "submenu.accordion#departments-lanzamientos"
+        ]
+    },
+    "submenu.accordion#departments-lanzamientos": {
+        "children": [
+            "menu#department__one-lanzamientos"
+        ]
+    },
+    "menu#department__one-lanzamientos": {
+        "children": [
+            "menu-item#category__one-lanzamientos"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#category__one-lanzamientos": {
+        "props": {
+            "id": "category__one-lanzamientos",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "moda",
+                "text": "Moda"
+            }
         }
     },
     "rich-text#body-menu": {
@@ -488,6 +560,9 @@
         }
     },
     "menu-item#category-cocina": {
+        "blocks": [
+            "submenu.accordion#departments"
+        ],
         "props": {
             "id": "menu-item-cocina",
             "type": "custom",
@@ -508,56 +583,46 @@
             },
             "iconToTheRight": true
         }
-    }
-
-
+    },
     /*Ejemplo de submenu  */
-    /*
-    "blocks": ["submenu.accordion#departments"]
-  },
-
-  "submenu.accordion#departments": {
-    "children": [
-      "menu#department__one"
-    ]
-  },
-  "menu#department__one": {
-    "children": [
-      "menu-item#category__one",
-      "menu-item#category__two"
-    ],
-    "props": {
-      "orientation": "vertical"
+    "submenu.accordion#departments": {
+        "children": [
+            "menu#department__one"
+        ]
+    },
+    "menu#department__one": {
+        "children": [
+            "menu-item#category__one",
+            "menu-item#category__two"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#category__one": {
+        "props": {
+            "id": "category__one",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "Sin Alcohol",
+                "text": "Sin Alcohol"
+            }
+        }
+    },
+    "menu-item#category__two": {
+        "props": {
+            "id": "category__one",
+            "type": "custom",
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "notFollow": true,
+                "tagTitle": "con Alcohol",
+                "text": "con Alcohol"
+            }
+        }
     }
-  },
-
-
-  "menu-item#category__one": {
-    "props": {
-      "id": "category__one",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "notFollow": true,
-        "tagTitle": "Sin Alcohol",
-        "text": "Sin Alcohol"
-      }
-    }
-  },
-
-  "menu-item#category__two": {
-    "props": {
-      "id": "category__one",
-      "type": "custom",
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "notFollow": true,
-        "tagTitle": "con Alcohol",
-        "text": "con Alcohol"
-      }
-    }
-  },
-*/
 }
