@@ -1,39 +1,125 @@
 {
-    "flex-layout.row#section__eigth-prefooter": {
-        "children": [
-            "rich-text#prefooter-one",
-            "rich-text#prefooter-two",
-            "rich-text#prefooter-three",
-            "rich-text#prefooter-four"
+    "flex-layout.row#section__eigth-container":{
+        "children":[
+            "flex-layout.col#section__eigth-container-group"
+        ],
+        "props":{
+            "blockClass":"section__eigth-container"
+        }
+        },
+
+    "flex-layout.col#section__eigth-container-group":{
+        "children":[
+            "flex-layout.row#section__eigth-container-group"
+
         ]
     },
-    "rich-text#prefooter-one": {
+    "flex-layout.row#section__eigth-container-group":{
+        "children":[
+            "flex-layout.row#section__eigth-group-one",
+            "flex-layout.row#section__eigth-group-two",
+            "flex-layout.row#section__eigth-group-three",
+            "flex-layout.row#section__eigth-group-four"
+
+        ]
+    }
+    ,
+    "flex-layout.row#section__eigth-group-one": {
+        "children": [
+            "image#group__one",
+            "rich-text#group__one"
+        ],
+        "props":{
+        "colJustify":"around",
+        "horizontalAlign":"rigth",
+        "blockClass":"group__container"
+        
+    }
+    },
+    "image#group__one":{
+        "props": {
+            "src": "assets/img/regalo.svg",
+            "heigth": "20px",
+            "width": "30px"
+        }
+    },
+    "rich-text#group__one": {
         "props": {
             "text": "Más de 100 mil productos",
-            "textAlignment": "RIGTH",
-            "font": "t-heading-5"
+            "font": "1rem"
         }
 
     },
-    "rich-text#prefooter-two": {
+
+    "flex-layout.row#section__eigth-group-two": {
+        "children": [
+            "image#group__two",
+            "rich-text#group__two"
+        ],
+        "props":{
+            "colJustify":"around",
+            "horizontalAlign":"rigth",
+            "blockClass":"group__container"
+    }
+    },
+    "image#group__two":{
+        "props": {
+            "src": "assets/img/escudo.svg",
+            "heigth": "20px",
+            "width": "30px"
+        }
+    },
+    "rich-text#group__two": {
         "props": {
             "text": "Compras seguras",
-            "textAlignment": "RIGTH",
-            "font": "t-heading-5"
+            "font": "1rem"
+        }
+
+    },
+    "flex-layout.row#section__eigth-group-three": {
+        "children": [
+            "image#group__three",
+            "rich-text#group__three"
+        ],
+        "props":{
+        "blockClass":"group__container"
+    }
+    },
+
+    "image#group__three":{
+        "props": {
+            "src": "assets/img/puntos.svg",
+            "heigth": "20px",
+            "width": "30px"
         }
     },
-    "rich-text#prefooter-three": {
+    "rich-text#group__three": {
         "props": {
             "text": "Acumulas Puntos",
-            "textAlignment": "RIGTH",
-            "font": "t-heading-5"
+            "font": "1rem"
+        }
+
+    },
+    "flex-layout.row#section__eigth-group-four": {
+        "children": [
+            "image#group__four",
+            "rich-text#group__four"
+        ],
+        "props":{
+        "blockClass":"group__container"
+    }
+    },
+    "image#group__four":{
+        "props": {
+            "src": "assets/img/paga.svg",
+            "heigth": "20px",
+            "width": "30px"
         }
     },
-    "rich-text#prefooter-four": {
+    "rich-text#group__four": {
         "props": {
-            "text": "Paga en línea o en efectivo",
-            "textAlignment": "RIGTH",
-            "font": "t-heading-5"
+            "text": "Paga en linea o en efectivo",
+            "font": "1rem"
         }
 
     }

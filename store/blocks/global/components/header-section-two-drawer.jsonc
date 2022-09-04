@@ -66,16 +66,16 @@
             "onMountBehavior":"open"
         },
         "blocks": [
-            "submenu.accordion#departments-eventos"
+            "vtex.menu@2.x:submenu.accordion#departments-eventos"
         ]
     },
     /* first category submenu */
-    "submenu.accordion#departments-eventos": {
+    "vtex.menu@2.x:submenu.accordion#departments-eventos": {
         "children": [
-            "menu#department__one-eventos"
+            "vtex.menu@2.x:menu#department__one-eventos"
         ]
     },
-    "menu#department__one-eventos": {
+    "vtex.menu@2.x:menu#department__one-eventos": {
         "children": [
             "menu-item#category__one-eventos",
             "menu-item#category__two-eventos"

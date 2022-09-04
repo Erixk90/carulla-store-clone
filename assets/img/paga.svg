@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_682" data-name="Rectángulo 682" width="30" height="30" transform="translate(-313.5 6248.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_738" data-name="Enmascarar grupo 738" transform="translate(313.5 -6248.5)" clip-path="url(#clip-path)">
+    <path id="Trazado_8052" data-name="Trazado 8052" d="M13.813,2.5A11.313,11.313,0,1,0,25.127,13.813,11.324,11.324,0,0,0,13.813,2.5Zm5.264,15.339H10.6l1.215,1.215a.863.863,0,0,1,0,1.215.808.808,0,0,1-1.191,0L7.93,17.577a.863.863,0,0,1,0-1.215L10.6,13.694a.859.859,0,0,1,1.215,1.215L10.6,16.124h8.479a.857.857,0,1,1,0,1.715Zm.619-6.6-2.691,2.691a.808.808,0,0,1-1.191,0,.863.863,0,0,1,0-1.215L17.029,11.5H8.55a.857.857,0,1,1,0-1.715h8.479L15.814,8.574a.859.859,0,1,1,1.215-1.215L19.7,10.026a.853.853,0,0,1,.262.6A.975.975,0,0,1,19.7,11.241Z" transform="translate(-312.5 6249.5)" fill="#221f1f"/>
+  </g>
+</svg>

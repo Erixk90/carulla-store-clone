@@ -366,4 +366,390 @@
    "drawer": {
      "children": []
    } */
+
+
+   /-------------------------footer------------------------/
+
+   
+
+  "flex-layout.col#footer__container-group-two":{
+    "children": [
+      "menu#help"
+    ]
+  },
+
+  "flex-layout.col#footer__container-group-three":{
+    "children": [
+      "menu#help"
+    ]
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "disclosure-layout-group#footer__menu-group"
+    ]
+  },
+
+  "disclosure-layout-group#footer__menu-group": {
+
+    "children": [
+      "flex-layout.row#footer"
+      /*,
+      "disclosure-layout#policies"*/
+    ]
+  },
+
+  "flex-layout.row#footer": {
+    "children": ["disclosure-layout#help",
+      "disclosure-layout#interestinfo"
+    ]
+  },
+
+  "disclosure-layout#help": {
+    "children": [
+      "disclosure-trigger#help",
+      "disclosure-content#help"
+    ]
+  },
+
+  "disclosure-trigger#help": {
+    "children": [
+      "rich-text#help"
+    ]
+  },
+
+  "rich-text#help": {
+    "props": {
+      "text": "Centro de Ayuda"
+    }
+  },
+
+
+  "disclosure-content#help": {
+    "children": [
+      "menu#help"
+    ]
+  },
+
+  "menu#help": {
+    "children": [
+      "menu-item#help-one",
+      "menu-item#help-two"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#help-one": {
+    "props": {
+      "id": "menu-help-one",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#help-two": {
+    "props": {
+      "id": "menu-help-two",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "Centro de ayuda",
+        "text": "Centro de ayuda"
+      }
+    }
+  },
+
+  /*Next disclosure*/
+  "disclosure-layout#interestinfo": {
+    "children": [
+      "disclosure-trigger#interestinfo",
+      "disclosure-content#interestinfo"
+    ]
+  },
+
+  "disclosure-trigger#interestinfo": {
+    "children": [
+      "rich-text#interestinfo"
+    ]
+  },
+
+  "rich-text#interestinfo": {
+    "props": {
+      "text": "Información de Interes"
+    }
+  },
+
+  "disclosure-content#interestinfo": {
+    "children": [
+      "menu#interestinfo"
+    ]
+  },
+
+  "menu#interestinfo": {
+    "children": [
+      "menu-item#interestinfo-one",
+      "menu-item#interestinfo-two"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#interestinfo-one": {
+    "props": {
+      "id": "menu-interestinfo-one",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#interestinfo-two": {
+    "props": {
+      "id": "menu-interestinfo-two",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "Centro de ayuda",
+        "text": "Centro de ayuda"
+      }
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" }
+      ]
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  }
+  /*
+  "flex-layout.row#footer": { 
+    "children": [
+      "image"
+    ]
+  },
+  "image": {
+    "props": {
+      "width": 100,
+      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  } */
+
+
+
+
+  
+    /*Search Results etse TOCA COLOCARLO OBLIGATORIO
+    traemos contexto para poder agregar a una pagina que no lo tiene como es el home*/ 
+
+  },
+  "search-result-layout.customQuery#home-search": {
+    "blocks": [
+      "search-result-layout.desktop#home__search-desktop",
+      "search-result-layout.mobile#home__search-mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "search-result-layout.desktop#home__search-desktop": {
+    "children": [
+      
+      
+      "flex-layout.row#home__results"/*,
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    */
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+  "flex-layout.row#home__results":{
+    "children": [
+      "flex-layout.col#home__results-search"
+    
+    ]
+  },
+  "flex-layout.col#home__results-filter":{
+    "props":{
+      "width": "100%"
+    }},
+
+    "flex-layout.col#home__results-search":{
+      "props":{
+        "width": "70%"
+    },
+    "children": [
+      "search-content#home__results-search"
+    ]},
+
+    "search-content#home__results-search":{
+      "blocks":[
+        "gallery", "not-found"]
+      },
+
+      "gallery":{
+        "blocks":[
+          "product-summary.shelf"
+        ]
+      },
+
+  "search-result-layout.mobile#home__search-mobile":{
+     
+  }
+}
+
+
+/* Footer de  viernes en la noche  */ 
+
+{
+  "footer": {
+    "title": "Footer",
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop#nada": {
+    "children": [
+      "disclosure-layout-group#footer__menu-group" 
+    ]
+  },
+
+  "disclosure-layout-group#footer__menu-group":{
+    "children": [
+      "disclosure-layout-group#footer__menu-group",
+
+
+      "flex-layout.col#footer__container",
+      "social-networks",
+      "accepted-payment-methods"
+    ]
+  },
+
+  "flex-layout.col#footer__container":{
+    "children": [
+    "flex-layout.row#footer__container-top-footer"/*,
+    "flex-layout.row#footer__container-middle-footer",
+    "flex-layout.row#footer__container-info-footer",
+    "flex-layout.row#footer__container-allies-footer"*/
+
+  ]},
+
+  "flex-layout.row#footer__container-top-footer":{
+    "children": [
+      "flex-layout.col#top__footer-productos",
+      "flex-layout.col#top__footer-compras",
+      "flex-layout.col#top__footer-puntos",
+      "flex-layout.col#top__footer-pagos"
+    ]
+  },
+
+  "flex-layout.col#top__footer-productos":{
+    "children":[
+      "icon#top__footer-productos",
+      "rich-text#top__footer-productos"
+    ]
+  },
+  "icon#top__footer-productos": {
+    "props": {
+        "id": "mpa-location-input",
+        "size": 20
+    }
+  },
+  "rich-text#top__footer-productos": {
+    "props": {
+        "text": " ¿Como quieres recibir tu pedido?",
+        "color": "c-on-emphasys",
+        "blockClass": "header__top-paragraph"
+    }
+  },
+
+"flex-layout.col#top__footer-compras":{
+  "children":[
+    "icon#top__footer-productos",
+    "rich-text#top__footer-productos"
+  ]
+},
+
+"flex-layout.col#top__footer-puntos":{
+  "children":[
+    "icon#top__footer-productos",
+    "rich-text#top__footer-productos"
+  ]
+},
+
+"flex-layout.col#top__footer-pagos":{
+  "children":[
+    "icon#top__footer-productos",
+    "rich-text#top__footer-productos"
+  ]
+},
+
+/*ejemplo*/
+
+"footer-layout.desktop": {
+  "children": [
+    "flex-layout.row#footer-desktop"
+  ]
+},
+"footer-layout.mobile": {
+  "children": [
+    "flex-layout.row#footer-mobile"
+  ]
+},
+"flex-layout.row#footer-desktop": {
+  "children": [
+    "social-networks",
+    "accepted-payment-methods",
+    "powered-by"
+  ]
+},
+"flex-layout.row#footer-mobile": {
+  "children": [
+    "social-networks",
+    "accepted-payment-methods",
+    "powered-by"
+  ]
+},
+"social-networks": {
+  "props": {
+    "socialNetworks": [
+      { "url": "https://facebook.com/foo", "name": "Facebook" },
+      { "url": "https://twitter.com/foo", "name": "Twitter" }
+    ]
+  }
+},
+"accepted-payment-methods": {
+  "props": {
+    "paymentMethods": ["mastercard", "visa", "diners club"]
+  }
+}
 }

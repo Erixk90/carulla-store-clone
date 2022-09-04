@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-
       "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
       "rich-text#title__section-two",
@@ -17,28 +16,27 @@
       "flex-layout.row#section__six-yourhome",
       "rich-text#title__section-seven",
       "flex-layout.row#section__seven-monthsproducts",
-      "flex-layout.row#section__eigth-prefooter",
-      "search-result-layout.customQuery#home-search"
+      "flex-layout.row#section__eigth-container"
+      //"search-result-layout.customQuery#home-search"
       //"flex-layout.row#section__nine-footer"
     ]
   },
-
-  "flex-layout.row#welcome__section":{
-    "children":[
+  "flex-layout.row#welcome__section": {
+    "children": [
       "image#section__one-welcome"
     ],
-    "props":{
-    "fullWidth":"true",
-    "marginBottom": 5,
-    "marginTop":5,
-    "blockClass":"image__welcome-content"
-  }
+    "props": {
+      "fullWidth": "true",
+      "marginBottom": 5,
+      "marginTop": 5,
+      "blockClass": "image__welcome-content"
+    }
   },
   "image#section__one-welcome": {
     "props": {
       "src": "assets/img/header1.jpg",
       "title": "Banner principal",
-      "blockClass":"image__welcome"
+      "blockClass": "image__welcome"
     }
   },
   "rich-text#title__section-two": {
@@ -50,124 +48,44 @@
       "textColor": "c-on-base"
     }
   },
-
   "rich-text#title__section-three": {
     "props": {
       "text": "Todo para tu mercado",
       "textAlignment": "CENTER",
       "textPosition": "left",
       "font": "t-heading-3"
-
     }
-
   },
-
   "rich-text#title__section-four": {
     "props": {
       "text": "Lo mas vendido",
       "textAlignment": "CENTER",
       "textPosition": "left",
       "font": "t-heading-3"
-
     }
-
   },
-
-
   "rich-text#title__section-five": {
     "props": {
       "text": "Pague 2 lleve 3 en vinos",
       "textAlignment": "CENTER",
       "textPosition": "left",
       "font": "t-heading-3"
-
     }
-
   },
-
   "rich-text#title__section-six": {
     "props": {
       "text": "Todo para ti y tu hogar",
       "textAlignment": "CENTER",
       "textPosition": "left",
       "font": "t-heading-3"
-
     }
-
   },
-
   "rich-text#title__section-seven": {
     "props": {
       "text": "Productos del mes",
       "textAlignment": "CENTER",
       "textPosition": "left",
       "font": "t-heading-3"
-
     }
-
-    /*Search Results
-    traemos contexto para poder agregar a una pagina que no lo tiene como es el home*/ 
-
-  },
-  "search-result-layout.customQuery#home-search": {
-    "blocks": [
-      "search-result-layout.desktop#home__search-desktop",
-      "search-result-layout.mobile#home__search-mobile",
-      "search-not-found-layout"
-    ],
-    "props": {
-      "querySchema": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
-      }
-    }
-  },
-
-  "search-result-layout.desktop#home__search-desktop": {
-    "children": [
-      
-      
-      "flex-layout.row#home__results"/*,
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
-    */
-    ],
-    "props": {
-      "preventRouteChange": true
-    }
-  },
-
-  "flex-layout.row#home__results":{
-    "children": [
-      "flex-layout.col#home__results-search"
-    
-    ]
-  },
-  "flex-layout.col#home__results-filter":{
-    "props":{
-      "width": "100%"
-    }},
-
-    "flex-layout.col#home__results-search":{
-      "props":{
-        "width": "70%"
-    },
-    "children": [
-      "search-content#home__results-search"
-    ]},
-
-    "search-content#home__results-search":{
-      "blocks":[
-        "gallery", "not-found"]
-      },
-
-      "gallery":{
-        "blocks":[
-          "product-summary.shelf"
-        ]
-      },
-
-  "search-result-layout.mobile#home__search-mobile":{
-     
   }
 }
