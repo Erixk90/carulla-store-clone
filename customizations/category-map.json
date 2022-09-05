@@ -3,28 +3,28 @@
         "categories": [
             {
                 "id": 1,
-                "name": "Categoria",
-                "href": "/category",
+                "name": "Construcción",
+                "href": "/construccion",
                 "children": [
                     {
                         "id": 2,
-                        "name": "Delicatessen",
-                        "href": "/category/delicatessen"
+                        "name": "Cemento",
+                        "href": "/construccion/cemento"
                     },
                     {
                         "id": 3,
-                        "name": "Vinos",
-                        "href": "/category/vinos"
+                        "name": "Hierro",
+                        "href": "/construccion/hierro"
                     },
                     {
                         "id": 4,
-                        "name": "Panadería",
-                        "href": "/category/panaderia"
+                        "name": "Varillas",
+                        "href": "/construccion/varillas"
                     },
                     {
                         "id": 5,
-                        "name": "Pollos",
-                        "href": "/category/pollos"
+                        "name": "Ladrillos",
+                        "href": "/construccion/ladrillos"
                     }
                 ]
             }

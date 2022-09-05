@@ -1,0 +1,150 @@
+{
+    "store.search#department": {
+        "blocks": [
+            "search-result-layout"
+        ]
+    },
+    "search-result-layout": {
+        "blocks": [
+            "search-result-layout.desktop#department",
+            "search-result-layout.mobile#department",
+            "search-not-found-layout"
+        ]
+    },
+
+    "search-result-layout.mobile#department":{
+        "children":[
+            "rich-text#prueba"
+        ]
+    },
+
+    "rich-text#prueba":{
+        "props":{
+            "text": "la pruebita mamita"
+        }
+    },
+
+    //------------------------first block ----------------
+    "search-result-layout.desktop#department": {
+        "children": [
+            "flex-layout.row#department__breadcrumb",
+            "flex-layout.row#department__results"
+        ]
+    },
+    "flex-layout.row#department__breadcrumb": {
+        "children": [
+            "flex-layout.col#department__breadcrumb"
+        ]
+    },
+    "flex-layout.col#department__breadcrumb": {
+        "children": [
+            "breadcrumb.search"
+        ]
+    },
+    "flex-layout.row#department__results": {
+        "title": "Department Results",
+        "children": [
+            //"gallery-layout-switcher",
+            // "search-content#phone"
+            "flex-layout.col#department__results-filter",
+            "flex-layout.col#department__results-content"
+        ]
+    },
+    "flex-layout.col#department__results-filter": {
+        "children": [
+            "filter-navigator.v3"
+        ],
+        "props": {
+            "width": "25%"
+        }
+    },
+    "flex-layout.col#department__results-content": {
+        "children": [
+            "search-content#results__content-products"
+        ],
+        "props": {
+            "width": "75%"
+        }
+    },
+    "search-content#results__content-products": {
+        "blocks": [
+            "gallery#department",
+            "not-found"
+        ]
+    },
+    "gallery#department": {
+            "props": {
+                "layouts": [
+                    {
+                        "name": "whole",
+                        "component": "OneOrTwoLineSummary",
+                        "itemsPerRow": 1
+                    },
+                    {
+                        "name": "two",
+                        "component": "OneOrTwoLineSummary",
+                        "itemsPerRow": 2
+                    },
+                    {
+                        "name": "many",
+                        "component": "ManyByLineSummary",
+                        "itemsPerRow": {
+                            "desktop": 5,
+                            "mobile": 1
+                        }
+                    }
+                ],
+                "OneOrTwoLineSummary": "product-summary.shelf",
+                "ManyByLineSummary": "product-summary.shelf"
+            }
+        },
+
+       
+
+        "vtex.store-components:product-name":{
+            "props":{
+                "tag":"h3"
+            }
+        }
+
+
+        /*
+    "gallery-layout-switcher": {
+        "children": [
+            "gallery-layout-option#grid__two-columns",
+            "gallery-layout-option#grid__one-columns"
+        ]
+    },
+    "gallery-layout-option#grid__two-columns": {
+        "props": {
+            "name": "grid-two-columns",
+            "blockClass": "grid__selector--two-columns"
+        }
+    },
+    "gallery-layout-option#grid__one-column": {
+        "props": {
+            "name": "grid-one-column",
+            "blockClass": "grid__selector--one-column"
+        }
+    },
+    "rich-text#desktop-result": {
+        "props": {
+            "text": "Desktop result"
+        }
+    },
+    "search-result-layout.mobile": {
+        "children": [
+            "rich-text#mobile-result"
+        ]
+    },
+    "rich-text#mobile-result": {
+        "props": {
+            "text": "mobile result"
+        }
+    },
+    "search-result-layout.mobile#department": {
+        "children": [
+            "flex-layout.row#department__breadcrumb"
+        ]
+    } */
+}
