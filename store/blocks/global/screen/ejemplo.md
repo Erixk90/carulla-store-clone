@@ -752,4 +752,149 @@
     "paymentMethods": ["mastercard", "visa", "diners club"]
   }
 }
+
+
+
+/*disclosure*/
+
+
+  "disclosure-layout#simple": {
+    "children": [
+      "disclosure-trigger#simple",
+       "disclosure-content#simple"
+      ]
+  },
+  "disclosure-trigger#simple": {
+    "children": [
+      "rich-text#question"
+    ]
+  },
+  "disclosure-content#simple": {
+    "children": [
+      "rich-text#answer"
+    ]
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+
+  /*Disclosure group*/
+  "flex-layout.row#footer__desktop-middle":{
+    "children":[
+      "flex-layout.col#footer__desktop-middle"
+  ]
+  },
+  "flex-layout.col#footer__desktop-middle":{
+    "children":[
+    "disclosure-layout-group#group__desktop"
+  ]
+  },
+
+  "disclosure-layout-group#group__desktop": {
+    "children": [
+      
+      "disclosure-layout#first",
+       "disclosure-layout#second",
+       "disclosure-layout#third"
+      ]
+  },
+
+  "flex-layout.row#disclosure__desktop": {
+    "children": [
+      "disclosure-layout-group#group__desktop"
+      
+      ]
+  },
+
+  "disclosure-layout#first": {
+    "children": [
+      "disclosure-trigger#first",
+       "disclosure-content#first"
+      ]
+  },
+  "disclosure-trigger#first": {
+    "children": [
+      "rich-text#question1"
+    ],
+    "props":{
+      "as":"p"
+    }
+  },
+  "disclosure-content#first": {
+    "children": [
+      "rich-text#answer1",
+      "rich-text#answer1",
+      "rich-text#answer1",
+      "rich-text#answer1"
+
+    ]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "esto deberia ser un p"
+    }
+  },
+
+
+  "rich-text#answer1": {
+    "props": {
+      "text": "respuesta 1"
+    }
+  },
+
+  "disclosure-layout#second": {
+    "children": [
+      "disclosure-trigger#first",
+       "disclosure-content#first"
+      ]
+  },
+  "disclosure-trigger#second": {
+    "children": [
+      "rich-text#question1"
+  ]
+  },
+  "disclosure-content#second": {
+    "children": [
+      "rich-text#answer1",
+      "rich-text#answer1",
+      "rich-text#answer1"
+    ]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "How can I track my order?"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  "disclosure-layout#third":{
+  "children": [
+    "disclosure-trigger#first",
+     "disclosure-content#first"
+    ]},
+  //-----------------Start one footer column Second group
+
+
+  //-----------------End one footer column Second group
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "social-networks",
+      "accepted-payment-methods"
+    ]
+  }
 }

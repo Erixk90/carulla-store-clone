@@ -1,40 +1,529 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-desktop"
+      "flex-layout.row#footer__desktop-top",
+      "flex-layout.row#footer__desktop-middle",
+      "flex-layout.row#footer__desktop-bottom"
     ]
   },
-  "footer-layout.mobile": {
+  "flex-layout.row#footer__desktop-top": {
     "children": [
-      "flex-layout.row#footer-mobile"
+      "flex-layout.col#footer__desktop-contact",
+      "flex-layout.col#footer__desktop-suscribe",
+      "flex-layout.col#footer__desktop-app"
     ]
   },
-  "flex-layout.row#footer-desktop": {
+  "flex-layout.col#footer__desktop-contact": {
     "children": [
-      "social-networks",
-      "accepted-payment-methods"      
+      "rich-text#contact__desktop-title",
+      "flex-layout.col#contact__desktop-elements"
     ]
   },
-  "flex-layout.row#footer-mobile": {
+  //-----------------Start First footer column first group
+  "rich-text#contact__desktop-title": {
+    "props": {
+      "text": "Contáctanos",
+      "fontSize": 20,
+      "color": "#5a5a5a"
+    }
+  },
+  "flex-layout.col#contact__desktop-elements": {
     "children": [
-      "social-networks",
-      "accepted-payment-methods"
+      "flex-layout.row#elements__contact-phone",
+      "flex-layout.row#elements__contact-wpp-sell",
+      "flex-layout.row#elements__contact-wpp-service",
+      "flex-layout.row#elements__contact-tel-service",
+      "flex-layout.row#elements__contact-medellin",
+      "flex-layout.row#elements__contact-rest"
     ]
   },
-  "social-networks": {
+  "flex-layout.row#elements__contact-phone": {
+    "children": [
+      "rich-text#information-tel",
+      "rich-text#link-information"
+    ]
+  },
+  "rich-text#information-tel": {
+    "props": {
+      "text": "Ventas telefónicas:"
+    }
+  },
+  "rich-text#link-information": {
+    "props": {
+      "text": "[(601) 425 28 28](https://www.carulla.com/tel:%20(601)%20425%2028%2028)"
+    }
+  },
+  "flex-layout.row#elements__contact-wpp-sell": {
+    "children": [
+      "rich-text#information-wpp-sell",
+      "rich-text#link-information-wpp-sell"
+    ]
+  },
+  "rich-text#information-wpp-sell": {
+    "props": {
+      "text": "Ventas Whatsapp:"
+    }
+  },
+  "rich-text#link-information-wpp-sell": {
+    "props": {
+      "text": "[(+57) 305 261 44 67](https://www.carulla.com/tel:%20(+57)%20305%20261%2044%2067)"
+    }
+  },
+  "flex-layout.row#elements__contact-wpp-service": {
+    "children": [
+      "rich-text#information-wpp-service",
+      "rich-text#link-information-wpp-service"
+    ]
+  },
+  "rich-text#information-wpp-service": {
+    "props": {
+      "text": "Servicio al cliente whatsapp:"
+    }
+  },
+  "rich-text#link-information-wpp-service": {
+    "props": {
+      "text": "[(+57) 305 261 54 42](https://www.carulla.com/tel:%20(+57)%20305%20261%2044%2067)"
+    }
+  },
+  "flex-layout.row#elements__contact-tel-service": {
+    "children": [
+      "rich-text#information-tel-service",
+      "rich-text#link-information-tel-service"
+    ]
+  },
+  "rich-text#information-tel-service": {
+    "props": {
+      "text": "Línea de servicio al cliente nacional:"
+    }
+  },
+  "rich-text#link-information-tel-service": {
+    "props": {
+      "text": "[01 8000 428 800](https://www.carulla.com/tel:%2001%208000%20428%20800)"
+    }
+  },
+  "flex-layout.row#elements__contact-medellin": {
+    "children": [
+      "rich-text#information-medellin",
+      "rich-text#link-information-medellin"
+    ]
+  },
+  "rich-text#information-medellin": {
+    "props": {
+      "text": "Medellín:"
+    }
+  },
+  "rich-text#link-information-medellin": {
+    "props": {
+      "text": "[(4) 604 19 19](https://www.carulla.com/tel:%20(4)%20604%2019%2019)"
+    }
+  },
+  "flex-layout.row#elements__contact-rest": {
+    "children": [
+      "rich-text#link-information-rest"
+    ]
+  },
+  "rich-text#link-information-rest": {
+    "props": {
+      "text": "[Resto de ciudades](https://www.carulla.com/centro-ayuda-contacto)"
+    }
+  },
+  //-----------------End First footer column first group
+  //-----------------Start Second footer column first group
+  "flex-layout.col#footer__desktop-suscribe": {
+    "children": [
+      "flex-layout.col#suscribe__group-title",
+      "flex-layout.col#suscribe__group-newsletter-form"
+    ]
+  },
+  "flex-layout.col#suscribe__group-title": {
+    "children": [
+      "rich-text#suscribe__group-title",
+      "rich-text#suscribe__group-subtitle"
+    ]
+  },
+  "rich-text#suscribe__group-title": {
+    "props": {
+      "text": "Suscríbete a nuestro newsletter"
+    }
+  },
+  "rich-text#suscribe__group-subtitle": {
+    "props": {
+      "text": "Entérate de nuestras ofertas y lanzamientos exclusivos"
+    }
+  },
+  //---------------Statrt newsletter form---------------//
+  "flex-layout.col#suscribe__group-newsletter-form": {
+    "children": [
+      "flex-layout.row#newsletter__form-suscribe"
+    ]
+  },
+  "flex-layout.row#newsletter__form-suscribe": {
+    "children": [
+      "newsletter-form#suscribe"
+    ]
+  },
+  "newsletter-form#suscribe": {
+    "children": [
+      "flex-layout.row#form__suscribe-data",
+      "newsletter-checkbox-confirmation"
+    ]
+  },
+  "flex-layout.row#form__suscribe-data": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Ingresa tu correo"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Suscríbete"
+    }
+  },
+  "newsletter-checkbox-confirmation": {
+    "props": {
+      "checkboxLabel": "Acepto términos y condiciones, términos y condiciones marketplace y autorizo el tratamiento de mis datos personales con las siguientes condiciones.",
+      "firstLabelLink": {
+        "props": {
+          "url": "https://www.carulla.com/terminos-condiciones",
+          "text": "términos y condiciones"
+        }
+      }
+    }
+  },
+  //-----------------End second footer column first group
+  //-----------------Start third footer column first group
+  "flex-layout.col#footer__desktop-app": {
+    "children": [
+      "flex-layout.row#app__desktop-code",
+      "flex-layout.col#app__desktop-social-media"
+    ]
+  },
+  "flex-layout.row#app__desktop-code": {
+    "children": [
+      "flex-layout.col#code__group"
+    ]
+  },
+  "flex-layout.col#code__group": {
+    "children": [
+      "rich-text#Title",
+      "flex-layout.row#code__flex"
+    ]
+  },
+  "rich-text#Title": {
+    "props": {
+      "text": "¡Descarga gratis la app!"
+    }
+  },
+  "flex-layout.row#code__flex": {
+    "children": [
+      "image#code__flex-qr",
+      "rich-text#code__flex-qr",
+      "image#code__flex-app"
+    ]
+  },
+  "image#code__flex-qr": {
+    "props": {
+      "src": "assets/img/qr.png"
+    }
+  },
+  "rich-text#code__flex-qr": {
+    "props": {
+      "text": "app"
+    }
+  },
+  "image#code__flex-app": {
+    "props": {
+      "src": "assets/img/app.png"
+    }
+  },
+  "flex-layout.col#app__desktop-social-media": {
+    "children": [
+      "social-networks#app__desktop-social-media"
+    ]
+  },
+  "flex-layout.row#social-media__app-media": {
+    "children": [
+      "social-networks#app__desktop-social-media"
+    ],
+    "props": {
+      "horizontalAlign": "around",
+      "marginTop": 9,
+      "colGap": 6
+    }
+  },
+  "social-networks#app__desktop-social-media": {
     "props": {
       "socialNetworks": [
-        { "url": "https://facebook.com/foo", "name": "Facebook" },
-        { "url": "https://twitter.com/foo", "name": "Twitter" }
-      ]
+        {
+          "url": "https://facebook.com/foo",
+          "name": "Facebook"
+        },
+        {
+          "url": "https://twitter.com/foo",
+          "name": "Twitter"
+        },
+        {
+          "url": "https://instagram.com/foo",
+          "name": "Instagram"
+        },
+        {
+          "url": "https://youtube.com/foo",
+          "name": "Youtube"
+        }
+      ],
+      "title": "Síguenos en:"
     }
   },
-  "accepted-payment-methods": {
+  //-----------------End third footer column first group
+
+  //-----------------Start disclosure footer row second group
+
+  "flex-layout.row#footer__desktop-middle":{
+    "children":[
+      "flex-layout.col#footer__desktop-middle"
+    ]
+  },
+
+  "flex-layout.col#footer__desktop-middle":{
+    "children":[
+      "flex-layout.row#footer__desktop-container-one",
+      "flex-layout.row#footer__desktop-container-two"
+    ]
+  },
+  "flex-layout.row#footer__desktop-container-one":{
+    "children":[
+      "disclosure-layout#information__desktop"
+    ],
+    "props":{
+     " horizontalAlign": "center"
+    }
+  },
+  "disclosure-layout#information__desktop":{
+    "children": [
+      "disclosure-trigger#information",
+       "disclosure-content#information"]
+  },
+
+  "disclosure-trigger#information":{
+    "children":[
+      "rich-text#information"
+    ],
     "props": {
-      "paymentMethods": ["mastercard", "visa", "diners club"]
+      "as":"h4"
+    }
+  },
+  "rich-text#information":{
+  "props":{
+    "text":"Más Información"
+  }
+  },
+
+  "disclosure-content#information":{
+"children":[
+  "flex-layout.row#footer__desktop-container-two"
+]
+},
+
+  "flex-layout.row#footer__desktop-container-two":{
+    "children":[
+      "flex-layout.row#container__two-group-one"
+    ]
+  },
+  "flex-layout.row#container__two-group-one":{
+    "children":[
+      "disclosure-layout-group#group-one__desktop"
+    ]
+  },
+  "disclosure-layout-group#group-one__desktop": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#first",
+      "disclosure-layout#first"
+    ]
+  },
+
+  "disclosure-layout#first": {
+    "children": [
+      "flex-layout.col#disclosure__firts-container"
+      ]
+  },
+  "flex-layout.col#disclosure__firts-container": {
+    "children": [
+      "disclosure-trigger#first",
+       "disclosure-content#first"
+      ]
+  },
+  "disclosure-trigger#first": {
+    "children": [
+      "rich-text#question1"
+    ],
+    "props":{
+      "as":"ul"
+    }
+  },
+  "disclosure-content#first": {
+    "children": [
+      "rich-text#answer1",
+      "rich-text#answer2",
+      "rich-text#answer3",
+      "rich-text#answer4",
+      "rich-text#answer5"
+
+    ]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "Centro de Ayuda"
+    }
+  },
+
+  "rich-text#answer1": {
+    "props": {
+      "text": "[Chat](https://api.whatsapp.com/send?phone=573052614467&text=Hola,+quiero+realizar+una+compra&utm_source=Webchat&utm_medium=Webchat_Carulla&utm_campaign=Webchat_Carulla&utm_id=232901)"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "[Preguntas Frecuentes](https://www.carulla.com/preguntas-frecuentes)"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "[Política de cambio y devoluciones](https://www.carulla.com/politicas-cambios-devoluciones)"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "[Contacto](https://www.carulla.com/contacto)"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "[Almacenes](https://www.carulla.com/almacenes)"
+    }
+  },
+
+
+  //-----------------End disclosure footer row second group
+
+  //-----------------Start one footer row three group
+
+
+  "flex-layout.row#footer__desktop-bottom": {
+    "children": [
+      "flex-layout.col#bottom__footer-first",
+      "flex-layout.col#bottom__footer-second"
+    ],
+    "props": {
+      "blockClass": "bottom__footer"
+    }
+  },
+  "flex-layout.col#bottom__footer-first": {
+    "children": [
+      "flex-layout.row#section__footer-first"
+    ]
+  },
+  "flex-layout.row#section__footer-first": {
+    "children": [
+      "flex-layout.col#first__section-group-one",
+      "flex-layout.col#first__section-group-two"
+    ],
+    "props": {
+      "blockClass": "first__section-group"
+    }
+  },
+  "flex-layout.col#first__section-group-one": {
+    "children": [
+      "rich-text#visit-us"
+    ],
+    "props": {
+      "blockClass": "first__section-group-one-text"
+    }
+  },
+
+  "rich-text#visit-us": {
+    "props": {
+      "blockClass": "visita",
+      "text": "Visita también:",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.col#first__section-group-two": {
+    "children": [
+      "flex-layout.row#first__section-group-two-logos"
+    ]
+  },
+  "flex-layout.row#first__section-group-two-logos": {
+    "children": [
+      "logo#logo__one",
+      "logo#logo__two",
+      "logo#logo__three",
+      "logo#logo__four"
+    ],
+    "props": {
+      "blockClass": "first__section-group-two-logos"
+    }
+  },
+  "logo#logo__one": {
+    "props": {
+      "blockClass": "logo__one",
+      "url": "assets/img/exito.svg"
+    }
+  },
+  "logo#logo__two": {
+    "props": {
+      "blockClass": "logo__two",
+      "url": "assets/img/viva.svg"
+    }
+  },
+  "logo#logo__three": {
+    "props": {
+      "blockClass": "logo__three",
+      "url": "assets/img/super-inter.svg"
+    }
+  },
+  "logo#logo__four": {
+    "props": {
+      "blockClass": "logo__four",
+      "url": "assets/img/surtimax.svg"
+    }
+  },
+
+  // hasta aqui llega la primera
+  "flex-layout.col#bottom__footer-second": {
+    "children": [
+      "rich-text#footer__text-rigths"
+    ],
+    "props": {
+      "blockClass": "text-rigths"
+    }
+  },
+  
+  "rich-text#footer__text-rigths": {
+    "props": {
+      "blockClass": "derechos",
+      "text": "2022 Carulla ® marca registrada de Grupo Éxito S.A. NIT 890900608-9. Todos los derechos reservados",
+      "textAlignment": "center",
+      "textPosition": "center"
     }
   }
+
+
+
+
+
+
+
 }
