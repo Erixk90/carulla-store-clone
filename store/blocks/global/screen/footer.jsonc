@@ -10,8 +10,13 @@
       "flex-layout.row#footer__desktop-top",
       "flex-layout.row#footer__desktop-middle",
       "flex-layout.row#footer__desktop-bottom"
-    ]
+    ],
+    "props":{
+      "blockClass":"footerLayoutSpacer"
+    }
   },
+
+  /*Start first part */
   "flex-layout.row#footer__desktop-top": {
     "children": [
       "flex-layout.col#footer__desktop-contact",
@@ -286,140 +291,175 @@
     }
   },
   //-----------------End third footer column first group
-
   //-----------------Start disclosure footer row second group
 
-  "flex-layout.row#footer__desktop-middle":{
+  "flex-layout.row#footer__desktop-middle": {
+    "children": [
+      "flex-layout.col#desktop__middle-top-content-information"
+      //"flex-layout.row#desktop__middle-top-content"
+    ]
+  },
+/*
+  "flex-layout.row#desktop__middle-top-content":{
     "children":[
-      "flex-layout.col#footer__desktop-middle"
+      "flex-layout.col#desktop__middle-top-content"
     ]
   },
 
-  "flex-layout.col#footer__desktop-middle":{
+  "flex-layout.col#desktop__middle-top-content":{
     "children":[
-      "flex-layout.row#footer__desktop-container-one",
-      "flex-layout.row#footer__desktop-container-two"
+      "flex-layout.row#desktop__middle-top-content-information"
+      
     ]
   },
-  "flex-layout.row#footer__desktop-container-one":{
+*/
+  "flex-layout.col#desktop__middle-top-content-information":{
     "children":[
       "disclosure-layout#information__desktop"
-    ],
-    "props":{
-     " horizontalAlign": "center"
-    }
+    ]
   },
+
   "disclosure-layout#information__desktop":{
     "children": [
       "disclosure-trigger#information",
-       "disclosure-content#information"]
+      "disclosure-content#information"
+    ]
   },
-
-  "disclosure-trigger#information":{
-    "children":[
+  "disclosure-trigger#information": {
+    "children": [
       "rich-text#information"
     ],
     "props": {
-      "as":"h4"
+      "as": "h4"
     }
   },
-  "rich-text#information":{
-  "props":{
-    "text":"Más Información"
-  }
+  "rich-text#information": {
+    "props": {
+      "text": "Más Información",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   },
 
   "disclosure-content#information":{
-"children":[
-  "flex-layout.row#footer__desktop-container-two"
-]
-},
+    "children":[
+      "flex-layout.row#desktop__middle-bottom-content"
+  ]
+  },
 
-  "flex-layout.row#footer__desktop-container-two":{
+  "flex-layout.row#desktop__middle-bottom-content":{
     "children":[
-      "flex-layout.row#container__two-group-one"
-    ]
-  },
-  "flex-layout.row#container__two-group-one":{
-    "children":[
-      "disclosure-layout-group#group-one__desktop"
-    ]
-  },
-  "disclosure-layout-group#group-one__desktop": {
-    "children": [
-      "disclosure-layout#first",
-      "disclosure-layout#first",
-      "disclosure-layout#first"
+      "flex-layout.col#bottom__content-first" ,
+      "flex-layout.col#bottom__content-first" ,
+      "flex-layout.col#bottom__content-first" 
+    //  "flex-layout.col#bottom__content-second",
+     // "flex-layout.col#bottom__content-third"
     ]
   },
 
-  "disclosure-layout#first": {
-    "children": [
-      "flex-layout.col#disclosure__firts-container"
-      ]
+//----------------------------------
+
+  "flex-layout.col#bottom__content-first":{
+    "children":[
+      "disclosure-layout#first__inner-content"
+    ]
   },
-  "flex-layout.col#disclosure__firts-container": {
-    "children": [
-      "disclosure-trigger#first",
-       "disclosure-content#first"
-      ]
-  },
-  "disclosure-trigger#first": {
-    "children": [
-      "rich-text#question1"
+  "disclosure-layout#first__inner-content":{
+    "children":[
+      "disclosure-trigger#first__inner-content",
+      "disclosure-content#first__inner-content"
     ],
     "props":{
-      "as":"ul"
+      "initialVisibility":"visible",
+      "animated":false
     }
   },
-  "disclosure-content#first": {
-    "children": [
-      "rich-text#answer1",
-      "rich-text#answer2",
-      "rich-text#answer3",
-      "rich-text#answer4",
-      "rich-text#answer5"
 
+  "disclosure-trigger#first__inner-content":{
+      "children": [
+        "rich-text#first__inner-text"
+      ],
+      "props": {
+        "as": "h4"
+      }
+    },
+    "rich-text#first__inner-text": {
+      "props": {
+        "text": "Centro de ayuda",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    "disclosure-content#first__inner-content":{
+      "children":[
+        "rich-text#answer1",
+        "rich-text#answer2",
+        "rich-text#answer3",
+        "rich-text#answer4",
+        "rich-text#answer5"
+      ]
+    },
+    "rich-text#answer1": {
+      "props": {
+        "text": "[Chat](https://api.whatsapp.com/send?phone=573052614467&text=Hola,+quiero+realizar+una+compra&utm_source=Webchat&utm_medium=Webchat_Carulla&utm_campaign=Webchat_Carulla&utm_id=232901)"
+      }
+    },
+    "rich-text#answer2": {
+      "props": {
+        "text": "[Preguntas Frecuentes](/preguntas-frecuentes)"
+      }
+    },
+    "rich-text#answer3": {
+      "props": {
+        "text": "[Política de cambio y devoluciones](https://www.carulla.com/politicas-cambios-devoluciones)"
+      }
+    },
+    "rich-text#answer4": {
+      "props": {
+        "text": "[Contacto](https://www.carulla.com/contacto)"
+      }
+    },
+    "rich-text#answer5": {
+      "props": {
+        "text": "[Almacenes](https://www.carulla.com/almacenes)"
+      }
+    },
+
+//------------------------------
+/*
+    "flex-layout.col#bottom__content-second":{
+      "children":[
+       // "disclosure-layout#second__inner-content"
+       "disclosure-layout#first__inner-content"
+      ]
+   },
+   "disclosure-layout#second__inner-content":{
+    "children":[
+      "disclosure-trigger#second__inner-content",
+      "disclosure-content#second__inner-content"
     ]
   },
-  "rich-text#question1": {
-    "props": {
-      "text": "Centro de Ayuda"
-    }
-  },
 
-  "rich-text#answer1": {
-    "props": {
-      "text": "[Chat](https://api.whatsapp.com/send?phone=573052614467&text=Hola,+quiero+realizar+una+compra&utm_source=Webchat&utm_medium=Webchat_Carulla&utm_campaign=Webchat_Carulla&utm_id=232901)"
-    }
-  },
-  "rich-text#answer2": {
-    "props": {
-      "text": "[Preguntas Frecuentes](https://www.carulla.com/preguntas-frecuentes)"
-    }
-  },
-  "rich-text#answer3": {
-    "props": {
-      "text": "[Política de cambio y devoluciones](https://www.carulla.com/politicas-cambios-devoluciones)"
-    }
-  },
-  "rich-text#answer4": {
-    "props": {
-      "text": "[Contacto](https://www.carulla.com/contacto)"
-    }
-  },
-  "rich-text#answer5": {
-    "props": {
-      "text": "[Almacenes](https://www.carulla.com/almacenes)"
-    }
-  },
 
+
+    "flex-layout.col#bottom__content-third":{
+      "children":[
+        //"disclosure-layout#third__inner-content"
+        "disclosure-layout#first__inner-content"
+      ]
+   },
+
+   "disclosure-layout#third__inner-content":{
+    "children":[
+      "disclosure-trigger#third__inner-content",
+      "disclosure-content#third__inner-content"
+    ]
+  },
+*/
 
   //-----------------End disclosure footer row second group
-
   //-----------------Start one footer row three group
-
-
   "flex-layout.row#footer__desktop-bottom": {
     "children": [
       "flex-layout.col#bottom__footer-first",
@@ -451,7 +491,6 @@
       "blockClass": "first__section-group-one-text"
     }
   },
-
   "rich-text#visit-us": {
     "props": {
       "blockClass": "visita",
@@ -500,8 +539,6 @@
       "url": "assets/img/surtimax.svg"
     }
   },
-
-  // hasta aqui llega la primera
   "flex-layout.col#bottom__footer-second": {
     "children": [
       "rich-text#footer__text-rigths"
@@ -510,7 +547,6 @@
       "blockClass": "text-rigths"
     }
   },
-  
   "rich-text#footer__text-rigths": {
     "props": {
       "blockClass": "derechos",
@@ -519,5 +555,4 @@
       "textPosition": "center"
     }
   }
-
 }

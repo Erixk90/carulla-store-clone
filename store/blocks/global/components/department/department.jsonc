@@ -11,19 +11,16 @@
             "search-not-found-layout"
         ]
     },
-
-    "search-result-layout.mobile#department":{
-        "children":[
+    "search-result-layout.mobile#department": {
+        "children": [
             "rich-text#prueba"
         ]
     },
-
-    "rich-text#prueba":{
-        "props":{
-            "text": "la pruebita mamita"
+    "rich-text#prueba": {
+        "props": {
+            "text": "eSTO ES UNA PRUEBA DEL RESPONSIVE"
         }
     },
-
     //------------------------first block ----------------
     "search-result-layout.desktop#department": {
         "children": [
@@ -73,42 +70,28 @@
         ]
     },
     "gallery#department": {
-            "props": {
-                "layouts": [
-                    {
-                        "name": "whole",
-                        "component": "OneOrTwoLineSummary",
-                        "itemsPerRow": 1
-                    },
-                    {
-                        "name": "two",
-                        "component": "OneOrTwoLineSummary",
-                        "itemsPerRow": 2
-                    },
-                    {
-                        "name": "many",
-                        "component": "ManyByLineSummary",
-                        "itemsPerRow": {
-                            "desktop": 5,
-                            "mobile": 1
-                        }
+        "props": {
+            "layouts": [
+                {
+                    "name": "general-grid",
+                    "component": "GeneralGrid",
+                    "itemsPerRow": {
+                        "desktop": 5,
+                        "tablet": 3,
+                        "mobile": 2
                     }
-                ],
-                "OneOrTwoLineSummary": "product-summary.shelf",
-                "ManyByLineSummary": "product-summary.shelf"
-            }
-        },
-
-       
-
-        "vtex.store-components:product-name":{
-            "props":{
-                "tag":"h3"
-            }
+                }
+            ],
+            "GeneralGrid": "product-summary.shelf",
+            "blockClass":"gallery"
         }
-
-
-        /*
+    },
+    "vtex.store-components:product-name": {
+        "props": {
+            "tag": "h3"
+        }
+    }
+    /*
     "gallery-layout-switcher": {
         "children": [
             "gallery-layout-option#grid__two-columns",

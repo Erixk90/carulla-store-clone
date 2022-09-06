@@ -16,67 +16,116 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
-      "notification.bar",
-      "header-row#header-top"
+      "sticky-layout.stack-container#header"
     ]
   },
-
+  "sticky-layout.stack-container#header": {
+    "props": {
+      "position": "top"
+    },
+    "children": [
+      "sticky-layout#links-menu",
+      "sticky-layout#main-menu",
+      "notification.bar"
+      
+    ]
+  },
   "header-layout.mobile": {
     "title": "Header mobile",
     "children": [
       "header-row#header-top"
     ]
   },
+  "sticky-layout#links-menu": { //
+    "children": [
+      //"header-row#header-top"
+      "flex-layout.row#4-desktop", "flex-layout.row#mega-menu"
+    ]
+  },
+  "flex-layout.row#4-desktop":{
+    "children": [
+      "flex-layout.col#trigger-mega-menu"]
+  },
+  
+  "flex-layout.row#mega-menu": {
+    "children": ["mega-menu#desktop"]
+  },
+
+
+  "mega-menu#desktop": {
+    "props": {
+      "openOnly": "horizontal"
+    }},
+    
+  "sticky-layout#main-menu": {
+    "children": [
+      "vtex.menu@2.x:menu#drawer"
+    ]
+  },
+
+"flex-layout.col#trigger-mega-menu":{ //recién agregado 4.37
+"props":{
+  "verticalAlign":"middle"
+},
+"children":[
+  "header-row#header-top"
+]
+},
 
   "header-row#header-top": {
     "title": "Header  top",
     "children": [
-        "drawer",
-        "logo#header__top-logo",
-        "icon#header__top-bell",
-        "rich-text#header-top",
-        "search-bar#header__search",
-        "login",
-        "minicart.v2"
+      // "drawer", lo anulo para poder colocar el mega menú 
+      "mega-menu-trigger-btn",
+      "logo#header__top-logo",
+      "icon#header__top-bell",
+      "rich-text#header-top",
+      "search-bar#header__search",
+      "login",
+      "minicart.v2"
     ],
     "props": {
-        "blockClass": "header__top"
+      "blockClass": "header__top"
     }
-},
-"logo#header__top-logo": {
-  "title": "logo",
-  "props": {
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "Drawer": "drawer#header__top-menu"
+    }
+  },
+  "logo#header__top-logo": {
+    "title": "logo",
+    "props": {
       "url": "assets/img/logo.png",
       "width": 26,
       "heigth": 26,
       "href": "/"
-  }
-},
-"search-bar#header__search": {
-  "blocks": [
+    }
+  },
+  "search-bar#header__search": {
+    "blocks": [
       "autocomplete-result-list.v2"
-  ],
-  "props": {
+    ],
+    "props": {
       "openAutocompleteOnFocus": true
-  }
-},
-"autocomplete-result-list.v2": {
-  "blocks": [
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
       "product-summary"
-  ]
-},
-"icon#header__top-bell": {
-  "props": {
+    ]
+  },
+  "icon#header__top-bell": {
+    "props": {
       "id": "mpa-location-input",
       "size": 20
-  }
-},
-"rich-text#header-top": {
-  "props": {
+    }
+  },
+  "rich-text#header-top": {
+    "props": {
       "text": " ¿Como quieres recibir tu pedido?",
       "color": "c-on-emphasys",
       "blockClass": "header__top-paragraph"
+    }
   }
-}
-
 }

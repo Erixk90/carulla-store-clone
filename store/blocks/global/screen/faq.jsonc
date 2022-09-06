@@ -1,0 +1,127 @@
+{
+    "store.custom#faq": {
+        "blocks": [
+            "flex-layout.row#faq"
+        ]
+    },
+    "flex-layout.row#faq": {
+        "children": [
+            "flex-layout.col#faq"
+        ]
+    },
+    "flex-layout.col#faq": {
+        "children": [
+            "flex-layout.row#title__content",
+            "flex-layout.row#category__content",
+            "flex-layout.row#paragraph__content",
+            "flex-layout.row#link__content"
+        ]
+    },
+    "flex-layout.row#title__content": {
+        "children": [
+            "rich-text#title"
+        ]
+    },
+    "rich-text#title": {
+        "props": {
+            "text": "Centro de Ayuda",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#category__content": {
+        "children": [
+            "rich-text#faq",
+            "rich-text#policies",
+            "rich-text#contact",
+            "rich-text#store"
+        ]
+    },
+    "rich-text#faq": {
+        "props": {
+            "text": "Preguntas frecuentes",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#policies": {
+        "props": {
+            "text": "Politica de cambios y devoluciones",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#contact": {
+        "props": {
+            "text": "Contacto",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#store": {
+        "props": {
+            "text": "Almacenes",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#paragraph__content": {
+        "children": [
+            "rich-text#paragraph"
+        ]
+    },
+    "rich-text#paragraph": {
+        "props": {
+            "text": "En carulla.com sabemos que la excelencia no es la mejor manera de actuar; es la única!. Por eso Queremos proveer a nuestros clientes una experiencia de compra única, estableciendo un vínculo emocional fuerte, por lo que a continuación encontrara un listado de preguntas y respuestas que le ayudaran a resolver sus inquietudes y que facilitan su compra a través de Carulla.com ya que queremos ser líderes en atención, calidez, amabilidad y vínculo de cercanía con usted.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "paragraph__content"
+        }
+    },
+    "flex-layout.row#link__content": {
+        "children": [
+            "flex-layout.col#link__content-one" /*,
+        "flex-layout.row#link__content-two",
+        "flex-layout.row#link__content-three",
+        "flex-layout.row#link__content-four",
+        "flex-layout.row#link__content-five"*/
+        ]
+    },
+    "flex-layout.col#link__content-one": {
+        "children": [
+            "rich-text#faq-one",
+            "rich-text#faq-two",
+            "rich-text#faq-three",
+            "rich-text#faq-four"
+        ]
+    },
+    
+    "rich-text#faq-one": {
+        "props": {
+            "text": "¿Como Comprar?",
+            "textAlignment": "CENTER",
+            "blockClass": "wrapper"
+        }
+    },
+    "rich-text#faq-two": {
+        "props": {
+            "text": "Medios de pago ",
+            "textAlignment": "CENTER",
+            "blockClass": "wrapper"
+        }
+    },
+    "rich-text#faq-three": {
+        "props": {
+            "text": "Entregas",
+            "textAlignment": "CENTER",
+            "blockClass": "wrapper"
+        }
+    },
+    "rich-text#faq-four": {
+        "props": {
+            "text": "Inconvenientes con la pagina",
+            "textAlignment": "CENTER",
+            "blockClass": "wrapper"
+        }
+    }
+}

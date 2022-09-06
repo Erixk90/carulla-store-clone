@@ -15,20 +15,35 @@
       "blocks": ["search-result-layout"]
     },
 
-    "product-summary.shelf#demo1": {
-      "children": [
-        "stack-layout#prodsum",
-        "product-summary-name",
-        "product-rating-inline",
-        "product-summary-space",
-        "product-summary-price",
-        "product-summary-buy-button"
-      ]
-    },
-    "list-context.product-list#demo1": {
-      "blocks": ["product-summary.shelf#demo1"],
-      "children": ["slider-layout#demo-products"]
+  //  "list-context.product-list#demo1": {
+ //     "blocks": ["product-summary.shelf#demo1"],
+   //   "children": ["slider-layout#demo-products"]
+  //},
+"product-summary.shelf": {
+  "children": [
+    "vtex.store-components:product-name",
+    "product-summary-image",
+   // "product-rating-inline",
+    //"product-summary-space",
+    "product-summary-price",
+    "product-list-price",
+    "product-selling-price",
+    "product-summary-sku-selector",
+    "add-to-cart-button" // Este se usa en vez del product sumary button porque este otro no renderiza enseguida
+    
+  ]
+},
+
+"product-summary-sku-selector":{
+  "props":{
+    "hideImpossibleCombinations":false
   }
+},
+
+
+"slider-layout#demo-products":{
+
+}
 
 /*
   "search-result-layout": {
