@@ -21,7 +21,8 @@
     8,
     16
   ],
-  "customMedia": [{
+  "customMedia": [
+    {
       "s": 20
     },
     {
@@ -301,7 +302,8 @@
     8,
     16
   ],
-  "sizes": [{
+  "sizes": [
+    {
       "name": "small",
       "value": 2
     },

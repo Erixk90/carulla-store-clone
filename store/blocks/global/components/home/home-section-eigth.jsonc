@@ -40,13 +40,15 @@
         "props": {
             "src": "assets/img/regalo.svg",
             "heigth": "20px",
-            "width": "30px"
+            "width": "30px",
+            "blockClass":"flex__image"
         }
     },
     "rich-text#group__one": {
         "props": {
             "text": "Más de 100 mil productos",
-            "font": "1rem"
+            "font": "1rem",
+            "blockClass":"flex__text"
         }
 
     },
@@ -66,13 +68,15 @@
         "props": {
             "src": "assets/img/escudo.svg",
             "heigth": "20px",
-            "width": "30px"
+            "width": "30px",
+            "blockClass":"flex__image"
         }
     },
     "rich-text#group__two": {
         "props": {
             "text": "Compras seguras",
-            "font": "1rem"
+            "font": "1rem",
+            "blockClass":"flex__text"
         }
 
     },
@@ -90,13 +94,15 @@
         "props": {
             "src": "assets/img/puntos.svg",
             "heigth": "20px",
-            "width": "30px"
+            "width": "30px",
+            "blockClass":"flex__image"
         }
     },
     "rich-text#group__three": {
         "props": {
             "text": "Acumulas Puntos",
-            "font": "1rem"
+            "font": "1rem",
+            "blockClass":"flex__text"
         }
 
     },
@@ -113,13 +119,15 @@
         "props": {
             "src": "assets/img/paga.svg",
             "heigth": "20px",
-            "width": "30px"
+            "width": "30px",
+            "blockClass":"flex__image"
         }
     },
     "rich-text#group__four": {
         "props": {
             "text": "Paga en linea o en efectivo",
-            "font": "1rem"
+            "font": "1rem",
+            "blockClass":"flex__text"
         }
 
     }
