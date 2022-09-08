@@ -24,9 +24,11 @@
       "position": "top"
     },
     "children": [
+      
       "sticky-layout#links-menu",
       "sticky-layout#main-menu",
       "notification.bar"
+      
       
     ]
   },

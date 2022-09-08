@@ -4,7 +4,6 @@
       "mega-menu#home_menu",
       "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
-      "rich-text#title__section-two",
       "flex-layout.row#section__two-categories",
       "flex-layout.row#section__two-categories2",
       "rich-text#title__section-three",
@@ -20,7 +19,9 @@
       "flex-layout.row#section__eigth-container"
       //"search-result-layout.customQuery#home-search"
       //"flex-layout.row#section__nine-footer"
-    ]
+    ],"props":{
+      "blockClass":"home__container"
+    }
   },
   "mega-menu#home_menu":{
     "props":{
@@ -47,15 +48,9 @@
       "blockClass": "image__welcome"
     }
   },
-  "rich-text#title__section-two": {
-    "props": {
-      "text": "Lo mejor para ti",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3",
-      "textColor": "c-on-base"
-    }
-  },
+  
+
+
   "rich-text#title__section-three": {
     "props": {
       "text": "Todo para tu mercado",

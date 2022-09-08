@@ -1,41 +1,51 @@
 {
     "flex-layout.row#section__one-homeUp": {
         "children": [
-            "slider-layout#section__one-slider"
+            "flex-layout.col#section__one-slider__container"
         ],
         "props": {
             "fullWidth": "true",
-            /*"marginBottom":2,
-            "marginTop":5,*/
+            "marginBottom":2,
+            "marginTop":5,
             "blockClass": "section__one-homeup-slider-content"
+        }
+    },
+    "flex-layout.col#section__one-slider__container": {
+        "children": [
+            "slider-layout#section__one-slider"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "marginRight": 2,
+            "blockClass": "section__one-slider__container"
         }
     },
     /* principal children*/
     "slider-layout#section__one-slider": {
         "title": "section one slider",
-        "props": {
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            },
-            "infinite": true,
-            "blockClass": "section__one-slider-container",
-            "autoplay": {
-                "timeout": 5000,
-                "stopOnHover": true
-            },
-            "showNavigationArrows": "always",
-            "centerMode": "disabled",
-            "fullWidth": false
-        },
         "children": [
             "image#initial__img1",
             "image#initial__img2",
             "image#initial__img3",
             "image#initial__img4",
             "image#initial__img5"
-        ]
+        ],
+        "props": {
+            "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "mobile": 1
+            },
+            "infinite": true,
+            "blockClass": "home__slider",
+            "autoplay": {
+              "timeout": 3000,
+              "stopOnHover": true
+            },
+            "arrowSize": 25
+            
+          }
+        
     },
     /*"flex-layout.col#section__one-home":{
         "children": ["image#section__one-principal"]
@@ -51,32 +61,32 @@
     "image#initial__img1": {
         "props": {
             "src": "assets/img/slider__img1.jpg",
-            "blockClass":"section__one-image",
-            "margin": "2rem 2rem 2rem" 
+            "blockClass": "section__one-image",
+            "margin": "2rem 2rem 2rem"
         }
     },
     "image#initial__img2": {
         "props": {
             "src": "assets/img/slider__img2.jpg",
-            "blockClass":"section__one-image"
+            "blockClass": "section__one-image"
         }
     },
     "image#initial__img3": {
         "props": {
             "src": "assets/img/slider__img3.jpg",
-            "blockClass":"section__one-image"
+            "blockClass": "section__one-image"
         }
     },
     "image#initial__img4": {
         "props": {
             "src": "assets/img/slider__img4.jpg",
-            "blockClass":"section__one-image"
+            "blockClass": "section__one-image"
         }
     },
     "image#initial__img5": {
         "props": {
             "src": "assets/img/slider__img5.jpg",
-            "blockClass":"section__one-image"
+            "blockClass": "section__one-image"
         }
     }
 }

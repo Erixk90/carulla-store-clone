@@ -1,6 +1,32 @@
 {
     "flex-layout.row#section__two-categories": {
         "children": [
+            "flex-layout.col#section__two-categories-container"
+        ],
+        "props": {
+            "rowGap": 4,
+            "blockClass": "section__two-categories"
+        }
+    },
+    "rich-text#title__section-two": {
+        "props": {
+            "text": "Lo mejor para ti",
+            "textAlignment": "CENTER",
+            "blockClass": "title__section-two"
+        }
+    },
+    "flex-layout.col#section__two-categories-container": {
+        "children": [
+            "rich-text#title__section-two",
+            "flex-layout.row#container__categories"
+        ],
+        "props": {
+            "rowGap": 4,
+            "blockClass": "section__two-categories-container"
+        }
+    },
+    "flex-layout.row#container__categories":{
+        "children": [
             "flex-layout.col#categories__group-one",
             "flex-layout.col#categories__group-two",
             "flex-layout.col#categories__group-three",
@@ -10,9 +36,10 @@
         ],
         "props": {
             "rowGap": 4,
-            "blockClass":"section__two-categories-container"
+            "blockClass": "section__two-categories-container-one"
         }
     },
+
     "flex-layout.row#section__two-categories2": {
         "children": [
             "flex-layout.col#categories__group-seven",
@@ -24,7 +51,7 @@
         ],
         "props": {
             "rowGap": 4,
-            "blockClass":"section__two-categories-c"
+            "blockClass": "section__two-categories-container-one"
         }
     },
     /*Principal Children*/
@@ -32,73 +59,109 @@
         "children": [
             "image#group__one-vinos",
             "rich-text#group__one-vinos"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-two": {
         "children": [
             "image#group__two-puntos",
             "rich-text#group__two-puntos"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-three": {
         "children": [
             "image#group__three-precio",
             "rich-text#group__three-precio"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-four": {
         "children": [
             "image#group__four-frutas",
             "rich-text#group__four-frutas"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-five": {
         "children": [
             "image#group__five-carnes",
             "rich-text#group__five-carnes"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-six": {
         "children": [
             "image#group__six-salud",
             "rich-text#group__six-salud"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-seven": {
         "children": [
             "image#group__seven-delicatessen",
             "rich-text#group__seven-delicatessen"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-eigth": {
         "children": [
             "image#group__eigth-lacteos",
             "rich-text#group__eigth-lacteos"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-nine": {
         "children": [
             "image#group__nine-huevos",
             "rich-text#group__nine-huevos"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-ten": {
         "children": [
             "image#group__ten-bebidas",
             "rich-text#group__ten-bebidas"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-eleven": {
         "children": [
             "image#group__eleven-limpieza",
             "rich-text#group__eleven-limpieza"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     "flex-layout.col#categories__group-twelve": {
         "children": [
             "image#group__twelve-colchones",
             "rich-text#group__twelve-colchones"
-        ]
+        ],
+        "props": {
+            "blockClass": "categories__group-one"
+        }
     },
     /*Secondary Children*/
     "image#group__one-vinos": {
@@ -109,10 +172,7 @@
     "rich-text#group__one-vinos": {
         "props": {
             "text": "Vinos y licores",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__two-puntos": {
@@ -123,10 +183,7 @@
     "rich-text#group__two-puntos": {
         "props": {
             "text": "PuntoManía",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__three-precio": {
@@ -137,10 +194,7 @@
     "rich-text#group__three-precio": {
         "props": {
             "text": "Mejor Precio",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__four-frutas": {
@@ -151,11 +205,7 @@
     "rich-text#group__four-frutas": {
         "props": {
             "text": "Frutas y verduras",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
-        }
+            "blockClass":"text-body__categories"}
     },
     "image#group__five-carnes": {
         "props": {
@@ -165,10 +215,7 @@
     "rich-text#group__five-carnes": {
         "props": {
             "text": "Carnes, pescados y pollos",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__six-salud": {
@@ -179,10 +226,7 @@
     "rich-text#group__six-salud": {
         "props": {
             "text": "Salud  y Belleza",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__seven-delicatessen": {
@@ -193,10 +237,7 @@
     "rich-text#group__seven-delicatessen": {
         "props": {
             "text": "Delicatessen",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__eigth-lacteos": {
@@ -207,10 +248,7 @@
     "rich-text#group__eigth-lacteos": {
         "props": {
             "text": "Lácteos y refrigerados",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__nine-huevos": {
@@ -221,10 +259,7 @@
     "rich-text#group__nine-huevos": {
         "props": {
             "text": "Huevos",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__ten-bebidas": {
@@ -235,10 +270,7 @@
     "rich-text#group__ten-bebidas": {
         "props": {
             "text": "bebidas, pasabocas y dulces",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__eleven-limpieza": {
@@ -249,10 +281,7 @@
     "rich-text#group__eleven-limpieza": {
         "props": {
             "text": "Limpieza del hogar",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "blockClass":"text-body__categories"
         }
     },
     "image#group__twelve-colchones": {
@@ -262,11 +291,8 @@
     },
     "rich-text#group__twelve-colchones": {
         "props": {
-            "text": "colchones",
-            "textAlignment": "CENTER",
-            "textPosition": "center",
-            "font": "t-heading-5",
-            "textColor": "c-on-base"
+            "text": "Colchones",
+            "blockClass":"text-body__categories"
         }
     }
 }

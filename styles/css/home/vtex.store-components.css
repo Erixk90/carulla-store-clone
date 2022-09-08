@@ -1,6 +1,4 @@
-.imageElement{
-    align-self: center;
-}
+
 
 .notificationBarInner{
     height:  10px;
@@ -48,3 +46,8 @@ align-items: center;
     justify-content: space-around;
     padding-bottom: 10px;
     padding-top: 10px;}
+
+.imageElement--section__one-image{
+    width:100%;
+}
+

@@ -1,0 +1,40 @@
+
+.flexRow--section__one-slider__container{
+    width: 1280px;
+}
+
+.flexRow--section__one-homeup-slider-content{
+    width: 1280px;
+}
+
+.flexRow--section__one-homeup-slider-content{
+    max-width: none;
+    margin: 0 auto;
+}
+/* ---------------Categories fist group----------------*/
+.flexRow--section__two-categories{
+    width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.flexRowContent--section__two-categories-container-one, .flexRowContent--section__two-categories-container-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flexCol--categories__group-one, .flexCol--categories__group-one {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.flexRowContent--section__two-categories-container-one{
+    width: 1280px;
+    margin: 0 auto;
+}
