@@ -1,4 +1,4 @@
-.paragraph--title__section-two{
+.paragraph--title__section-two, .paragraph--title__section-five{
     margin: 20px auto;
     max-width: 1280px;
     width: 100%;
@@ -14,3 +14,23 @@
     font-weight: 500;
     margin: 0 auto;
     ;}
+
+    .paragraph--title__section-three, .paragraph--title__section-six{
+        margin: 20px auto;
+        max-width: 1280px;
+        width: 100%;
+        font-family: 'Cabin';
+        font-size: 20;
+        color:rgb(119, 119, 119);
+        font-weight: 400;
+    }
+
+    .paragraph--title__section-four, .paragraph--title__section-seven{
+        margin: 20px auto;
+        max-width: 1280px;
+        width: 100%;
+        font-family: 'Cabin';
+        font-size: 20;
+        color:#000000;
+        font-weight: 400;
+    }

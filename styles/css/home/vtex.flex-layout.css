@@ -38,3 +38,40 @@
     width: 1280px;
     margin: 0 auto;
 }
+
+.flexRow--section__three-yourmarket-content{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.flexRow--market__group-one{
+    margin: auto 15px;
+}
+
+.flexRow--market__group-two{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.flexRow--section__four-bestsellers-content{
+    width: 1280px;
+    margin: 0 auto;
+}
+.flexRow--section__five-wines-content{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.flexRowContent--section__six-yourhome-content{
+    width: 1280px;
+    margin: 0 auto;
+    border-bottom: #efefef solid 1px;
+    border-top: #efefef solid 1px;
+}
+
+.flexRow--section__seven-monthsproducts-content{
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

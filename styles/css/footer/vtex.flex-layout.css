@@ -101,6 +101,10 @@ gap:15px;
     margin-right: 10px;
 }
 
+.flexRow--bottom__footer{
+    width: 100%;
+    background-color: #efefef;
+}
 
 
 

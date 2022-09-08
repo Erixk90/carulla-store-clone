@@ -1,64 +1,93 @@
 {
-    "flex-layout.row#section__six-yourhome":{
-        "children":[
+    "flex-layout.row#section__six-yourhome-content": {
+        "children": [
+            "flex-layout.col#section__six-yourhome"
+        ],
+        "props": {
+            "blockClass": "section__six-yourhome-content"
+        }
+    },
+    "flex-layout.col#section__six-yourhome": {
+        "children": [
+            "rich-text#title__section-six",
+            "flex-layout.row#six__yourhome-one"
+        ],
+        "props": {
+            "blockClass": "section__six-yourhome-container"
+        }
+    },
+    "flex-layout.row#six__yourhome-one": {
+        "children": [
             "flex-layout.col#six__yourhome-one",
             "flex-layout.col#six__yourhome-two",
             "flex-layout.col#six__yourhome-three",
             "flex-layout.col#six__yourhome-four"
         ],
-        "props":{}
+        "props": {
+            "blockClass": "content__group-yourhome"
+        }
     },
-
-    "flex-layout.col#six__yourhome-one":{
-        "children":[
+    "rich-text#title__section-six": {
+        "props": {
+            "text": "Todo Para ti y para tu hogar",
+            "textAlignment": "CENTER",
+            "blockClass": "title__section-six"
+        }
+    },
+    "flex-layout.col#six__yourhome-one": {
+        "children": [
             "image#yourhome_one"
-        ]
+        ],
+        "props": {
+            "blockClass": "six__yourhome-category"
+        }
     },
-
-    "image#yourhome_one":{
+    "image#yourhome_one": {
         "props": {
             "src": "assets/img/todoparati__img1.jpg",
             "maxHeight": 240
         }
     },
-
-    "flex-layout.col#six__yourhome-two":{
-        "children":[
+    "flex-layout.col#six__yourhome-two": {
+        "children": [
             "image#yourhome_two"
-        ]
+        ],
+        "props": {
+            "blockClass": "six__yourhome-category"
+        }
     },
-
-    "image#yourhome_two":{
+    "image#yourhome_two": {
         "props": {
             "src": "assets/img/todoparati__img2.jpg",
             "maxHeight": 240
         }
     },
-    "flex-layout.col#six__yourhome-three":{
-        "children":[
+    "flex-layout.col#six__yourhome-three": {
+        "children": [
             "image#yourhome_three"
-        ]
+        ],
+        "props": {
+            "blockClass": "six__yourhome-category"
+        }
     },
-
-    "image#yourhome_three":{
+    "image#yourhome_three": {
         "props": {
             "src": "assets/img/todoparati__img3.jpg",
             "maxHeight": 240
         }
     },
-
-    "flex-layout.col#six__yourhome-four":{
-        "children":[
+    "flex-layout.col#six__yourhome-four": {
+        "children": [
             "image#yourhome_four"
-        ]
+        ],
+        "props": {
+            "blockClass": "six__yourhome-category"
+        }
     },
-
-    "image#yourhome_four":{
+    "image#yourhome_four": {
         "props": {
             "src": "assets/img/todoparati__img4.jpg",
             "maxHeight": 240
         }
     }
-
-
 }

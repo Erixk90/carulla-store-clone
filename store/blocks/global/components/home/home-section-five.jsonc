@@ -1,40 +1,63 @@
 {
-    "slider-layout#section__five-wines": {
+    "flex-layout.row#section__five-wines-content": {
         "children": [
-            "flex-layout.row#section__five-wines"
+            "flex-layout.col#section__five-wines"
         ],
         "props": {
-            "autoplay": {
-                "timeout": 5000,
-                "stopOnHover": true
-            },
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            },
-            "infinite": true,
-            "centerMode": "disabled",
-            //"navigationStep": "page",
-            //"fullWidth":false,
-            "showNavigationArrows":"desktopOnly"
+            "blockClass": "section__five-wines-content"
+        }
+    },
+    "flex-layout.col#section__five-wines": {
+        "children": [
+            "rich-text#title__section-five",
+            "flex-layout.row#content__slider-wines"
+        ],
+        "props": {
+            "blockClass": "section__five-wines-container"
+        }
+    },
+    "flex-layout.row#content__slider-wines": {
+        "children": [
+            "slider-layout#section__five-wines"
+        ],
+        "props": {
+            "blockClass": "content__slider-wines"
         }
     },
 
-    "flex-layout.row#section__five-wines": {
+    "slider-layout#section__five-wines": {
         "children": [
             "info-card#wine",
             "info-card#wine",
+            "info-card#wine",
+            "info-card#wine",
             "info-card#wine"
-
         ],
         "props": {
-
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "mobile": 1
+            },
+            "infinite": true,
+            "blockClass": "home__slider",
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "arrowSize": 25,
+            "centerMode": "disabled",
+            "showNavigationArrows": "always"
         }
-    }
+    },
 
-    
-    ,
+    "rich-text#title__section-five": {
+        "props": {
+            "text": "3 por 2 en todos los vinos",
+            "textAlignment": "CENTER",
+            "blockClass":"title__section-five"
+        }
+    },
     "info-card#wine": {
         "props": {
             "id": "info-card-img2",

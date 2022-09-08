@@ -6,30 +6,25 @@
       "flex-layout.row#section__one-homeUp",
       "flex-layout.row#section__two-categories",
       "flex-layout.row#section__two-categories2",
-      "rich-text#title__section-three",
       "flex-layout.row#section__three-yourmarket",
-      "rich-text#title__section-four",
-      "slider-layout#section__four-bestsellers",
-      "rich-text#title__section-five",
-      "slider-layout#section__five-wines",
-      "rich-text#title__section-six",
-      "flex-layout.row#section__six-yourhome",
-      "rich-text#title__section-seven",
-      "flex-layout.row#section__seven-monthsproducts",
+      "flex-layout.row#section__four-bestsellers-content",
+      "flex-layout.row#section__five-wines-content",
+      "flex-layout.row#section__six-yourhome-content",
+      "flex-layout.row#section__seven-monthsproducts-content",
       "flex-layout.row#section__eigth-container"
       //"search-result-layout.customQuery#home-search"
       //"flex-layout.row#section__nine-footer"
-    ],"props":{
-      "blockClass":"home__container"
+    ],
+    "props": {
+      "blockClass": "home__container"
     }
   },
-  "mega-menu#home_menu":{
-    "props":{
-      "blockClass":"home__menu",
-      "openOnly":"horizontal"
+  "mega-menu#home_menu": {
+    "props": {
+      "blockClass": "home__menu",
+      "openOnly": "horizontal"
     }
   },
-
   "flex-layout.row#welcome__section": {
     "children": [
       "image#section__one-welcome"
@@ -46,49 +41,6 @@
       "src": "assets/img/header1.jpg",
       "title": "Banner principal",
       "blockClass": "image__welcome"
-    }
-  },
-  
-
-
-  "rich-text#title__section-three": {
-    "props": {
-      "text": "Todo para tu mercado",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#title__section-four": {
-    "props": {
-      "text": "Lo mas vendido",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#title__section-five": {
-    "props": {
-      "text": "Pague 2 lleve 3 en vinos",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#title__section-six": {
-    "props": {
-      "text": "Todo para ti y tu hogar",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#title__section-seven": {
-    "props": {
-      "text": "Productos del mes",
-      "textAlignment": "CENTER",
-      "textPosition": "left",
-      "font": "t-heading-3"
     }
   }
 }

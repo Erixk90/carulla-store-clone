@@ -5,8 +5,8 @@
         ],
         "props": {
             "fullWidth": "true",
-            "marginBottom":2,
-            "marginTop":5,
+            "marginBottom": 2,
+            "marginTop": 5,
             "blockClass": "section__one-homeup-slider-content"
         }
     },
@@ -32,20 +32,18 @@
         ],
         "props": {
             "itemsPerPage": {
-              "desktop": 1,
-              "tablet": 1,
-              "mobile": 1
+                "desktop": 1,
+                "tablet": 1,
+                "mobile": 1
             },
             "infinite": true,
             "blockClass": "home__slider",
             "autoplay": {
-              "timeout": 3000,
-              "stopOnHover": true
+                "timeout": 3000,
+                "stopOnHover": true
             },
             "arrowSize": 25
-            
-          }
-        
+        }
     },
     /*"flex-layout.col#section__one-home":{
         "children": ["image#section__one-principal"]

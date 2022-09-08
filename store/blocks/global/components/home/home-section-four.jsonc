@@ -1,11 +1,40 @@
 {
-    "slider-layout#section__four-bestsellers": {
+    "flex-layout.row#section__four-bestsellers-content": {
         "children": [
-            "flex-layout.row#section__four-bestsellers"
+            "flex-layout.col#section__four-bestsellers"
         ],
         "props": {
+            "blockClass": "section__four-bestsellers-content"
+        }
+    },
+    "flex-layout.col#section__four-bestsellers": {
+        "children": [
+            "rich-text#title__section-four",
+            "flex-layout.row#content__slider-bestsellers"
+        ],
+        "props": {
+            "blockClass": "section__four-bestsellers-container"
+        }
+    },
+    "flex-layout.row#content__slider-bestsellers": {
+        "children": [
+            "slider-layout#section__four-bestsellers"
+        ],
+        "props": {
+            "blockClass": "content__slider-bestsellers"
+        }
+    },
+    "slider-layout#section__four-bestsellers": {
+        "children": [
+            "info-card#bestsellers",
+            "info-card#bestsellers",
+            "info-card#bestsellers",
+            "info-card#bestsellers",
+            "info-card#bestsellers"
+        ], /*
+        "props": {
             "autoplay": {
-                "timeout": 5000,
+                "timeout": 3000,
                 "stopOnHover": true
             },
             "itemsPerPage": {
@@ -17,22 +46,31 @@
             "centerMode": "disabled",
             //"navigationStep": "page",
             //"fullWidth":false,
-            "showNavigationArrows":"desktopOnly"
-        }
-    },
-
-    "flex-layout.row#section__four-bestsellers": {
-        "children": [
-            "info-card#bestsellers",
-            "info-card#bestsellers",
-            "info-card#bestsellers"
-
-        ],
+            "showNavigationArrows": "desktopOnly"*/
         "props": {
-
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 1,
+                "mobile": 1
+            },
+            "infinite": true,
+            "blockClass": "home__slider",
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "arrowSize": 25,
+            "centerMode": "disabled",
+            "showNavigationArrows": "always"
         }
     },
-
+    "rich-text#title__section-four": {
+        "props": {
+            "text": "Lo mas vendido",
+            "textAlignment": "CENTER",
+            "blockClass":"title__section-four"
+        }
+    },
     "info-card#bestsellers": {
         "props": {
             "id": "info-card-img1",
@@ -43,6 +81,5 @@
             "callToActionText": "Agregar",
             "textAlignment": "left"
         }
-    
     }
 }
