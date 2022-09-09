@@ -4,80 +4,90 @@
     "blocks": [
       "header-layout.desktop",
       "header-layout.mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "header__content"
+    }
   },
   "header.full": {
     "title": "Header",
     "blocks": [
       "header-layout.desktop",
       "header-layout.mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "header__full-content"
+    }
   },
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
       "sticky-layout.stack-container#header"
-    ]
+    ],
+    "props": {
+      "blockClass": "header__desktop-content"
+    }
   },
   "sticky-layout.stack-container#header": {
     "props": {
-      "position": "top"
+      "position": "top",
+      "blockClass": "sticky-container"
     },
     "children": [
-      
       "sticky-layout#links-menu",
       "sticky-layout#main-menu",
       "notification.bar"
-      
-      
     ]
   },
   "header-layout.mobile": {
     "title": "Header mobile",
     "children": [
       "header-row#header-top"
-    ]
+    ],"props":{
+      "blockClass":"header__mobile-content"}
   },
   "sticky-layout#links-menu": { //
     "children": [
       //"header-row#header-top"
-      "flex-layout.row#4-desktop", "flex-layout.row#mega-menu"
+      "flex-layout.row#4-desktop",
+      "flex-layout.row#mega-menu"
     ]
   },
-  "flex-layout.row#4-desktop":{
+  "flex-layout.row#4-desktop": {
     "children": [
-      "flex-layout.col#trigger-mega-menu"]
+      "flex-layout.col#trigger-mega-menu"
+    ],"props":{
+      "blockClass":"flex__4desktop"}
   },
-  
   "flex-layout.row#mega-menu": {
-    "children": ["mega-menu#desktop"]
+    "children": [
+      "mega-menu#desktop"
+    ],"props":{
+      "blockClass":"mega__menu__content"}
   },
-
-
   "mega-menu#desktop": {
     "props": {
-      "openOnly": "horizontal"
-    }},
-    
+      "openOnly": "horizontal",
+      "blockClass": "mega__menu"
+    }
+  },
   "sticky-layout#main-menu": {
     "children": [
       "vtex.menu@2.x:menu#drawer"
     ]
   },
-
-"flex-layout.col#trigger-mega-menu":{ //recién agregado 4.37
-"props":{
-  "verticalAlign":"middle"
-},
-"children":[
-  "header-row#header-top"
-]
-},
-
+  "flex-layout.col#trigger-mega-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"trigger-mega__menu"
+    },
+    "children": [
+      "header-row#header-top"
+    ]
+  },
   "header-row#header-top": {
     "title": "Header  top",
     "children": [
-      // "drawer", lo anulo para poder colocar el mega menú 
       "mega-menu-trigger-btn",
       "logo#header__top-logo",
       "icon#header__top-bell",
@@ -87,12 +97,14 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "header__top"
+      "blockClass": "header__top",
+      "fullWidth":true
     }
   },
   "mega-menu-trigger-btn": {
     "props": {
-      "Drawer": "drawer#header__top-menu"
+      "Drawer": "drawer#header__top-menu",
+      "blockClass":"mega-menu-trigger-btn"
     }
   },
   "logo#header__top-logo": {
@@ -101,7 +113,8 @@
       "url": "assets/img/logo.png",
       "width": 26,
       "heigth": 26,
-      "href": "/"
+      "href": "/",
+      "blockClass":"header__top-logo"
     }
   },
   "search-bar#header__search": {
@@ -120,7 +133,8 @@
   "icon#header__top-bell": {
     "props": {
       "id": "mpa-location-input",
-      "size": 20
+      "size": 20,
+      "blockClass":"header__top-bell"
     }
   },
   "rich-text#header-top": {

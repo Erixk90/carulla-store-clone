@@ -13,7 +13,7 @@
       "flex-layout.row#section__seven-monthsproducts-content",
       "flex-layout.row#section__eigth-container"
       //"search-result-layout.customQuery#home-search"
-      //"flex-layout.row#section__nine-footer"
+     
     ],
     "props": {
       "blockClass": "home__container"

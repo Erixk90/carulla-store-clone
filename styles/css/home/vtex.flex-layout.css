@@ -67,11 +67,16 @@
     width: 1280px;
     margin: 0 auto;
     border-bottom: #efefef solid 1px;
-    border-top: #efefef solid 1px;
+   
 }
 
 .flexRow--section__seven-monthsproducts-content{
     width: 1280px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.flexColChild--bottom__content-first {
+    margin: 0 auto;
+
 }

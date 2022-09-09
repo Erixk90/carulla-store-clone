@@ -1,0 +1,24 @@
+
+
+.flexCol--department__results-content-col{
+    display: flex;
+    flex-basis: auto;
+    background-color: #efefef;
+    margin: 5px;
+    height: 95%;
+  
+}
+
+.flexColChild--department__results-filter{
+    width: 300px!important;
+    padding-right: 1rem;
+    overflow: hidden;
+    box-shadow: 4px 4px 6px rgb(0 0 0 / 16%);
+    z-index: 1;
+}
+
+.flexRowContent--department__breadcrumb-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

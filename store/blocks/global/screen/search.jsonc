@@ -1,18 +1,30 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"]
+    "blocks": ["search-result-layout"],
+    "props":{
+      "blockClass":"store__search-content"
+    }
   },
 
     "store.search#category":{
-      "blocks": ["search-result-layout"]
+      "blocks": ["search-result-layout"],
+      "props":{
+        "blockClass":"store__search-category"
+      }
     },
     
     "store.search#subcategory":{
-      "blocks": ["search-result-layout"]
+      "blocks": ["search-result-layout"],
+      "props":{
+        "blockClass":"store__search-subcategory"
+      }
     },
     
     "store.search#brand":{
-      "blocks": ["search-result-layout"]
+      "blocks": ["search-result-layout"],
+      "props":{
+        "blockClass":"store__search-brand"
+      }
     },
 
   //  "list-context.product-list#demo1": {
@@ -30,8 +42,10 @@
     "product-selling-price",
     "product-summary-sku-selector",
     "add-to-cart-button" // Este se usa en vez del product sumary button porque este otro no renderiza enseguida
-    
-  ]
+  ],
+  "props":{
+    "blockClass":"product-summary.shelf"
+  }
 },
 
 "product-summary-sku-selector":{

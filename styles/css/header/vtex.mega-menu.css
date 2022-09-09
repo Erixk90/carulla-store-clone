@@ -1,0 +1,41 @@
+.menuContainerNav--mega__menu{
+position: fixed;
+top:0;
+bottom:0;
+z-index: 1000;
+background-color: rgba(0, 0, 0, 0.82);
+}
+.menuContainer{
+    max-height: 100% !important;
+    width: 336px !important;
+    min-width: 336px;
+    background-color: #fff;
+}
+
+.submenuContainer{
+    max-height: 100% !important;
+    width: 790px !important;
+    background-color: #fff;
+}
+
+.menuContainerNav--mega__menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.menuContainerNav--mega__menu::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.menuContainerNav--mega__menu::-webkit-scrollbar-thumb {
+    background-color:orangered;
+    border-radius: 20px;
+    border: 2px solid fuchsia;
+}
+
+.menuContainerNav--mega__menu::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.triggerButtonIcon--active{
+    color: #fff;
+}

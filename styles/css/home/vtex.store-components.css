@@ -32,16 +32,17 @@ height: 20;
 
 .section__eigth-container{
 align-items: center;
-    border: 1px solid #eae8e8;
+    border-top: 1px solid #eae8e8;
     display: flex;
     justify-content: space-around;
     padding-bottom: 10px;
     padding-top: 10px;
+    box-shadow: 4px 3px 5px -3px rgba(239,239,239,1);
 }
 
 .flexRowContent--group__container{
 align-items: center;
-    border: 1px solid #eae8e8;
+    border-bottom: 1px solid #eae8e8;
     display: flex;
     justify-content: space-around;
     padding-bottom: 10px;
@@ -53,5 +54,12 @@ align-items: center;
 
 .imageElement--market__image-one{
     height: 90%;
+}
+
+.infoCardContainer--info__card-wine{
+    border: 1px solid rgba(46,46,46,.22);
+    margin: 0 10px;
+    border-radius: 5px;
+   box-shadow:  0 1px 6pxrgba(46,46,46,.22);
 }
 

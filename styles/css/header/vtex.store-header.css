@@ -1,5 +1,5 @@
-.headerRowContainer{
-    
+.headerRowContainer, .flexRow--flex__4desktop{
+    background-color: var(--green-offers);
     width: 100%
 }
 
@@ -11,4 +11,8 @@
 
 .headerRowContentContainer--header__top{
     background-color: var(--green-offers);
+}
+
+.headerRowContainer--header__top{
+    background-color: var(--green-offers)
 }

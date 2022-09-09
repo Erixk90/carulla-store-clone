@@ -74,7 +74,7 @@
   },
   "rich-text#link-information": {
     "props": {
-      "text": "[(601) 425 28 28](https://www.carulla.com/tel:%20(601)%20425%2028%2028)",
+      "text": "[(601) 425 28 28](/preguntas-frecuentes)",
       "blockClass": "subgroup__link-information"
     }
   },
@@ -95,7 +95,7 @@
   },
   "rich-text#link-information-wpp-sell": {
     "props": {
-      "text": "[(+57) 305 261 44 67](https://www.carulla.com/tel:%20(+57)%20305%20261%2044%2067)",
+      "text": "[(+57) 305 261 44 67](/preguntas-frecuentes)",
       "blockClass": "subgroup__link-information"
     }
   },
@@ -116,7 +116,7 @@
   },
   "rich-text#link-information-wpp-service": {
     "props": {
-      "text": "[(+57) 305 261 54 42](https://www.carulla.com/tel:%20(+57)%20305%20261%2044%2067)",
+      "text": "[(+57) 305 261 54 42](/preguntas-frecuentes)",
       "blockClass": "subgroup__link-information"
     }
   },
@@ -137,7 +137,7 @@
   },
   "rich-text#link-information-tel-service": {
     "props": {
-      "text": "[01 8000 428 800](https://www.carulla.com/tel:%2001%208000%20428%20800)",
+      "text": "[01 8000 428 800](/preguntas-frecuentes)",
       "blockClass": "subgroup__link-information"
     }
   },
@@ -158,7 +158,7 @@
   },
   "rich-text#link-information-medellin": {
     "props": {
-      "text": "[(4) 604 19 19](https://www.carulla.com/tel:%20(4)%20604%2019%2019)",
+      "text": "[(4) 604 19 19](/preguntas-frecuentes)",
       "blockClass": "subgroup__link-information"
     }
   },
@@ -169,7 +169,7 @@
   },
   "rich-text#link-information-rest": {
     "props": {
-      "text": "[Resto de ciudades](https://www.carulla.com/centro-ayuda-contacto)",
+      "text": "[Resto de ciudades](/preguntas-frecuentes)",
       "blockClass": "subgroup__text-information-sub"
     }
   },
@@ -253,7 +253,7 @@
       "checkboxLabel": "Acepto términos y condiciones, términos y condiciones marketplace y autorizo el tratamiento de mis datos personales con las siguientes condiciones.",
       "firstLabelLink": {
         "props": {
-          "url": "https://www.carulla.com/terminos-condiciones",
+          "url": "https://erickcarullastore--itgloberspartnercl.myvtex.com/preguntas-frecuentes",
           "text": "términos y condiciones",
           "blockClass":"newsletter__checkbox-confirmation-block"
         }
@@ -370,162 +370,192 @@
   "flex-layout.row#footer__desktop-middle": {
     "children": [
       "flex-layout.col#desktop__middle-top-content-information"
-      //"flex-layout.row#desktop__middle-top-content"
-    ]
-  },
-  /*
-  "flex-layout.row#desktop__middle-top-content":{
-    "children":[
-      "flex-layout.col#desktop__middle-top-content"
-    ]
+    ],
+    "props": {
+      "blockClass": "footer__desktop-middle"
+  }
   },
 
-  "flex-layout.col#desktop__middle-top-content":{
-    "children":[
-      "flex-layout.row#desktop__middle-top-content-information"
-      
-    ]
-  },
-*/
   "flex-layout.col#desktop__middle-top-content-information": {
     "children": [
+      "flex-layout.row#container__text-information",
+      "flex-layout.row#container__disclosure-information"
+    ],
+    "props": {
+      "blockClass": "desktop__middle-top-content-information"
+  }
+},
+
+  "flex-layout.row#container__text-information": {
+    "children": [
+      "rich-text#information"
+    ],
+    "props": {
+      "blockClass": "container__text-information"
+  }},
+
+  "rich-text#information": {
+    "props": {
+      "text": "Más Información",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "principal-text"
+    }
+  },
+
+
+  "flex-layout.row#container__disclosure-information": {
+    "children": [
+      "flex-layout.col#container__disclosure-information"
+      
+
+    ],
+    "props": {
+      "blockClass": "container__disclosure-information-first"
+  }
+  },
+  "flex-layout.col#container__disclosure-information": {
+    "children": [
       "disclosure-layout#information__desktop"
-    ]
+      
+
+    ],
+    "props": {
+      "blockClass": "container__disclosure-information-second"
+  }
   },
   "disclosure-layout#information__desktop": {
     "children": [
       "disclosure-trigger#information",
       "disclosure-content#information"
-    ]
-  },
-  "disclosure-trigger#information": {
-    "children": [
-      "rich-text#information"
     ],
     "props": {
-      "as": "h4"
-    }
+      "blockClass": "disclosure__layout-information__desktop"
+  }
   },
-  "rich-text#information": {
+
+  //---------------trigger--------------------//
+  "disclosure-trigger#information": {
+    "children": [
+      "flex-layout.row#trigger__container-information-one"
+    ],
     "props": {
-      "text": "Más Información",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "as": "h4",
+      "blockClass": "container__trigger-information"
     }
   },
+
+
+  "flex-layout.row#trigger__container-information-one":{
+    "children":[
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group"
+    ],
+      "props":{
+        "blockClass":"different__container"
+
+      }
+    },
+
+
+  "flex-layout.row#trigger__container-information-one-group":{
+    "children": [
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "trigger__container-information-one"
+  }
+  },
+
+  "rich-text#first__inner-text": {
+    "props": {
+      "text": "Centro de ayuda",
+      "blockClass": "principal-text"
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#state-indicator-down",
+      "Hide": "icon-caret#state-indicator-up",
+      "blockClass": "state--disclosure"
+    }
+  },
+  "icon-caret#state-indicator-down": {
+    "props": {
+      "id": "nav-caret--down"
+    }
+  },
+  "icon-caret#state-indicator-up": {
+    "props": {
+      "id": "nav-caret--up"
+    }
+  },
+//----------------End trigger----------------------//
+//------------------content-----------------------//
+
   "disclosure-content#information": {
     "children": [
       "flex-layout.row#desktop__middle-bottom-content"
-    ]
+    ],
+    "props": {
+      "blockClass": "disclosure__content-information"
+  }
   },
   "flex-layout.row#desktop__middle-bottom-content": {
     "children": [
       "flex-layout.col#bottom__content-first",
       "flex-layout.col#bottom__content-first",
       "flex-layout.col#bottom__content-first"
-      //  "flex-layout.col#bottom__content-second",
-      // "flex-layout.col#bottom__content-third"
     ],
     "props": {
       "blockClass": "desktop__middle-bottom-content"
     }
   },
-  //----------------------------------
   "flex-layout.col#bottom__content-first": {
-    "children": [
-      "disclosure-layout#first__inner-content"
-    ]
-  },
-  "disclosure-layout#first__inner-content": {
-    "children": [
-      "disclosure-trigger#first__inner-content",
-      "disclosure-content#first__inner-content"
-    ],
-    "props": {
-      "initialVisibility": "visible",
-      "animated": false
-    }
-  },
-  "disclosure-trigger#first__inner-content": {
-    "children": [
-      "rich-text#first__inner-text"
-    ],
-    "props": {
-      "as": "h4"
-    }
-  },
-  "rich-text#first__inner-text": {
-    "props": {
-      "text": "Centro de ayuda",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "disclosure-content#first__inner-content": {
     "children": [
       "rich-text#answer1",
       "rich-text#answer2",
       "rich-text#answer3",
       "rich-text#answer4",
       "rich-text#answer5"
-    ]
+    ],
+    "props": {
+      "blockClass": "bottom__content-first"
+  }
   },
   "rich-text#answer1": {
     "props": {
-      "text": "[Chat](https://api.whatsapp.com/send?phone=573052614467&text=Hola,+quiero+realizar+una+compra&utm_source=Webchat&utm_medium=Webchat_Carulla&utm_campaign=Webchat_Carulla&utm_id=232901)"
+      "text": "[Chat](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
     }
   },
   "rich-text#answer2": {
     "props": {
-      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)"
+      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
     }
   },
   "rich-text#answer3": {
     "props": {
-      "text": "[Política de cambio y devoluciones](https://www.carulla.com/politicas-cambios-devoluciones)"
+      "text": "[Política de cambio y devoluciones](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
     }
   },
   "rich-text#answer4": {
     "props": {
-      "text": "[Contacto](https://www.carulla.com/contacto)"
+      "text": "[Contacto](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
     }
   },
   "rich-text#answer5": {
     "props": {
-      "text": "[Almacenes](https://www.carulla.com/almacenes)"
+      "text": "[Almacenes](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
     }
   },
-  //------------------------------
-  /*
-    "flex-layout.col#bottom__content-second":{
-      "children":[
-       // "disclosure-layout#second__inner-content"
-       "disclosure-layout#first__inner-content"
-      ]
-   },
-   "disclosure-layout#second__inner-content":{
-    "children":[
-      "disclosure-trigger#second__inner-content",
-      "disclosure-content#second__inner-content"
-    ]
-  },
-
-
-
-    "flex-layout.col#bottom__content-third":{
-      "children":[
-        //"disclosure-layout#third__inner-content"
-        "disclosure-layout#first__inner-content"
-      ]
-   },
-
-   "disclosure-layout#third__inner-content":{
-    "children":[
-      "disclosure-trigger#third__inner-content",
-      "disclosure-content#third__inner-content"
-    ]
-  },
-*/
   //-----------------End disclosure footer row second group
   //-----------------Start one footer row three group
   "flex-layout.row#footer__desktop-bottom": {
