@@ -3428,3 +3428,193 @@
         }
     }
 }
+/ footer nuevo 08 09 22/
+
+"flex-layout.row#footer__desktop-middle": {
+    "children": [
+      "flex-layout.col#desktop__middle-top-content-information"
+    ],
+    "props": {
+      "blockClass": "footer__desktop-middle"
+  }
+  },
+
+  "flex-layout.col#desktop__middle-top-content-information": {
+    "children": [
+      "flex-layout.row#container__text-information",
+      "flex-layout.row#container__disclosure-information"
+    ],
+    "props": {
+      "blockClass": "desktop__middle-top-content-information"
+  }
+},
+
+  "flex-layout.row#container__text-information": {
+    "children": [
+      "rich-text#information"
+    ],
+    "props": {
+      "blockClass": "container__text-information"
+  }},
+
+  "rich-text#information": {
+    "props": {
+      "text": "Más Información",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "principal-text"
+    }
+  },
+
+
+  "flex-layout.row#container__disclosure-information": {
+    "children": [
+      "flex-layout.col#container__disclosure-information"
+      
+
+    ],
+    "props": {
+      "blockClass": "container__disclosure-information-first"
+  }
+  },
+  "flex-layout.col#container__disclosure-information": {
+    "children": [
+      "disclosure-layout#information__desktop"
+      
+
+    ],
+    "props": {
+      "blockClass": "container__disclosure-information-second"
+  }
+  },
+  "disclosure-layout#information__desktop": {
+    "children": [
+      "disclosure-trigger#information",
+      "disclosure-content#information"
+    ],
+    "props": {
+      "blockClass": "disclosure__layout-information__desktop"
+  }
+  },
+
+  //---------------trigger--------------------//
+  "disclosure-trigger#information": {
+    "children": [
+      "flex-layout.row#trigger__container-information-one"
+    ],
+    "props": {
+      "as": "h4",
+      "blockClass": "container__trigger-information"
+    }
+  },
+
+
+  "flex-layout.row#trigger__container-information-one":{
+    "children":[
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group"
+    ],
+      "props":{
+        "blockClass":"different__container"
+
+      }
+    },
+
+
+  "flex-layout.row#trigger__container-information-one-group":{
+    "children": [
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "trigger__container-information-one"
+  }
+  },
+
+  "rich-text#first__inner-text": {
+    "props": {
+      "text": "Centro de ayuda",
+      "blockClass": "principal-text"
+    }
+  },
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#state-indicator-down",
+      "Hide": "icon-caret#state-indicator-up",
+      "blockClass": "state--disclosure"
+    }
+  },
+  "icon-caret#state-indicator-down": {
+    "props": {
+      "id": "nav-caret--down"
+    }
+  },
+  "icon-caret#state-indicator-up": {
+    "props": {
+      "id": "nav-caret--up"
+    }
+  },
+//----------------End trigger----------------------//
+//------------------content-----------------------//
+
+  "disclosure-content#information": {
+    "children": [
+      "flex-layout.row#desktop__middle-bottom-content"
+    ],
+    "props": {
+      "blockClass": "disclosure__content-information"
+  }
+  },
+  "flex-layout.row#desktop__middle-bottom-content": {
+    "children": [
+      "flex-layout.col#bottom__content-first",
+      "flex-layout.col#bottom__content-first",
+      "flex-layout.col#bottom__content-first"
+    ],
+    "props": {
+      "blockClass": "desktop__middle-bottom-content"
+    }
+  },
+  "flex-layout.col#bottom__content-first": {
+    "children": [
+      "rich-text#answer1",
+      "rich-text#answer2",
+      "rich-text#answer3",
+      "rich-text#answer4",
+      "rich-text#answer5"
+    ],
+    "props": {
+      "blockClass": "bottom__content-first"
+  }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "[Chat](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
+    }
+  },
+  "rich-text#answer3": {
+    "props": {
+      "text": "[Política de cambio y devoluciones](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "[Contacto](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
+    }
+  },
+  "rich-text#answer5": {
+    "props": {
+      "text": "[Almacenes](/preguntas-frecuentes)",
+      "blockClass": "subgroup__text-information"
+    }

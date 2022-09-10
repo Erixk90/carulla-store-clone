@@ -177,15 +177,13 @@
   //-----------------Start Second footer column first group
   "flex-layout.col#footer__desktop-suscribe": {
     "children": [
-    "flex-layout.row#newsletter__form-suscribe"
+      "flex-layout.row#newsletter__form-suscribe"
     ],
     "props": {
       "blockClass": "footer__desktop-suscribe"
     }
   },
-
   //---------------Statrt newsletter form---------------//
-
   "flex-layout.row#newsletter__form-suscribe": {
     "children": [
       "newsletter-form#suscribe"
@@ -213,20 +211,18 @@
       "blockClass": "form_header"
     }
   },
-
-  "rich-text#form__title":{
-    "props":{
-      "text":"Suscríbete a nuestro newsletter",
+  "rich-text#form__title": {
+    "props": {
+      "text": "Suscríbete a nuestro newsletter",
       "blockClass": "group__desktop-title"
     }
   },
-
-  "rich-text#form__subtitle":{
+  "rich-text#form__subtitle": {
     "props": {
       "text": "Entérate de nuestras ofertas y lanzamientos exclusivos",
       "blockClass": "subgroup__text-information"
-  }},
-
+    }
+  },
   "flex-layout.row#form__suscribe-data": {
     "children": [
       "newsletter-input-email",
@@ -239,13 +235,13 @@
   "newsletter-input-email": {
     "props": {
       "placeholderText": "Ingresa tu correo",
-      "blockClass":"newsletter-input-email"
+      "blockClass": "newsletter-input-email"
     }
   },
   "newsletter-submit": {
     "props": {
-      "submitButtonLabel":  "Suscríbete",
-      "blockClass":"newsletter__submit"
+      "submitButtonLabel": "Suscríbete",
+      "blockClass": "newsletter__submit"
     }
   },
   "newsletter-checkbox-confirmation": {
@@ -255,7 +251,7 @@
         "props": {
           "url": "https://erickcarullastore--itgloberspartnercl.myvtex.com/preguntas-frecuentes",
           "text": "términos y condiciones",
-          "blockClass":"newsletter__checkbox-confirmation-block"
+          "blockClass": "newsletter__checkbox-confirmation-block"
         }
       }
     }
@@ -277,8 +273,8 @@
     ],
     "props": {
       "blockClass": "app__desktop-code"
-  }
-},
+    }
+  },
   "flex-layout.col#code__group": {
     "children": [
       "rich-text#Title",
@@ -286,7 +282,7 @@
     ],
     "props": {
       "blockClass": "code__group"
-  }
+    }
   },
   "rich-text#Title": {
     "props": {
@@ -302,24 +298,24 @@
     ],
     "props": {
       "blockClass": "code__flex"
-  }
+    }
   },
   "image#code__flex-qr": {
     "props": {
       "src": "assets/img/qr.png",
-      "blockClass":"code__flex-qr-image"
+      "blockClass": "code__flex-qr-image"
     }
   },
   "rich-text#code__flex-qr": {
     "props": {
       "text": "app",
-      "blockClass":"code__flex-qr-text"
+      "blockClass": "code__flex-qr-text"
     }
   },
   "image#code__flex-app": {
     "props": {
       "src": "assets/img/app.png",
-      "blockClass":"code__flex-app-image"
+      "blockClass": "code__flex-app-image"
     }
   },
   "flex-layout.col#app__desktop-social-media": {
@@ -328,7 +324,7 @@
     ],
     "props": {
       "blockClass": "app__desktop-social-media"
-  }
+    }
   },
   "flex-layout.row#social-media__app-media": {
     "children": [
@@ -338,7 +334,7 @@
       "horizontalAlign": "around",
       "marginTop": 9,
       "colGap": 6,
-      "blockClass":"container__social-media"
+      "blockClass": "container__social-media"
     }
   },
   "social-networks#app__desktop-social-media": {
@@ -362,38 +358,46 @@
         }
       ],
       "title": "Síguenos en:",
-      "blockClass":"image__social-media"
+      "blockClass": "image__social-media"
     }
   },
   //-----------------End third footer column first group
   //-----------------Start disclosure footer row second group
   "flex-layout.row#footer__desktop-middle": {
     "children": [
-      "flex-layout.col#desktop__middle-top-content-information"
+      "disclosure-layout#desktop__middle-content"
     ],
     "props": {
       "blockClass": "footer__desktop-middle"
+    }
+  },
+  "disclosure-layout#desktop__middle-content": {
+    "children": [
+      "disclosure-trigger#information",
+      "disclosure-content#information"
+    ],
+    "props": {
+      "blockClass": "disclosure__desktop__middle-content"
   }
   },
-
-  "flex-layout.col#desktop__middle-top-content-information": {
+  "disclosure-trigger#information": {
     "children": [
       "flex-layout.row#container__text-information",
       "flex-layout.row#container__disclosure-information"
     ],
     "props": {
-      "blockClass": "desktop__middle-top-content-information"
-  }
-},
-
-  "flex-layout.row#container__text-information": {
+      "as": "h4",
+      "blockClass": "container__trigger-information"
+    }
+  },"flex-layout.row#container__text-information": {
     "children": [
-      "rich-text#information"
+      "rich-text#information",
+      "disclosure-state-indicator"
     ],
     "props": {
       "blockClass": "container__text-information"
-  }},
-
+    }
+  },
   "rich-text#information": {
     "props": {
       "text": "Más Información",
@@ -402,160 +406,187 @@
       "blockClass": "principal-text"
     }
   },
-
-
+  
   "flex-layout.row#container__disclosure-information": {
     "children": [
-      "flex-layout.col#container__disclosure-information"
-      
-
+      "flex-layout.col#container__disclosure-information-one",
+      "flex-layout.col#container__disclosure-information-two",
+      "flex-layout.col#container__disclosure-information-three"
     ],
     "props": {
-      "blockClass": "container__disclosure-information-first"
-  }
-  },
-  "flex-layout.col#container__disclosure-information": {
-    "children": [
-      "disclosure-layout#information__desktop"
-      
-
-    ],
-    "props": {
-      "blockClass": "container__disclosure-information-second"
-  }
-  },
-  "disclosure-layout#information__desktop": {
-    "children": [
-      "disclosure-trigger#information",
-      "disclosure-content#information"
-    ],
-    "props": {
-      "blockClass": "disclosure__layout-information__desktop"
-  }
-  },
-
-  //---------------trigger--------------------//
-  "disclosure-trigger#information": {
-    "children": [
-      "flex-layout.row#trigger__container-information-one"
-    ],
-    "props": {
-      "as": "h4",
-      "blockClass": "container__trigger-information"
+      "blockClass": "container__disclosure-information-title"
     }
   },
 
-
-  "flex-layout.row#trigger__container-information-one":{
+  "flex-layout.col#container__disclosure-information-one":{
     "children":[
-      "flex-layout.row#trigger__container-information-one-group",
-      "flex-layout.row#trigger__container-information-one-group",
-      "flex-layout.row#trigger__container-information-one-group"
-    ],
-      "props":{
-        "blockClass":"different__container"
-
-      }
-    },
-
-
-  "flex-layout.row#trigger__container-information-one-group":{
-    "children": [
+      "flex-layout.row#container__text-information-help"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+  "flex-layout.row#container__text-information-help":{
+    "children":[
       "rich-text#first__inner-text",
       "disclosure-state-indicator"
-    ],
-    "props": {
-      "blockClass": "trigger__container-information-one"
-  }
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
   },
-
   "rich-text#first__inner-text": {
     "props": {
       "text": "Centro de ayuda",
       "blockClass": "principal-text"
     }
   },
+  "flex-layout.col#container__disclosure-information-two":{
+    "children":[
+      "flex-layout.row#container__text-information-interest"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+  "flex-layout.row#container__text-information-interest":{
+    "children":[
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ], "props":{
+      "blockClass":"disclosure-information-two-container"
+    }
+  },
+  "flex-layout.col#container__disclosure-information-three":{
+    "children":[
+      "flex-layout.row#container__text-information-legal"
+    ],"props": {
+      "blockClass": "disclosure-information-three"
+    }
+  },
+  "flex-layout.row#container__text-information-legal":{
+    "children":[
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ],"props": {
+      "blockClass": "disclosure-information-three"
+    }
+  },
 
-  "disclosure-state-indicator": {
-    "props": {
-      "Show": "icon-caret#state-indicator-down",
-      "Hide": "icon-caret#state-indicator-up",
-      "blockClass": "state--disclosure"
-    }
-  },
-  "icon-caret#state-indicator-down": {
-    "props": {
-      "id": "nav-caret--down"
-    }
-  },
-  "icon-caret#state-indicator-up": {
-    "props": {
-      "id": "nav-caret--up"
-    }
-  },
-//----------------End trigger----------------------//
-//------------------content-----------------------//
+  //------------trigger one--------------
 
   "disclosure-content#information": {
     "children": [
-      "flex-layout.row#desktop__middle-bottom-content"
+      "flex-layout.row#disclosure__content-information-container"
     ],
     "props": {
       "blockClass": "disclosure__content-information"
-  }
+    }
   },
-  "flex-layout.row#desktop__middle-bottom-content": {
+"flex-layout.row#disclosure__content-information-container": {
+  "children": [
+    "flex-layout.col#bottom__content-first",
+    "flex-layout.col#bottom__content-first",
+    "flex-layout.col#bottom__content-first"
+  ],
+  "props": {
+    "blockClass": "disclosure__content-information"
+  }
+},
+"flex-layout.col#bottom__content-first": {
+  "children": [
+    "rich-text#answer1",
+    "rich-text#answer2",
+    "rich-text#answer3",
+    "rich-text#answer4",
+    "rich-text#answer5"
+  ],
+  "props": {
+    "blockClass": "bottom__content-first"
+  }
+},
+"rich-text#answer1": {
+  "props": {
+    "text": "[Chat](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer2": {
+  "props": {
+    "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer3": {
+  "props": {
+    "text": "[Política de cambio y devoluciones](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer4": {
+  "props": {
+    "text": "[Contacto](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer5": {
+  "props": {
+    "text": "[Almacenes](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+
+"disclosure-state-indicator": {
+  "props": {
+    "Show": "icon-caret#state-indicator-down",
+    "Hide": "icon-caret#state-indicator-up",
+    "blockClass": "state--disclosure"
+  }
+},
+"icon-caret#state-indicator-down": {
+  "props": {
+    "id": "nav-caret--down"
+  }
+},
+"icon-caret#state-indicator-up": {
+  "props": {
+    "id": "nav-caret--up"
+  }
+},
+
+
+
+/*
+  "flex-layout.col#desktop__middle-top-content-information": {
     "children": [
-      "flex-layout.col#bottom__content-first",
-      "flex-layout.col#bottom__content-first",
-      "flex-layout.col#bottom__content-first"
+      "flex-layout.row#container__disclosure-information"
     ],
     "props": {
-      "blockClass": "desktop__middle-bottom-content"
+      "blockClass": "desktop__middle-top-content-information"
     }
   },
-  "flex-layout.col#bottom__content-first": {
+  
+  ,*/
+  //---------------trigger--------------------//
+  /*
+  "flex-layout.row#trigger__container-information-one": {
     "children": [
-      "rich-text#answer1",
-      "rich-text#answer2",
-      "rich-text#answer3",
-      "rich-text#answer4",
-      "rich-text#answer5"
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group",
+      "flex-layout.row#trigger__container-information-one-group"
     ],
     "props": {
-      "blockClass": "bottom__content-first"
-  }
-  },
-  "rich-text#answer1": {
-    "props": {
-      "text": "[Chat](/preguntas-frecuentes)",
-      "blockClass": "subgroup__text-information"
+      "blockClass": "different__container"
     }
   },
-  "rich-text#answer2": {
+  "flex-layout.row#trigger__container-information-one-group": {
+    "children": [
+      
+    ],
     "props": {
-      "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
-      "blockClass": "subgroup__text-information"
+      "blockClass": "trigger__container-information-one"
     }
-  },
-  "rich-text#answer3": {
-    "props": {
-      "text": "[Política de cambio y devoluciones](/preguntas-frecuentes)",
-      "blockClass": "subgroup__text-information"
-    }
-  },
-  "rich-text#answer4": {
-    "props": {
-      "text": "[Contacto](/preguntas-frecuentes)",
-      "blockClass": "subgroup__text-information"
-    }
-  },
-  "rich-text#answer5": {
-    "props": {
-      "text": "[Almacenes](/preguntas-frecuentes)",
-      "blockClass": "subgroup__text-information"
-    }
-  },
+  },*/
+  
+ 
+
   //-----------------End disclosure footer row second group
   //-----------------Start one footer row three group
   "flex-layout.row#footer__desktop-bottom": {
@@ -651,9 +682,7 @@
       "text": "2022 Carulla ® marca registrada de Grupo Éxito S.A. NIT 890900608-9. Todos los derechos reservados",
       "textAlignment": "center",
       "textPosition": "center"
-      
     }
   }
-
   //-----------------End one footer row three group
 }

@@ -1,0 +1,25 @@
+.trigger--container__trigger-information--hidden, .trigger--container__trigger-information--visible {
+    background: transparent;
+    border-color: transparent;
+    padding: 0;
+    border: 0;
+}
+.flexRowContent--disclosure__content-information {
+    background-color: #fff;
+    color: #4d5766;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.flexRowContent--disclosure__content-information :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 15px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    max-height: 500px;
+    transition: max-height .25s ease-in;
+}
