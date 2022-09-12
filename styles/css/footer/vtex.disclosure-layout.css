@@ -3,6 +3,7 @@
     border-color: transparent;
     padding: 0;
     border: 0;
+    margin-bottom: 0;
 }
 .flexRowContent--disclosure__content-information {
     background-color: #fff;

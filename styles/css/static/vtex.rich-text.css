@@ -1,0 +1,14 @@
+
+
+.container--title__content-text{
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+margin-bottom: 22px;
+line-height: 1.2;
+color: #7D7D7D;
+font-family: 'Cabin';
+border-bottom: 2px solid #efefef;
+max-width: 83.3%;
+
+}

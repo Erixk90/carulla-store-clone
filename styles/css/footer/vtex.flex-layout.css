@@ -198,10 +198,10 @@ gap:15px;
     width: auto !important;
 }
 
-.flexRowContent--disclosure-information-one{
+.flexRowContent--disclosure-information-one, .flexRowContent--disclosure-information-two-container{
     align-items: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 5px;
     cursor: pointer;
     background-color: #fff;
@@ -219,7 +219,7 @@ gap:15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     line-height: 15px;
     overflow: hidden;
     padding-bottom: 10px;
@@ -230,4 +230,6 @@ gap:15px;
 
 .flexRowContent--container__disclosure-information-title{
     background-color: #fff;
+    display: flex;
+    justify-content: center;
 }
