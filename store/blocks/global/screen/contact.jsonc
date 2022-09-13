@@ -1,0 +1,153 @@
+{
+    "store.custom#contact": {
+        "blocks": [
+            "flex-layout.row#contact"
+        ]
+    },
+    "flex-layout.row#contact": {
+        "children": [
+            "flex-layout.col#contact"
+        ]
+    },
+    "flex-layout.col#contact": {
+        "children": [
+            "flex-layout.row#title__content-contact",
+            "flex-layout.row#category__content-contact",
+            "flex-layout.row#paragraph__content-contact",
+            "flex-layout.row#link__content-contact"
+        ],
+        "props": {
+            "blockClass": "faq__content"
+        }
+    },
+    "flex-layout.row#title__content-contact": {
+        "children": [
+            "rich-text#-contact"
+        ],
+        "props": {
+            "blockClass": "title__content"
+        }
+    },
+    "rich-text#-contact": {
+        "props": {
+            "text": "Centro de Ayuda",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "title__content-text"
+        }
+    },
+    "flex-layout.row#category__content-contact": {
+        "children": [
+            "rich-text#faq",
+            "rich-text#policies",
+            "rich-text#contact",
+            "rich-text#store"
+        ],
+        "props": {
+            "blockClass": "category__content"
+        }
+    },
+    "rich-text#faq": {
+        "props": {
+            "text": "[Preguntas frecuentes](/preguntas-frecuentes)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+
+        }
+    },
+    "rich-text#policies": {
+        "props": {
+            "text": "[Politica de cambios y devoluciones](/cambios)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "rich-text#contact": {
+        "props": {
+            "text": "[Contacto](/contactos)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "rich-text#store": {
+        "props": {
+            "text": "[Almacenes](/preguntas-frecuentes)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "flex-layout.row#paragraph__content-contact": {
+        "children": [
+            "rich-text#paragraph"
+        ],
+        "props": {
+            "blockClass": "paragraph__content"
+        }
+    },
+    "rich-text#paragraph": {
+        "props": {
+            "text": "Si su inquietud no va dirigida a www.carulla.com le agradecemos contactarnos a través del correo servicio-al-cliente-carulla@clientesexito.com",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "paragraph__content-text"
+        }
+    },
+    "flex-layout.row#link__content-contact": {
+        "children": [
+            "flex-layout.col#link__content-one-contact"
+        ],
+        "props": {
+            "blockClass": "link__content"
+        }
+    },
+    "flex-layout.col#link__content-one-contact": {
+        "children": [
+            "disclosure-layout#simple-contact",
+            "disclosure-layout#simple-contact",
+            "disclosure-layout#simple-contact",
+            "disclosure-layout#simple-contact"
+        ],
+        "props": {
+            "blockClass": "link__content-onecol"
+        }
+    },
+    "disclosure-layout#simple-contact": {
+        "children": [
+            "disclosure-trigger#simple-contact",
+            "disclosure-content#simple-contact"
+        ],"props": {
+            "blockClass": "disclosure__links-content"
+    }},
+    "disclosure-trigger#simple-contact": {
+        "children": [
+            "rich-text#question__contact"
+        ],"props": {
+            "blockClass": "trigger__links-content",
+            "as": "a"
+    }
+    },
+    "disclosure-content#simple-contact": {
+        "children": [
+            "rich-text#answer_contact"
+        ],"props": {
+            "blockClass": "content__links-content"
+    }
+    },
+    "rich-text#question__contact": {
+        "props": {
+        "text": "¿Como puedes llamar a nuestros contactos?                                                                                                                 ",
+        "blockClass": "links__text-question"
+        }
+    },
+    "rich-text#answer_contact": {
+        "props": {
+        "text": "Nos puedes contactar a las líneas de Atención en: \n **Bogotá:** 745-57-77 \n **Medellín** 657-54-54",
+        "blockClass": "links__text-answer"
+    }
+    }
+    }
+

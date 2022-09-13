@@ -1,5 +1,11 @@
 {
     "store.custom#faq": {
         "path": "/preguntas-frecuentes"
+    },
+    "store.custom#contact": {
+        "path": "/contactos"
+    },
+    "store.custom#policies": {
+        "path": "/cambios"
     }
 }

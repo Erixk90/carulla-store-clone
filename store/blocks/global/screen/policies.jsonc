@@ -1,0 +1,163 @@
+{
+    "store.custom#policies": {
+        "blocks": [
+            "flex-layout.row#policies"
+        ]
+    },
+    "flex-layout.row#policies": {
+        "children": [
+            "flex-layout.col#policies"
+        ]
+    },
+    "flex-layout.col#policies": {
+        "children": [
+            "flex-layout.row#title__content-policies",
+            "flex-layout.row#category__content-policies",
+            "flex-layout.row#paragraph__content-policies",
+            "flex-layout.row#link__content-policies"
+        ],
+        "props": {
+            "blockClass": "faq__content"
+        }
+    },
+    "flex-layout.row#title__content-policies": {
+        "children": [
+            "rich-text#title-policies"
+        ],
+        "props": {
+            "blockClass": "title__content"
+        }
+    },
+    "rich-text#title-policies": {
+        "props": {
+            "text": "Centro de Ayuda",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "title__content-text"
+        }
+    },
+    "flex-layout.row#category__content-policies": {
+        "children": [
+            "rich-text#faq-policies",
+            "rich-text#policies-policies",
+            "rich-text#contact-policies",
+            "rich-text#store-policies"
+        ],
+        "props": {
+            "blockClass": "category__content"
+        }
+    },
+    "rich-text#faq-policies": {
+        "props": {
+            "text": "[Preguntas frecuentes](/preguntas-frecuentes)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+
+        }
+    },
+    "rich-text#policies-policies": {
+        "props": {
+            "text": "[Politica de cambios y devoluciones](/cambios)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "rich-text#contact-policies": {
+        "props": {
+            "text": "[Contacto](/contactos)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "rich-text#store-policies": {
+        "props": {
+            "text": "[Almacenes](/preguntas-frecuentes)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "flex-layout.row#paragraph__content-policies": {
+        "children": [
+            "rich-text#paragraph-policies"
+        ],
+        "props": {
+            "blockClass": "paragraph__content"
+        }
+    },
+    "rich-text#paragraph-policies": {
+        "props": {
+            "text": "Tenga en cuenta que para los productos de línea blanca, televisores y muebles es responsabilidad del cliente revisarlos estéticamente en el momento en que los recibe. Una vez hecha esta revisión se debe diligenciar el formato de entrega del producto que será suministrado por las personas que realizan la entrega. En este formato se confirmará que el artículo y todas sus piezas se encuentran en buen estado. Este documento debe firmarse para garantizar la satisfacción con el artículo y su estado. Una vez haya firmado dicho formato a conformidad no se recibirán reclamos por temas estéticos como rayones o golpes; por tal motivo se recomienda revisar antes de firmar a conformidad.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "paragraph__content-text"
+        }
+    },
+    "flex-layout.row#link__content-policies": {
+        "children": [
+            "flex-layout.col#link__content-one-policies"
+        ],
+        "props": {
+            "blockClass": "link__content"
+        }
+    },
+    "flex-layout.col#link__content-one-policies": {
+        "children": [
+            "disclosure-layout#simple-policies",
+            "disclosure-layout#simple-policies",
+            "disclosure-layout#simple-policies",
+            "disclosure-layout#simple-policies"
+        ],
+        "props": {
+            "blockClass": "link__content-onecol"
+        }
+    },
+    "disclosure-layout#simple-policies": {
+        "children": [
+            "disclosure-trigger#simple-policies",
+            "disclosure-content#simple-policies"
+        ],"props": {
+            "blockClass": "disclosure__links-content"
+    }},
+    "disclosure-trigger#simple-policies": {
+        "children": [
+            "rich-text#question__policies"
+        ],"props": {
+            "blockClass": "trigger__links-content",
+            "as": "a"
+    }
+    },
+    "disclosure-content#simple-policies": {
+        "children": [
+            "rich-text#answer_policies",
+            "rich-text#answer_policies2"
+        ],"props": {
+            "blockClass": "content__links-content"
+    }
+    },
+    "rich-text#question__policies": {
+        "props": {
+        "text": "¿Que politicas puedo encontrar en carulla?                                                                                                                 ",
+        "blockClass": "links__text-question"
+        }
+    },
+    "rich-text#answer_policies": {
+        "props": {
+        "text": " Politica de datos personales,"
+        ,
+        "blockClass": "links__text-answer"
+    }
+    },
+    "rich-text#answer_policies2": {
+        "props": {
+        "text": " Tratamiento de datos"
+        ,
+        "blockClass": "links__text-answer"
+    }
+    }
+    }
+
+

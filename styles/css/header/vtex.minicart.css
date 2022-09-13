@@ -5,3 +5,17 @@
 .minicartIconContainer{
     color: #fff
 }
+
+.popupContentContainer--minicart__content {
+    border-color: #f7f7f7 ;
+}
+
+.minicartContentContainer--minicart-product-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minicartTitle--minicart-product-list{
+    
+}

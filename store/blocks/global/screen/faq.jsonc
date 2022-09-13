@@ -16,74 +16,79 @@
             "flex-layout.row#paragraph__content",
             "flex-layout.row#link__content"
         ],
-        "props":{
-        "blockClass":"faq__content"}
+        "props": {
+            "blockClass": "faq__content"
+        }
     },
     "flex-layout.row#title__content": {
         "children": [
             "rich-text#title"
         ],
-        "props":{
-        "blockClass":"title__content"}
+        "props": {
+            "blockClass": "title__content"
+        }
     },
     "rich-text#title": {
         "props": {
             "text": "Centro de Ayuda",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass":"title__content-text"
+            "blockClass": "title__content-text"
         }
     },
     "flex-layout.row#category__content": {
         "children": [
-            "rich-text#faq",
-            "rich-text#policies",
-            "rich-text#contact",
-            "rich-text#store"
+            "rich-text#faq-faq",
+            "rich-text#policies-faq",
+            "rich-text#contact-faq",
+            "rich-text#store-faq"
         ],
-        "blockClass":"category__content"
-    },
-    "rich-text#faq": {
         "props": {
-            "text": "Preguntas frecuentes",
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "blockClass":"subtitle__content-text"
+            "blockClass": "category__content"
         }
     },
-    "rich-text#policies": {
+    "rich-text#faq-faq": {
         "props": {
-            "text": "Politica de cambios y devoluciones",
+            "text": "[Preguntas frecuentes](/preguntas-frecuentes)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass":"sutitle__content-text"
+            "blockClass": "subtitle__content-text"
+
         }
     },
-    "rich-text#contact": {
+    "rich-text#policies-faq": {
         "props": {
-            "text": "Contacto",
+            "text": "[Politica de cambios y devoluciones](/cambios)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass":"subtitle__content-text"
+            "blockClass": "subtitle__content-text"
         }
     },
-    "rich-text#store": {
+    "rich-text#contact-faq": {
         "props": {
-            "text": "Almacenes",
+            "text": "[Contacto](/contactos)",
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "blockClass":"subtitle__content-text"
+            "blockClass": "subtitle__content-text"
+        }
+    },
+    "rich-text#store-faq": {
+        "props": {
+            "text": "[Almacenes](/preguntas-frecuentes)",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "subtitle__content-text"
         }
     },
     "flex-layout.row#paragraph__content": {
         "children": [
-            "rich-text#paragraph"
+            "rich-text#paragraph-faq"
         ],
-        "props":{
-        "blockClass":"paragraph__content"
+        "props": {
+            "blockClass": "paragraph__content"
         }
     },
-    "rich-text#paragraph": {
+    "rich-text#paragraph-faq": {
         "props": {
             "text": "En carulla.com sabemos que la excelencia no es la mejor manera de actuar; es la única!. Por eso Queremos proveer a nuestros clientes una experiencia de compra única, estableciendo un vínculo emocional fuerte, por lo que a continuación encontrara un listado de preguntas y respuestas que le ayudaran a resolver sus inquietudes y que facilitan su compra a través de Carulla.com ya que queremos ser líderes en atención, calidez, amabilidad y vínculo de cercanía con usted.",
             "textAlignment": "CENTER",
@@ -93,17 +98,62 @@
     },
     "flex-layout.row#link__content": {
         "children": [
-            "flex-layout.col#link__content-one" /*,
-        "flex-layout.row#link__content-two",
-        "flex-layout.row#link__content-three",
-        "flex-layout.row#link__content-four",
-        "flex-layout.row#link__content-five"*/
+            "flex-layout.col#link__content-one"
         ],
-        "props":{
-        "blockClass":"link__content"
+        "props": {
+            "blockClass": "link__content"
         }
     },
     "flex-layout.col#link__content-one": {
+        "children": [
+            "disclosure-layout#simple",
+            "disclosure-layout#simple",
+            "disclosure-layout#simple",
+            "disclosure-layout#simple"
+        ],
+        "props": {
+            "blockClass": "link__content-onecol"
+        }
+    },
+    "disclosure-layout#simple": {
+        "children": [
+            "disclosure-trigger#simple",
+            "disclosure-content#simple"
+        ],"props": {
+            "blockClass": "disclosure__links-content"
+    }},
+    "disclosure-trigger#simple": {
+        "children": [
+            "rich-text#question__faq"
+        ],"props": {
+            "blockClass": "trigger__links-content",
+            "as": "a"
+    }
+    },
+    "disclosure-content#simple": {
+        "children": [
+            "rich-text#answer__faq"
+        ],"props": {
+            "blockClass": "content__links-content"
+    }
+    },
+    "rich-text#question__faq": {
+        "props": {
+        "text": "Como Realizar un cambio?                                                                                                                 ",
+        "blockClass": "links__text-question"
+        }
+    },
+    "rich-text#answer__faq": {
+        "props": {
+        "text": "**Cambio no relacionado con la garantía**.",
+        "blockClass": "links__text-answer"
+    }
+    }
+    }
+
+
+
+/*"flex-layout.col#link__content-one": {
         "children": [
             "rich-text#faq-one",
             "rich-text#faq-two",
@@ -139,5 +189,4 @@
             "textAlignment": "CENTER",
             "blockClass": "wrapper"
         }
-    }
-}
+    }*/

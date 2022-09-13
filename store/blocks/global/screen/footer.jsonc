@@ -516,7 +516,7 @@
 },
 "rich-text#answer3": {
   "props": {
-    "text": "[Política de cambio y devoluciones](/preguntas-frecuentes)",
+    "text": "[Política de cambio y devoluciones](/cambios)",
     "blockClass": "subgroup__text-information"
   }
 },
