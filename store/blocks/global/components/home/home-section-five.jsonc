@@ -24,7 +24,6 @@
             "blockClass": "content__slider-wines"
         }
     },
-
     "slider-layout#section__five-wines": {
         "children": [
             "info-card#wine",
@@ -50,12 +49,11 @@
             "showNavigationArrows": "always"
         }
     },
-
     "rich-text#title__section-five": {
         "props": {
             "text": "3 por 2 en todos los vinos",
             "textAlignment": "CENTER",
-            "blockClass":"title__section-five"
+            "blockClass": "title__section-five"
         }
     },
     "info-card#wine": {
@@ -67,7 +65,7 @@
             "subhead": "Santa Julia marca exclusiva <br> V.TTO reserva Malbec  Santa <br> Julia Marca exclusiva <br>$55.900<br>$27.950",
             "callToActionText": "Agregar",
             "textAlignment": "left",
-            "blockClass":"info__card-wine"
+            "blockClass": "info__card-wine"
         }
     }
 }

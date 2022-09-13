@@ -1,0 +1,11 @@
+.quantitySelectorButton--minicart-quantity-selector{
+color: var(----buttons-descriptions);
+}
+
+.productPrice {
+    color: #5a5a5a;
+    font-weight: 700;
+    font-family: 'Cabin' !important;
+    font-size: 14px;
+    margin: 5px 5px;
+}

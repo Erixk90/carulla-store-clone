@@ -6,3 +6,36 @@
 .flexRowContent--minicart__row-desktop{
     display: flex;
 }
+
+.flexCol--minicart-empty-flexcol{
+    width: 95%;
+}
+
+.flexColChild--minicart-empty-flexcol{
+color: #8DBF44;
+
+}
+
+.flexRow--minicart__footer{
+    height: 20%;
+}
+
+.flexRow--minicart__row-desktop{
+    display: flex;
+}
+
+.flexRowContent--minicart__row-desktop{
+display: flex;
+align-items: flex-start;
+margin: 5px 5px;
+border: solid 0.5px #f7f7f7;
+box-shadow: 10px 10px 5px -3px rgba(229,229,229,1);
+min-height: 150px;
+
+}
+
+.flexColChild--minicart__col-info{
+    font-size: 14px;
+    color: #5a5a5a;
+    font-family: 'Cabin' !important;
+}

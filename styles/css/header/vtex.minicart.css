@@ -1,17 +1,30 @@
-.cartIcon{
+.cartIcon {
     color: #fff
 }
 
-.minicartIconContainer{
+.minicartIconContainer {
     color: #fff
 }
 
 .popupContentContainer--minicart__content {
-    border-color: #f7f7f7 ;
+    border-color: #f7f7f7;
 }
 
-.minicartContentContainer--minicart-product-list{
+.minicartContentContainer--minicart-product-list {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.minicartProductListContainer--minicart-product-list-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.minicartSideBarContentWrapper--minicart__content{
+   width: 95%;
+   margin: 0 auto;
 }

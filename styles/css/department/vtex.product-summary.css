@@ -14,4 +14,7 @@
     max-height: 400px;
 }
 
-
+.imageStackContainer{
+    max-width:  170px;
+    max-height: 170px;
+}

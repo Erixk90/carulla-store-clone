@@ -9,7 +9,7 @@
 "minicart.v2": {
     "props": {
         "MinicartIcon": "icon#header__top-minicart",
-        "variation": "popup",
+        "variation": "drawer",
         "itemCountMode": "total",
         "blockClass":"minicart__content"
     },
@@ -127,7 +127,7 @@
 
 "rich-text#minicart__empty-rich-text": {
     "props": {
-        "text": "Hola, Agrega los mejores productos a tu cesta",
+        "text": "En Carulla tenemos miles de productos para que disfrutes los mejores placeres todos los días.",
         "blockClass":"subgroup__text-information"
     }
 },
