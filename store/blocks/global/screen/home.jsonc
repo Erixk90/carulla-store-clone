@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "whatsapp-button",
       "mega-menu#home_menu",
       "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
@@ -17,6 +18,15 @@
     ],
     "props": {
       "blockClass": "home__container"
+    }
+  },
+
+  "whatsapp-button": {
+    "props": {
+      "logos": "assets/img/whatsapp-logo.webp",
+      "phone": "7777777777",
+      "message": "VTEX U RLZ",
+      "blockClass":"whatsapp__button"
     }
   },
   "mega-menu#home_menu": {
