@@ -22,7 +22,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: baseline;
+    
 }
 .minicartSideBarContentWrapper--minicart__content{
    width: 95%;
