@@ -4,7 +4,9 @@
 }
 
 .headerRowContainer--header__top{
-    color:#fff
+    color:#fff;
+    display: flex;
+    justify-content: center;
 }
 
 

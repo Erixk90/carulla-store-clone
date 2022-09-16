@@ -57,7 +57,8 @@
     "vtex.store-form": "0.x",
     "vtex.store-newsletter": "1.x",
     "vtex.checkout-summary": "0.x",
-    "itglobers.whatsapp-button": "0.x"
+    "itglobers.whatsapp-button": "0.x",
+    "itglobers.bullets-diagramation": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x"

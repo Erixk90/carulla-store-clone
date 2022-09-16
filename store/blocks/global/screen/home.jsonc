@@ -5,6 +5,7 @@
       "mega-menu#home_menu",
       "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
+      "list-context.bullet-group",
       "flex-layout.row#section__two-categories",
       "flex-layout.row#section__two-categories2",
       "flex-layout.row#section__three-yourmarket",
@@ -27,6 +28,60 @@
       "phone": "7777777777",
       "message": "VTEX U RLZ",
       "blockClass":"whatsapp__button"
+    }
+  },
+
+  "list-context.bullet-group":{
+    "title":"Contexto de lista de Bullets",
+    "children":["slider-layout#bullet-group"],
+    "props":{
+      "bullets":[
+        {
+      "image":"assets/img/queso1.png",
+      "titleBullet": "Queso Importante",
+      "link":{
+        "url":"/quesito"
+        }
+      },
+      {
+        "image":"assets/img/queso2.png",
+        "titleBullet": "Queso principal",
+        "link":{
+          "url":"/quesito22"
+          }
+        },
+        {
+          "image":"assets/img/queso2.png",
+          "titleBullet": "Queso principal",
+          "link":{
+            "url":"/quesito23"
+            }
+          },
+          {
+        "image":"assets/img/queso2.png",
+        "titleBullet": "Queso principal",
+        "link":{
+          "url":"/quesito24"
+          }
+        },
+        {
+          "image":"assets/img/queso2.png",
+          "titleBullet": "Queso principal",
+          "link":{
+            "url":"/quesito25"
+            }
+          }
+  ]
+    }
+  },
+  "slider-layout#bullet-group":{
+    "props":{
+      "itemsPerPage":{
+      "desktop":5,
+      "tablet":5,
+      "mobile":5
+      },
+      "infinite":true
     }
   },
   "mega-menu#home_menu": {
