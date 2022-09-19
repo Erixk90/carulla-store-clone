@@ -37,40 +37,63 @@
     "props":{
       "bullets":[
         {
-      "image":"assets/img/queso1.png",
-      "titleBullet": "Queso Importante",
-      "link":{
-        "url":"/quesito"
-        }
+          "image":"assets/img/queso1.png",
+          "titleBullet": "Queso Importante",
+          "link":{
+                  "url":"/quesito"},
+          "width":80,
+          "heigth":80
       },
       {
         "image":"assets/img/queso2.png",
         "titleBullet": "Queso principal",
         "link":{
           "url":"/quesito22"
-          }
+          }, "width":80,
+          "heigth":80
         },
         {
-          "image":"assets/img/queso2.png",
+          "image":"assets/img/queso3.png",
           "titleBullet": "Queso principal",
           "link":{
             "url":"/quesito23"
-            }
+            }, "width":80,
+            "heigth":80
           },
           {
         "image":"assets/img/queso2.png",
         "titleBullet": "Queso principal",
         "link":{
           "url":"/quesito24"
-          }
+          }, "width":80,
+          "heigth":80
         },
         {
           "image":"assets/img/queso2.png",
           "titleBullet": "Queso principal",
           "link":{
             "url":"/quesito25"
-            }
-          }
+            },
+            "width":80,
+            "heigth":80
+          }, 
+          {
+            "image":"assets/img/queso2.png",
+            "titleBullet": "Queso principal",
+            "link":{
+              "url":"/quesito24"
+              }, "width":80,
+              "heigth":80
+            },
+            {
+              "image":"assets/img/queso2.png",
+              "titleBullet": "Queso principal",
+              "link":{
+                "url":"/quesito25"
+                },
+                "width":80,
+                "heigth":80
+              }
   ]
     }
   },
@@ -78,11 +101,22 @@
     "props":{
       "itemsPerPage":{
       "desktop":5,
-      "tablet":5,
-      "mobile":5
+      "tablet":2,
+      "mobile":3
       },
-      "infinite":true
+      
+      "infinite": true,
+      "blockClass": "",
+      "autoplay": {
+          "timeout": 3000,
+          "stopOnHover": true
+      },
+      "arrowSize": 25,
+      "centerMode": "disabled",
+      "showNavigationArrows": "always",
+      "fullWidth":false
     }
+
   },
   "mega-menu#home_menu": {
     "props": {

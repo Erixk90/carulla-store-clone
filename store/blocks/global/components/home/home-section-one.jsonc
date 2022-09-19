@@ -45,16 +45,7 @@
             "arrowSize": 25
         }
     },
-    /*"flex-layout.col#section__one-home":{
-        "children": ["image#section__one-principal"]
-    },
-
-    "image#section__one-principal": {
-        "props": {
-            "src": "assets/img/static__img1.jpg"
-        }
-    },
-
+    
     /* Secondary children*/
     "image#initial__img1": {
         "props": {

@@ -1,0 +1,10 @@
+.bullet__item--image {
+    width: 80px;
+  
+}
+
+.bullet__item--title,
+.bullet__item--link {
+    text-decoration: none;
+    color: #5a5a5a;
+}
