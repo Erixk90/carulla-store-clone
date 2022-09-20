@@ -10,6 +10,7 @@
     "flex-layout.col#section__four-bestsellers": {
         "children": [
             "rich-text#title__section-four",
+            "list-context.bullet-group",
             "flex-layout.row#content__slider-bestsellers"
         ],
         "props": {

@@ -5,7 +5,6 @@
       "mega-menu#home_menu",
       "flex-layout.row#welcome__section",
       "flex-layout.row#section__one-homeUp",
-      "list-context.bullet-group",
       "flex-layout.row#section__two-categories",
       "flex-layout.row#section__two-categories2",
       "flex-layout.row#section__three-yourmarket",

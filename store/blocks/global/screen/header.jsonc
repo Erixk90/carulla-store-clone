@@ -139,7 +139,7 @@
   },
   "rich-text#header-top": {
     "props": {
-      "text": " ¿Como quieres recibir tu pedido?",
+      "text": " [¿Como quieres recibir tu pedido?](/construccion)",
       "color": "c-on-emphasys",
       "blockClass": "header__top-paragraph"
     }

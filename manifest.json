@@ -58,10 +58,12 @@
     "vtex.store-newsletter": "1.x",
     "vtex.checkout-summary": "0.x",
     "itglobers.whatsapp-button": "0.x",
-    "itglobers.bullets-diagramation": "0.x"
+    "itglobers.bullets-diagramation": "0.x",
+    "itglobers.add-to-cart-info": "0.x"
   },
   "peerDependencies": {
-    "vtex.mega-menu": "2.x"
+    "vtex.mega-menu": "2.x",
+    "vtex.questions-and-answers": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

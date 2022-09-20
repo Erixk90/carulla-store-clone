@@ -53,6 +53,7 @@
 },"minicart-product-list": {
     "blocks": [
         "product-list#minicart"
+        
     ],
     "props": {
         "blockClass": "minicart-product-list-container"

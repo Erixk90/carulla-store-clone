@@ -1,12 +1,24 @@
-.pargraph{
+.pargraph {
     font-family: Cabin;
 }
 
 
 .paragraph--header__top-paragraph {
-    color: #fff;
+
     margin: 5px 10px;
     font-weight: 500;
-   
-    
+    text-decoration: none;
+
+
+}
+
+.link--header__top-paragraph {
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.link--header__top-paragrap:hover {
+    color: #e5e5e5;
+    text-decoration: underline;
 }

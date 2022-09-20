@@ -34,10 +34,56 @@
     "search-result-layout.desktop#department": {
         "children": [
             "flex-layout.row#department__breadcrumb",
-            "flex-layout.row#department__results"
+            "flex-layout.row#department__results",
+            "flex-layout.row#quickview__modal"
         ],
         "props": {
             "blockClass": "department-desktop__search-result-layout"
+        }
+    },
+    "flex-layout.row#quickview__modal": {
+        "children": [
+            "modal-trigger#modal__event"
+        ],
+        "props":{
+            "blockClass":"modal__trigger-event"
+        }
+    },
+    "modal-trigger#modal__event": {
+        "children": [
+            "modal-layout#home__modal-event"
+        ],
+        "props": {
+            "trigger": "event",
+            "customPixelEventName": "addToCart",
+            "blockClass":"home__modal-event-trigger"
+        }
+    },
+    "rich-text#example": {
+        "props": {
+            "text": "Click me"
+        }
+    },
+    "modal-layout#home__modal-event": {
+        "children": [
+            "flex-layout.row#trigger__add-to-cart-info"
+        ],"props": {
+            "blockClass": "home__modal-event-layout"
+        }
+    },
+
+    "flex-layout.row#trigger__add-to-cart-info":{
+        "children":[
+            "flex-layout.col#trigger__add-to-cart-info"
+        ],"props":{
+            "blockClass":"row-trigger__add-to-cart-info"
+        }
+    },
+    "flex-layout.col#trigger__add-to-cart-info":{
+        "children":[
+            "add-to-cart-info"
+        ],"props":{
+            "blockClass":"col-trigger__add-to-cart-info"
         }
     },
     "flex-layout.row#department__breadcrumb": {
