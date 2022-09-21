@@ -61,7 +61,8 @@
     "itglobers.bullets-diagramation": "0.x",
     "itglobers.add-to-cart-info": "0.x",
     "itglobers.custom-department-search": "0.x",
-    "itglobers.pdf-reader": "0.x"
+    "itglobers.pdf-reader": "0.x",
+    "itglobers.quick-order": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x",

@@ -7,6 +7,7 @@
   },
   "footer-layout.desktop": {
     "children": [
+      "quick-order",
       "flex-layout.row#footer__desktop-top",
       "flex-layout.row#footer__desktop-middle",
       "flex-layout.row#footer__desktop-bottom"

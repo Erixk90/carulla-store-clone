@@ -119,6 +119,7 @@
             // "search-content#phone"
             "flex-layout.col#department__results-filter",
             "flex-layout.col#department__results-content"
+
         ],
         "props": {
             "blockClass": "department__results-content"
@@ -207,6 +208,9 @@
             "icon-menu"
         ]
     }
+
+
+
     /*,
     "rich-text#desktop-result": {
         "props": {
