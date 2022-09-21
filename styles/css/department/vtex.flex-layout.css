@@ -22,3 +22,20 @@
     justify-content: center;
     align-items: center;
     }
+
+.flexRow--row-trigger__add-to-cart-info{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColChild--col-trigger__add-to-cart-info{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+

@@ -82,7 +82,8 @@
     },
     "flex-layout.row#paragraph__content": {
         "children": [
-            "rich-text#paragraph-faq"
+            "pdf-reader"
+           // "rich-text#paragraph-faq"
         ],
         "props": {
             "blockClass": "paragraph__content"
@@ -148,10 +149,16 @@
         "text": "**Cambio no relacionado con la garantía**.",
         "blockClass": "links__text-answer"
     }
+    },
+    "pdf-reader":{
+    "props":{
+        "pdfUrl": "assets/documents/archivo.pdf",
+        "width": 500,
+        "height": 800
     }
     }
 
-
+}
 
 /*"flex-layout.col#link__content-one": {
         "children": [

@@ -81,11 +81,20 @@
     },
     "flex-layout.col#trigger__add-to-cart-info":{
         "children":[
+            "modal-header#add-to-cart-info",
             "add-to-cart-info"
         ],"props":{
             "blockClass":"col-trigger__add-to-cart-info"
         }
     },
+
+    "modal-header#add-to-cart-info":{
+        "props":{
+            "showCloseButton":true,
+            "iconCloseSize":24
+        }
+    },
+
     "flex-layout.row#department__breadcrumb": {
         "children": [
             "flex-layout.col#department__breadcrumb"
@@ -97,7 +106,8 @@
     },
     "flex-layout.col#department__breadcrumb": {
         "children": [
-            "breadcrumb.search"
+            "breadcrumb.search",
+            "department-search"
         ],
         "props": {
             "blockClass": "department__breadcrumb-content-col"
