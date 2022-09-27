@@ -1,0 +1,17 @@
+{
+
+    
+    "footer-layout.mobile": {
+      "children": [
+        "quick-order",
+        "flex-layout.row#footer__desktop-top",
+        "flex-layout.row#footer__desktop-middle",
+        "flex-layout.row#footer__desktop-bottom"
+      ],
+      "props": {
+        "blockClass": "footer-layout-cascade"
+      }
+    }
+    
+  
+  }

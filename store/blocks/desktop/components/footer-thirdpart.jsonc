@@ -1,0 +1,100 @@
+{
+     
+  //-----------------Start one footer row three group
+  "flex-layout.row#footer__desktop-bottom": {
+    "children": [
+      "flex-layout.col#bottom__footer-first",
+      "flex-layout.col#bottom__footer-second"
+    ],
+    "props": {
+      "blockClass": "bottom__footer"
+    }
+  },
+  "flex-layout.col#bottom__footer-first": {
+    "children": [
+      "flex-layout.row#section__footer-first"
+    ]
+  },
+  "flex-layout.row#section__footer-first": {
+    "children": [
+      "flex-layout.col#first__section-group-one",
+      "flex-layout.col#first__section-group-two"
+    ],
+    "props": {
+      "blockClass": "first__section-group"
+    }
+  },
+  "flex-layout.col#first__section-group-one": {
+    "children": [
+      "rich-text#visit-us"
+    ],
+    "props": {
+      "blockClass": "first__section-group-one-text"
+    }
+  },
+  "rich-text#visit-us": {
+    "props": {
+      "blockClass": "visita",
+      "text": "Visita también:",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  },
+  "flex-layout.col#first__section-group-two": {
+    "children": [
+      "flex-layout.row#first__section-group-two-logos"
+    ]
+  },
+  "flex-layout.row#first__section-group-two-logos": {
+    "children": [
+      "logo#logo__one",
+      "logo#logo__two",
+      "logo#logo__three",
+      "logo#logo__four"
+    ],
+    "props": {
+      "blockClass": "first__section-group-two-logos"
+    }
+  },
+  "logo#logo__one": {
+    "props": {
+      "blockClass": "logo__one",
+      "url": "assets/img/exito.svg"
+    }
+  },
+  "logo#logo__two": {
+    "props": {
+      "blockClass": "logo__two",
+      "url": "assets/img/viva.svg"
+    }
+  },
+  "logo#logo__three": {
+    "props": {
+      "blockClass": "logo__three",
+      "url": "assets/img/super-inter.svg"
+    }
+  },
+  "logo#logo__four": {
+    "props": {
+      "blockClass": "logo__four",
+      "url": "assets/img/surtimax.svg"
+    }
+  },
+  "flex-layout.col#bottom__footer-second": {
+    "children": [
+      "rich-text#footer__text-rigths"
+    ],
+    "props": {
+      "blockClass": "text-rigths"
+    }
+  },
+  "rich-text#footer__text-rigths": {
+    "props": {
+      "blockClass": "rights",
+      "text": "2022 Carulla ® marca registrada de Grupo Éxito S.A. NIT 890900608-9. Todos los derechos reservados",
+      "textAlignment": "center",
+      "textPosition": "center"
+    }
+  }
+  //-----------------End one footer row three group
+}

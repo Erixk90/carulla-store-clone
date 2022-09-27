@@ -1,0 +1,27 @@
+{
+    "header-layout.mobile": {
+        "title": "Header mobile",
+        "children": [
+            "header-row#header-top"
+        ],
+        "props": {
+            "blockClass": "header__mobile-content"
+        }
+    },
+    "header-row#header-top": {
+        "title": "Header  top",
+        "children": [
+            "mega-menu-trigger-btn",
+            "logo#header__top-logo",
+            "icon#header__top-bell",
+            "rich-text#header-top",
+            "search-bar#header__search",
+            "login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "header__top",
+            "fullWidth": true
+        }
+    }
+}

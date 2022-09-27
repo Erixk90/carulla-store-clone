@@ -1,0 +1,192 @@
+{
+     //-----------------Start disclosure footer row second group
+  "flex-layout.row#footer__desktop-middle": {
+    "children": [
+      "disclosure-layout#desktop__middle-content"
+    ],
+    "props": {
+      "blockClass": "footer__desktop-middle"
+    }
+  },
+  "disclosure-layout#desktop__middle-content": {
+    "children": [
+      "disclosure-trigger#information",
+      "disclosure-content#information"
+    ],
+    "props": {
+      "blockClass": "disclosure__desktop__middle-content"
+  }
+  },
+  "disclosure-trigger#information": {
+    "children": [
+      "flex-layout.row#container__text-information",
+      "flex-layout.row#container__disclosure-information"
+    ],
+    "props": {
+      "as": "h4",
+      "blockClass": "container__trigger-information"
+    }
+  },"flex-layout.row#container__text-information": {
+    "children": [
+      "rich-text#information",
+      "disclosure-state-indicator"
+    ],
+    "props": {
+      "blockClass": "container__text-information"
+    }
+  },
+  "rich-text#information": {
+    "props": {
+      "text": "Más Información",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "principal-text"
+    }
+  },
+  
+  "flex-layout.row#container__disclosure-information": {
+    "children": [
+      "flex-layout.col#container__disclosure-information-one",
+      "flex-layout.col#container__disclosure-information-two",
+      "flex-layout.col#container__disclosure-information-three"
+    ],
+    "props": {
+      "blockClass": "container__disclosure-information-title"
+    }
+  },
+
+  "flex-layout.col#container__disclosure-information-one":{
+    "children":[
+      "flex-layout.row#container__text-information-help"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+  "flex-layout.row#container__text-information-help":{
+    "children":[
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+  "rich-text#first__inner-text": {
+    "props": {
+      "text": "Centro de ayuda",
+      "blockClass": "principal-text"
+    }
+  },
+  "flex-layout.col#container__disclosure-information-two":{
+    "children":[
+      "flex-layout.row#container__text-information-interest"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+  "flex-layout.row#container__text-information-interest":{
+    "children":[
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ], "props":{
+      "blockClass":"disclosure-information-one"
+    }
+  },
+  "flex-layout.col#container__disclosure-information-three":{
+    "children":[
+      "flex-layout.row#container__text-information-legal"
+    ],"props": {
+      "blockClass": "disclosure-information-three"
+    }
+  },
+  "flex-layout.row#container__text-information-legal":{
+    "children":[
+      "rich-text#first__inner-text",
+      "disclosure-state-indicator"
+    ],"props": {
+      "blockClass": "disclosure-information-one"
+    }
+  },
+
+  //------------trigger one--------------
+
+  "disclosure-content#information": {
+    "children": [
+      "flex-layout.row#disclosure__content-information-container"
+    ],
+    "props": {
+      "blockClass": "disclosure__content-information"
+    }
+  },
+"flex-layout.row#disclosure__content-information-container": {
+  "children": [
+    "flex-layout.col#bottom__content-first",
+    "flex-layout.col#bottom__content-first",
+    "flex-layout.col#bottom__content-first"
+  ],
+  "props": {
+    "blockClass": "disclosure__content-information"
+  }
+},
+"flex-layout.col#bottom__content-first": {
+  "children": [
+    "rich-text#answer1",
+    "rich-text#answer2",
+    "rich-text#answer3",
+    "rich-text#answer4",
+    "rich-text#answer5"
+  ],
+  "props": {
+    "blockClass": "bottom__content-first"
+  }
+},
+"rich-text#answer1": {
+  "props": {
+    "text": "[Chat](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer2": {
+  "props": {
+    "text": "[Preguntas Frecuentes](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer3": {
+  "props": {
+    "text": "[Política de cambio y devoluciones](/cambios)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer4": {
+  "props": {
+    "text": "[Contacto](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+"rich-text#answer5": {
+  "props": {
+    "text": "[Almacenes](/preguntas-frecuentes)",
+    "blockClass": "subgroup__text-information"
+  }
+},
+
+"disclosure-state-indicator": {
+  "props": {
+    "Show": "icon-caret#state-indicator-down",
+    "Hide": "icon-caret#state-indicator-up",
+    "blockClass": "state--disclosure"
+  }
+},
+"icon-caret#state-indicator-down": {
+  "props": {
+    "id": "nav-caret--down"
+  }
+},
+"icon-caret#state-indicator-up": {
+  "props": {
+    "id": "nav-caret--up"
+  }
+}
+
+  //-----------------End disclosure footer row second group
+}
