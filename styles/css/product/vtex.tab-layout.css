@@ -1,0 +1,5 @@
+.listContainer--product__tabs-list{
+    display: flex;
+    flex-direction: column;
+}
+

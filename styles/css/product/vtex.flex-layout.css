@@ -1,0 +1,28 @@
+.flexCol--Product__info-image{
+    border-left: solid #e5e5e5 1px;
+    width: 90%;
+    -webkit-box-shadow: 6px 0px 5px 1px rgba(229,229,229,0.68);
+-moz-box-shadow: 6px 0px 5px 1px rgba(229,229,229,0.68);
+box-shadow: 6px 0px 5px 1px rgba(229,229,229,0.68);
+border-top: none;
+}
+
+
+
+.flexRowContent--Product__info-row{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.stretchChildrenWidth {
+    width: auto;
+}
+
+.flexColChild--Product__info-data {
+    width: 60%;
+    margin: 5px auto;
+
+}
