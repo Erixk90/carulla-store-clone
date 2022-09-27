@@ -39,3 +39,14 @@
     flex-wrap: wrap;
 }
 
+
+.flexColChild--department__breadcrumb-content-col {  
+    display: flex;
+}
+
+.flexColChild--department__department-search{
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -106,13 +106,37 @@
     },
     "flex-layout.col#department__breadcrumb": {
         "children": [
-            "breadcrumb.search",
-            "department-search"
+            "flex-layout.col#department__breadcrumb-search",
+            "flex-layout.col#department__department-search"
         ],
         "props": {
             "blockClass": "department__breadcrumb-content-col"
         }
     },
+
+    "flex-layout.col#department__breadcrumb-search":{
+        "children":[
+            "breadcrumb.search"
+        ],
+        "props": {
+            "blockClass": "department__breadcrumb-search"
+        }
+    },
+
+
+    "flex-layout.col#department__department-search":{
+        "children":[
+            "department-search"
+        ],
+        "props": {
+            "blockClass": "department__department-search"
+        }
+    },
+    
+
+
+
+
     "flex-layout.row#department__results": {
         "title": "Department Results",
         "children": [
