@@ -22,3 +22,9 @@
     color: #e5e5e5;
     text-decoration: underline;
 }
+
+.paragraph--richtextclass{
+    font-size: 40px;
+    color:red;
+    background-color: blue;
+}

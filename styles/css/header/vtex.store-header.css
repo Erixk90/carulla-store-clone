@@ -7,6 +7,7 @@
     color:#fff;
     display: flex;
     justify-content: center;
+    height: 44px;
 }
 
 
@@ -17,4 +18,10 @@
 
 .headerRowContainer--header__top{
     background-color: var(--green-offers)
+}
+
+.headerRowContainer--header__top-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

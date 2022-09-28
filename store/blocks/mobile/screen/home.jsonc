@@ -2,11 +2,10 @@
     "responsive-layout.mobile": {
         "title": "Home Principal",
         "props": {
-            "blockClass": "home__container"
+            "blockClass": "home__container-mobile"
         },
         "children": [
             "whatsapp-button",
-            "mega-menu#home_menu",
             "flex-layout.row#welcome__section",
             "flex-layout.row#section__one-homeUp",
             "flex-layout.row#section__two-categories",

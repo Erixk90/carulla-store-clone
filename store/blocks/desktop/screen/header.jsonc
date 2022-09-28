@@ -14,15 +14,14 @@
           "blockClass": "sticky-container"
         },
         "children": [
-          "sticky-layout#links-menu",
-          "sticky-layout#main-menu",
           "notification.bar"
+          ,"sticky-layout#links-menu"
+         //"sticky-layout#main-menu" => no renderiza nada
         ]
       },
-      
+
       "sticky-layout#links-menu": { //
         "children": [
-          //"header-row#header-top"
           "flex-layout.row#4-desktop",
           "flex-layout.row#mega-menu"
         ]

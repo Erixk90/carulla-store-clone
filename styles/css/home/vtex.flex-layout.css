@@ -35,8 +35,10 @@
 }
 
 .flexRowContent--section__two-categories-container-one{
-    width: 1280px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .flexRow--section__three-yourmarket-content{

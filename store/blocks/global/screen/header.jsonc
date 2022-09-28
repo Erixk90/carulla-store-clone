@@ -4,6 +4,7 @@
     "blocks": [
       "header-layout.desktop",
       "header-layout.mobile"
+      
     ],
     "props": {
       "blockClass": "header__content"
@@ -14,6 +15,7 @@
     "blocks": [
       "header-layout.desktop",
       "header-layout.mobile"
+      
     ],
     "props": {
       "blockClass": "header__full-content"

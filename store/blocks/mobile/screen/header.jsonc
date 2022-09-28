@@ -2,26 +2,147 @@
     "header-layout.mobile": {
         "title": "Header mobile",
         "children": [
-            "header-row#header-top"
+            "header-row#header__mobile-one",
+            "header-row#header__mobile-two"
         ],
         "props": {
-            "blockClass": "header__mobile-content"
+            "blockClass": "header__mobile-content",
+            "fullwidth": true
         }
     },
-    "header-row#header-top": {
+    "header-row#header__mobile-one": {
+        "children": [
+            "drawer#header__mobile-menu",
+            "logo#header__top-logo",
+            "search-bar#header__search",
+            "header-spacer",
+            "login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "header__mobile-one"
+        }
+    },
+    "drawer#header__mobile-menu": {
+        "children": [
+            "mega-menu#mobile"
+        ],
+        "blocks": [
+            "drawer-header#drawer__content"
+        ]
+    },
+    "mega-menu#mobile": {
+        "props": {
+            "blockClass": "mega-menu__mobile",
+            "orientation": "vertical",
+            "openOnly": "vertical"
+        }
+    },
+    "drawer-header#drawer__content": {
+        "children": [
+            "flex-layout.row#drawer__content-header"
+        ]
+    },
+    "flex-layout.row#drawer__content-header": {
+        "children": [
+            "flex-layout.col#mega-menu__back-button",
+            "flex-layout.col#drawer__close-button"
+        ],
+        "props": {
+            "blockClass": "drawer-header",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#drawer__close-button": {
+        "children": [
+            "drawer-close-button"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "right"
+        }
+    },
+    "flex-layout.col#mega-menu__back-button": {
+        "children": [
+            "mega-menu-go-back-btn"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "left",
+            "paddingLeft": 4
+        }
+    },
+    "rich-text#mobile": {
+        "props": {
+            "text": "aqui va el mobile de tu vida",
+            "blockClass": "richtextclass"
+        }
+    },
+
+    "header-row#header__mobile-two": {
+        "children": [
+            "icon#header__top-bell",
+            "rich-text#header-top"
+        ],
+        "props": {
+          "blockClass": "header__mobile-two"
+        }
+      }
+      
+    /*
+
+
+    "header-row#header-top-mobile": {
         "title": "Header  top",
+        "children": [
+            "header-row#header__mobile-one",
+            "header-row#header__mobile-two",
+            "header-row#header__mobile-three"
+        ],
+        "props": {
+            "blockClass": "header__top-mobile",
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#header-top-mobile":{
+        "title": "Header  top",
+        "children": [
+            
+        ],
+        "props": {
+            "blockClass": "header__top-mobile-col",
+            "fullWidth": true
+        }
+    },
+
+    "header-row#header__mobile-one": {
+        "children": [
+            //v"notification.bar"
+        ],
+        "props": {
+            "blockClass": "header__mobile-one"
+        }
+    },
+    "header-row#header__mobile-two": {
         "children": [
             "mega-menu-trigger-btn",
             "logo#header__top-logo",
-            "icon#header__top-bell",
-            "rich-text#header-top",
             "search-bar#header__search",
             "login",
             "minicart.v2"
         ],
         "props": {
-            "blockClass": "header__top",
-            "fullWidth": true
+            "blockClass": "header__mobile-two"
+        }
+    },
+    "header-row#header__mobile-three": {
+        "children": [],
+        "props": {
+            "blockClass": "header__mobile-three"
         }
     }
+   */
 }
