@@ -24,3 +24,12 @@
     max-height: 500px;
     transition: max-height .25s ease-in;
 }
+
+
+/* <---------mobile styles---------------> */
+
+@media screen and (max-width: 487px){
+
+
+    
+}

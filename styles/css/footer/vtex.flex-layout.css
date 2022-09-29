@@ -19,13 +19,14 @@ justify-content: center;
 
 .flexRow--footer__desktop-top  , .flexRowContent--bottom__footer{
     background-color: #efefef;
-    width: 100%;
     margin: 0 auto;
 }
 
 .flexRowContent--container__information{
     display: flex;
     align-items: center;
+    height: 40px;
+    margin: 0 10px;
 }
 
 .flexColChild--footer__desktop-contact{
@@ -91,7 +92,6 @@ gap:15px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 140%;
 }
 
 .flexColChild--text-rigths{
@@ -102,8 +102,10 @@ gap:15px;
 }
 
 .flexRow--bottom__footer{
-    width: 100%;
     background-color: #efefef;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .flexCol--bottom__content-first{
@@ -156,23 +158,20 @@ gap:15px;
 .flexRowContent--container__text-information {
     display: flex;
     justify-content: center;
-    max-width: 172px;
-    margin: auto;
     margin: auto;
     align-items: center;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
     margin-bottom: -1px;
     z-index: 2;
     background: #fff;
-    border: 1px solid #ededed;
+   /* border: 1px solid #ededed;*/
     border-bottom: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     padding: 4px 20px;
     color: #000;
     transform: translateY(0px);
+    height: 50px;
+    width: 153px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .flexRowContent--container__text-information :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
@@ -232,4 +231,71 @@ gap:15px;
     background-color: #fff;
     display: flex;
     justify-content: center;
+}
+
+.flexCol--bottom__footer-first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* <-------------------mobile styles--------------------> */
+
+@media screen and (max-width: 487px){
+
+.flexCol--footer__desktop-suscribe{
+    margin-bottom: 25px;
+}
+
+.flexRowContent--form__suscribe-data{
+    display: flex;
+    flex-direction: row;
+    gap:0.1px;
+    width: 97%;
+}
+
+.flexCol--footer__desktop-app{
+    padding-left: 0;
+    margin: 10px 1px 10px 1px;
+}
+
+.flexRow--container__text-information{
+    display: none;
+}
+
+.flexRowContent--container__disclosure-information-title
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    width: 97%;
+}
+
+.flexRowContent--footer__desktop-middle.stretchChildrenWidth {
+margin: 0px;
+}
+
+.flexRow--footer__desktop-middle{
+    background-color: #fff;
+}
+
+.flexRowContent--first__section-group{
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.flexRowContent--first__section-group-two-logos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+    flex-wrap: wrap; /*si le quito esto vuelve a colocarse transversal y se expande por toda la pantalla*/
+    flex-direction: row;
+   
+}
 }

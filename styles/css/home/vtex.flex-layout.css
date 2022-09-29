@@ -1,19 +1,19 @@
 
 .flexRow--section__one-slider__container{
-    width: 1280px;
+    width: 97%;
 }
 
 .flexRow--section__one-homeup-slider-content{
-    width: 1280px;
+    width: 97%;
 }
 
 .flexRow--section__one-homeup-slider-content{
-    max-width: none;
+    max-width: 97%;
     margin: 0 auto;
 }
 /* ---------------Categories fist group----------------*/
 .flexRow--section__two-categories{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
     
 }
@@ -42,7 +42,7 @@
 }
 
 .flexRow--section__three-yourmarket-content{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
 }
 
@@ -57,28 +57,130 @@
 }
 
 .flexRow--section__four-bestsellers-content{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
 }
 .flexRow--section__five-wines-content{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
 }
 
 .flexRowContent--section__six-yourhome-content{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
     border-bottom: #efefef solid 1px;
    
 }
 
 .flexRow--section__seven-monthsproducts-content{
-    width: 1280px;
+    width: 97%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
 .flexColChild--bottom__content-first {
     margin: 0 auto;
+
+}
+/* <---------mobile styles---------------> */
+
+.flexRow--image__welcome-content{
+    min-width: 265px;
+    width: 97%;
+    margin: auto
+}
+
+
+@media screen and (max-width: 487px){
+
+    .flexRow--section__one-homeup-slider-content{
+    min-width: 260px;
+
+
+    }
+
+.flexRowContent--section__two-categories-mobile{
+    width: 97%;
+    display: flex;
+    margin: 7px;
+}
+
+.flexRow--section__three-yourmarket-container-groups{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.flexRowContent--market__group-two{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.stretchChildrenWidth {
+    margin: 5px;
+    width: none;
+}
+
+.flexRow--section__four-bestsellers-content{
+    min-width: 260px;
+    width: 97%;
+
+}
+
+.flexRow--section__five-wines-content{
+    min-width: 260px;
+    
+}
+
+.flexRowContent--section__three-yourmarket-container-groups{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--content__group-yourhome{
+    display:flex ;
+    flex-wrap: nowrap;
+}
+.flexColChild--six__yourhome-category{
+    min-width: 50px;
+
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexRowContent--content__group-seven-monthsproducts{
+min-width: 50px;}
+
+.flexColChild--seven-monthsproducts-category{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexRow--section__seven-monthsproducts-content{
+    min-width: 265px;
+}
+
+.flexRowContent--content__group-monthsproducts{
+    display: flex;
+}
+
+.flexRowContent--section__eigth-container-row-group{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+
 
 }

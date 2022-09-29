@@ -50,3 +50,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* <-------------------- mobile styles ----------------------> */
+
+@media screen and (max-width: 489px) {
+    
+
+
+.flexCol--department__results-filter{
+    align-items: center;
+}
+
+.flexColChild--department__department-search{
+flex-direction: column;
+}
+
+}

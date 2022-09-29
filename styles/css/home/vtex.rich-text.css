@@ -35,4 +35,28 @@
         font-weight: 400;
     }
 
-    
+    .paragraph--title__section-two-mobile{
+        display: none ;
+    }
+
+    /* <--------------------------mobile----------------------------------->*/
+
+
+    @media screen and (max-width: 487px){
+
+
+    .paragraph--title__section-two{
+        display: none ;
+    }
+
+    .paragraph--title__section-two-mobile{
+    display: inline;
+    margin: 20px 15px;
+    max-width: 1280px;
+    width: 100%;
+    font-family: 'Cabin';
+    font-size: 20;
+    color:#8dc63f;
+    font-weight: 400;
+    }
+}

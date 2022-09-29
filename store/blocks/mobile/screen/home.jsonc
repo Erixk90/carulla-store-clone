@@ -8,8 +8,8 @@
             "whatsapp-button",
             "flex-layout.row#welcome__section",
             "flex-layout.row#section__one-homeUp",
-            "flex-layout.row#section__two-categories",
-            "flex-layout.row#section__two-categories2",
+            "rich-text#title__section-two-mobile",
+            "flex-layout.row#section__two-categories-mobile",
             "flex-layout.row#section__three-yourmarket",
             "flex-layout.row#section__four-bestsellers-content",
             "flex-layout.row#section__five-wines-content",
@@ -141,6 +141,22 @@
             "src": "assets/img/header1.jpg",
             "title": "Banner principal",
             "blockClass": "image__welcome"
+        }
+    },
+    "flex-layout.row#section__two-categories-mobile": {
+        "children": [
+            "flex-layout.row#section__two-categories",
+            "flex-layout.row#section__two-categories2"
+        ],
+        "props": {
+            "blockClass": "section__two-categories-mobile"
+        }
+    },
+    "rich-text#title__section-two-mobile": {
+        "props": {
+            "text": "Lo mejor para ti",
+            "textAlignment": "CENTER",
+            "blockClass": "title__section-two-mobile"
         }
     }
 }

@@ -62,7 +62,7 @@
             },
             "arrowSize": 25,
             "centerMode": "disabled",
-            "showNavigationArrows": "always"
+            "showNavigationArrows": "desktopOnly"
         }
     },
     "rich-text#title__section-four": {

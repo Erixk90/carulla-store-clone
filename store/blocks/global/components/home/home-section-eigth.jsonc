@@ -11,8 +11,9 @@
     "flex-layout.col#section__eigth-container-group":{
         "children":[
             "flex-layout.row#section__eigth-container-group"
-
-        ]
+        ],
+        "props":{
+            "blockClass":"section__eigth-container-col-group"}
     },
     "flex-layout.row#section__eigth-container-group":{
         "children":[
@@ -20,10 +21,11 @@
             "flex-layout.row#section__eigth-group-two",
             "flex-layout.row#section__eigth-group-three",
             "flex-layout.row#section__eigth-group-four"
-
-        ]
+        ],
+        "props":{
+            "blockClass":"section__eigth-container-row-group"
     }
-    ,
+},
     "flex-layout.row#section__eigth-group-one": {
         "children": [
             "image#group__one",

@@ -37,6 +37,7 @@
                 "mobile": 1
             },
             "infinite": true,
+            "showNavigationArrows": "desktopOnly",
             "blockClass": "home__slider",
             "autoplay": {
                 "timeout": 3000,

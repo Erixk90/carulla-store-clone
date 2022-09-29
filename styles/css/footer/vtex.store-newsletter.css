@@ -61,3 +61,21 @@
     margin: 0;
     position: relative;
 }
+
+/* <---------mobile styles---------------> */
+
+@media screen and (max-width: 487px){
+
+
+.newsletterForm--newsletter__form-suscribe{
+    display: flex;
+    flex-direction: column;
+}
+
+.emailInputContainer--newsletter-input-email{
+    margin: 0;
+    width: 217px;
+}
+
+
+}

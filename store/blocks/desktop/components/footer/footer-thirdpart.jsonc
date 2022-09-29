@@ -1,10 +1,9 @@
 {
-     
   //-----------------Start one footer row three group
   "flex-layout.row#footer__desktop-bottom": {
     "children": [
       "flex-layout.col#bottom__footer-first",
-      "flex-layout.col#bottom__footer-second"
+      "rich-text#footer__text-rigths"
     ],
     "props": {
       "blockClass": "bottom__footer"
@@ -12,26 +11,14 @@
   },
   "flex-layout.col#bottom__footer-first": {
     "children": [
-      "flex-layout.row#section__footer-first"
-    ]
-  },
-  "flex-layout.row#section__footer-first": {
-    "children": [
-      "flex-layout.col#first__section-group-one",
-      "flex-layout.col#first__section-group-two"
+      "rich-text#visit-us",
+      "flex-layout.row#first__section-group-two-logos"
     ],
     "props": {
-      "blockClass": "first__section-group"
+      "blockClass": "bottom__footer-first"
     }
   },
-  "flex-layout.col#first__section-group-one": {
-    "children": [
-      "rich-text#visit-us"
-    ],
-    "props": {
-      "blockClass": "first__section-group-one-text"
-    }
-  },
+
   "rich-text#visit-us": {
     "props": {
       "blockClass": "visita",
@@ -40,11 +27,7 @@
       "textPosition": "center"
     }
   },
-  "flex-layout.col#first__section-group-two": {
-    "children": [
-      "flex-layout.row#first__section-group-two-logos"
-    ]
-  },
+  
   "flex-layout.row#first__section-group-two-logos": {
     "children": [
       "logo#logo__one",
@@ -80,14 +63,7 @@
       "url": "assets/img/surtimax.svg"
     }
   },
-  "flex-layout.col#bottom__footer-second": {
-    "children": [
-      "rich-text#footer__text-rigths"
-    ],
-    "props": {
-      "blockClass": "text-rigths"
-    }
-  },
+  
   "rich-text#footer__text-rigths": {
     "props": {
       "blockClass": "rights",

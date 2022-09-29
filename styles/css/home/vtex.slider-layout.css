@@ -8,3 +8,16 @@
     text-decoration: none;
     color: #5a5a5a;
 }
+
+
+
+/* <-----------------mobile---------------> */
+
+@media screen and (max-width: 487px){
+
+.sliderLayoutContainer--home__slider{
+    width: 90%;
+    min-width: 260px;
+    margin: 0 auto;
+}
+}

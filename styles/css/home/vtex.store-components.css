@@ -60,6 +60,30 @@ align-items: center;
     border: 1px solid rgba(46,46,46,.22);
     margin: 0 10px;
     border-radius: 5px;
-   box-shadow:  0 1px 6pxrgba(46,46,46,.22);
+   box-shadow:  0 1px 6px rgba(46,46,46,.22);
 }
 
+.imageElement--six__yourhome-category-image{
+    max-height: 240px;
+}
+
+
+/* <---------------------------mobile------------------------> */
+
+
+@media screen and (max-width: 487px){
+
+.imageElement--six__yourhome-category-image{
+max-height: 150px;
+}
+
+.imageElement--section__one-image {
+    margin: 0 auto;
+}
+
+.infoCardImageContainer{
+    width: 97%;
+    min-width: 265px;
+}
+
+}

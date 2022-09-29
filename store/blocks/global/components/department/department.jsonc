@@ -17,19 +17,6 @@
             "blockClass": "department__search-result-layout"
         }
     },
-    "search-result-layout.mobile#department": {
-        "children": [
-            "rich-text#prueba"
-        ],
-        "props": {
-            "blockClass": "department-mobile__search-result-layout"
-        }
-    },
-    "rich-text#prueba": {
-        "props": {
-            "text": "eSTO ES UNA PRUEBA DEL RESPONSIVE"
-        }
-    },
     //------------------------first block ----------------
     "search-result-layout.desktop#department": {
         "children": [
