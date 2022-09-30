@@ -66,13 +66,30 @@ align-items: center;
 .imageElement--six__yourhome-category-image{
     max-height: 240px;
 }
+/*
+.imageElement--image__welcome{
+    width: 97%;
+}
 
+.imageElement--image__welcome-mobile{
+    display: none;
+    
+}*/
 
 /* <---------------------------mobile------------------------> */
 
 
 @media screen and (max-width: 487px){
+/*
+.imageElement--image__welcome-mobile{
+    display: block;
+    max-width: 97%;
+}
 
+.imageElement--image__welcome{
+    display: none;
+}
+*/
 .imageElement--six__yourhome-category-image{
 max-height: 150px;
 }

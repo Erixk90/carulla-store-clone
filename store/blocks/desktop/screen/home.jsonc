@@ -128,7 +128,8 @@
     },
     "flex-layout.row#welcome__section": {
         "children": [
-            "image#section__one-welcome"
+            "image#section__one-welcome",
+            "image#section__one-welcome-mobile"
         ],
         "props": {
             "fullWidth": "true",
@@ -142,6 +143,13 @@
             "src": "assets/img/header1.jpg",
             "title": "Banner principal",
             "blockClass": "image__welcome"
+        }
+    },
+    "image#section__one-welcome-mobile": {
+        "props": {
+            "src": "assets/img/header2.jpg",
+            "title": "Banner principal",
+            "blockClass": "image__welcome-mobile"
         }
     }
 }

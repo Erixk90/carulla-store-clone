@@ -9,3 +9,12 @@ color: var(----buttons-descriptions);
     font-size: 14px;
     margin: 5px 5px;
 }
+
+
+/*<----------- mobile------------->*/
+@media screen and (max-width: 489px) {
+.inputContainer{
+    width:63%
+}
+
+}

@@ -127,6 +127,7 @@
     },
     "flex-layout.row#welcome__section": {
         "children": [
+            /*"image#section__one-welcome-mobile",*/
             "image#section__one-welcome"
         ],
         "props": {
@@ -136,11 +137,11 @@
             "blockClass": "image__welcome-content"
         }
     },
-    "image#section__one-welcome": {
+    "image#section__one-welcome-mobile": {
         "props": {
-            "src": "assets/img/header1.jpg",
+            "src": "assets/img/header2.jpg",
             "title": "Banner principal",
-            "blockClass": "image__welcome"
+            "blockClass": "image__welcome-mobile"
         }
     },
     "flex-layout.row#section__two-categories-mobile": {

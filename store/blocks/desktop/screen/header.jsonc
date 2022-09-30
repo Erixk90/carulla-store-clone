@@ -83,7 +83,7 @@
       "logo#header__top-logo": {
         "title": "logo",
         "props": {
-          "url": "assets/img/logo.png",
+          "url": "assets/img/carulla_colombia2.png",
           "width": 26,
           "heigth": 26,
           "href": "/",
@@ -95,7 +95,8 @@
           "autocomplete-result-list.v2"
         ],
         "props": {
-          "openAutocompleteOnFocus": true
+          "openAutocompleteOnFocus": true,
+          "blockClass":"header__search"
         }
       },
       "autocomplete-result-list.v2": {

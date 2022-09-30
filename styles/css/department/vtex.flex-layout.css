@@ -65,4 +65,11 @@
 flex-direction: column;
 }
 
+.flexRowContent--Product__info-row{
+    flex-direction: column;
+}
+
+.flexRow--product__tabs-row{
+    display: none;
+}
 }

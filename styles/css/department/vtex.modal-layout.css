@@ -2,3 +2,9 @@
     max-height: 100vh;
     width: 30%;
 }
+
+@media screen and (max-width: 489px) {
+    .paper--home__modal-event-layout{
+        width: 70%;
+    }
+}

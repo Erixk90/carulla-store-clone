@@ -4,3 +4,14 @@
     justify-content: center;
     align-items: center;
 }
+
+
+/*<------mobile styles -------->*/
+
+@media screen and (max-width: 489px) {
+
+.container{
+    /*padding: 0px;*/
+}
+
+}
