@@ -39,3 +39,11 @@ min-height: 150px;
     color: #5a5a5a;
     font-family: 'Cabin' !important;
 }
+
+/*<----------- mobile styles------------->*/
+
+@media screen and (max-width: 489px) {
+.flexRowContent--image__welcome-content :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+margin: 0;
+}
+}
