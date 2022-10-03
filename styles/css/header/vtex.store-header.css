@@ -31,7 +31,11 @@
 @media screen and (max-width: 489px) {
 
 
-
-
-
 }
+
+@media (max-width: 768px) {
+    .headerStickyRow--header__mobile-one :global(.vtex-store-components-3-x-container),
+    .headerStickyRow--header__mobile-two :global(.vtex-store-components-3-x-container)  {
+      padding: 0;
+    }
+   }

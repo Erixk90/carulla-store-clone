@@ -18,23 +18,32 @@ background-color: rgba(0, 0, 0, 0.82);
     background-color: #fff;
 }
 
-.menuContainerNav--mega__menu::-webkit-scrollbar {
+/*.menuContainerNav--mega__menu::-webkit-scrollbar {
     -webkit-appearance: none;
-}
+}*/
 
-.menuContainerNav--mega__menu::-webkit-scrollbar-button {
-    display: none;
+.menuContainer::-webkit-scrollbar {
+    height: 10px;
 } 
 
-.menuContainerNav--mega__menu::-webkit-scrollbar-thumb {
-    background-color:orangered;
+.menuContainer::-webkit-scrollbar-thumb {
+  /*  background-color:orangered;
     border-radius: 20px;
     border: 2px solid fuchsia;
+*/
+    background-clip: padding-box;
+    background-color:#843a8d; 
+    border-right: 16px solid transparent;
 }
 
-.menuContainerNav--mega__menu::-webkit-scrollbar-track {
+.menuContainer::-webkit-scrollbar-track {
     border-radius: 10px;  
+    background-clip: padding-box;
+    background-color: #5e5e5e;
+    border-right: 16px solid transparent;
 }
+
+
 
 .triggerButtonIcon--active{
     color: #fff;

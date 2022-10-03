@@ -129,3 +129,18 @@
     }
 
 }
+
+
+ /* <-------------------Tablet styles--------------------> */
+
+ @media screen and (min-width: 488px) and (max-width: 900px) {
+
+.paragraph--subgroup__text-information {
+    font-size: 12px;
+}
+
+.paragraph--subgroup__link-information{
+    font-size: 12px;
+}
+
+}

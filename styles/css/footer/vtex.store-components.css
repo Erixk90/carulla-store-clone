@@ -9,4 +9,13 @@
     width: 41px;
     }
 
- 
+ /* <-------------------Tablet styles--------------------> */
+
+@media screen and (min-width: 488px) and (max-width: 900px) {
+
+    .vtex-store-components-3-x-sizeMobile{
+        min-width: none !important;
+        padding: 0 !important;
+    }
+
+}

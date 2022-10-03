@@ -326,19 +326,19 @@
     "props": {
       "socialNetworks": [
         {
-          "url": "https://facebook.com/foo",
+          "url": "https://facebook.com/SupermercadosCarulla/",
           "name": "Facebook"
         },
         {
-          "url": "https://twitter.com/foo",
+          "url": "https://twitter.com/PlaceresCarulla",
           "name": "Twitter"
         },
         {
-          "url": "https://instagram.com/foo",
+          "url": "https://instagram.com/placerescarulla/",
           "name": "Instagram"
         },
         {
-          "url": "https://youtube.com/foo",
+          "url": "https://youtube.com/user/supermercadoscarulla",
           "name": "Youtube"
         }
       ],

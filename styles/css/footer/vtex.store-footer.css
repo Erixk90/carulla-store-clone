@@ -1,0 +1,4 @@
+.socialNetworksContainer--image__social-media{
+    display: flex;
+    justify-content: space-around;
+}
