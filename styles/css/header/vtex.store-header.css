@@ -26,6 +26,11 @@
     align-items: center;
 }
 
+.headerRowContainer--header__mobile-two {
+    padding-left: 10px;
+    color: #fff;
+}
+
 /*<-----------------mobile styles--------------->*/
 
 @media screen and (max-width: 489px) {
